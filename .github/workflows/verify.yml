@@ -1,0 +1,34 @@
+name: RTL and behavioral-model verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  simulation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Build isolated simulation tools
+        run: docker build -t fpga-daq-tools:1 -f tools/Dockerfile .
+      - name: Run lint, models, cocotb and generic synthesis
+        run: make verify
+      - name: Run structural timing checks
+        run: ./tools/run python tools/timing_audit.py
+      - name: Retain executed evidence
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: simulation-evidence
+          path: |
+            results/*.xml
+            results/system-audit/*.json
+            results/benchmark_csv/
+            synthesis/reports/timing-audit.json
+            synthesis/reports/longest-path.txt
+          if-no-files-found: error
+# Public publication authorized by the owner; local evidence and remote CI remain separate.
