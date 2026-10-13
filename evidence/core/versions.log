@@ -1,0 +1,40 @@
+Python 3.12.3
+Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+2.0.0
+Yosys 0.33 (git sha1 2584903a060)
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with KLU Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Mar 31 20:15:14 UTC 2024
+******
+7.0.11
+git version 2.43.0
+GNU Make 4.3
+click==8.1.6
+cocotb==2.0.0
+colorama==0.4.6
+contourpy==1.4.0
+cycler==0.12.1
+find_libpython==0.5.1
+fonttools==4.66.1
+iniconfig==2.3.1
+kiwisolver==1.5.1
+matplotlib==3.10.6
+numpy==2.5.4
+packaging==26.3
+pillow==10.2.0
+pluggy==1.6.0
+Pygments==2.21.0
+pyparsing==3.3.3
+pytest==8.4.2
+python-dateutil==2.9.0.post0
+setuptools==68.1.2
+six==1.16.0
+wheel==0.42.0
+wxPython==4.2.1
+56c7c46314adfad06dd093b77823bfd9b49ebef72342549f790718199c3e8223  /tmp/verilator.tar.gz

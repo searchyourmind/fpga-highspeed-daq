@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852771" />
+    <testcase name="streaming_frames_gain_stalls_and_reset" classname="test_streaming" file="/work/tb/test_streaming.py" lineno="10" time="0.0483098030090332" sim_time_ns="14723.0" ratio_time="304762.16177588265" />
+  </testsuite>
+</testsuites>

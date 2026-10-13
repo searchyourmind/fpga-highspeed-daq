@@ -1,0 +1,2 @@
+FROM fpga-daq-eda:2
+RUN apt-get update && apt-get install -y --no-install-recommends openjdk-25-jre-headless ca-certificates curl && rm -rf /var/lib/apt/lists/*

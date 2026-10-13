@@ -1,0 +1,11 @@
+{
+  "scope": "Final clean local Git clone, generated directories absent; all verification commands return zero and final git status is empty. Previously no-cache-built core image reused. No PCB numerical rerun or hardware work in this finalization.",
+  "tested_commit": "85d4c3222280431d91c0e911b1357893a964564a",
+  "production_cases": 63,
+  "matrix_scenarios": 33,
+  "all_recorded_commands_exit_zero": true,
+  "final_tracked_worktree_clean": true,
+  "figure_regeneration": "Actual earlier clean-run WAVES=1 make e2e and make release-assets; final label correction separately recorded in asset-labels.json. Historical VCD bytes match the fresh rerun.",
+  "prior_clean_failure": "evidence/debug/clean-probe-directory-failure/",
+  "archive_scope": "Final package adds the final execution receipts and release documentation to the tested snapshot; reproduction inputs are byte-identical."
+}

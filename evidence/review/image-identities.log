@@ -1,0 +1,235 @@
+[
+    {
+        "Id": "sha256:2dec7862c4c753b2a039e56abfcd9dfaec6707819e73fc19c85c3b52011b9d55",
+        "RepoTags": [
+            "fpga-daq-tools:1"
+        ],
+        "RepoDigests": [
+            "fpga-daq-tools@sha256:2dec7862c4c753b2a039e56abfcd9dfaec6707819e73fc19c85c3b52011b9d55"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-12T05:02:41.427052138Z",
+        "Config": {
+            "Env": [
+                "PATH=/opt/venv/bin:/opt/verilator/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "MPLBACKEND=Agg"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "WorkingDir": "/work",
+            "Labels": {
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 9485867666,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:1e9178dc90058fa454a60803300219ee8c17e515be8718817ed824b96fa1207b",
+                "sha256:44b0d02d3128dd7fe87c63ed3902928b082374dfdee4cc3d20676faf853e16a6",
+                "sha256:e9227ede959025046b4b24d3e206de12eb5bb9e57bed7459d66c87a734c89529",
+                "sha256:2a40db5ad0e925be06e87c514b1d4d5e80596db663e1620148d34d7a68fba2cf",
+                "sha256:eba3ad2bba0351e90453a7c1e5a12b3df90a6d817eb585a6c680b62bb3a9682c",
+                "sha256:d04d97603ce5b644f6ed7a64775d296bb7fb3184044952af12e367f7bb839b9e",
+                "sha256:e73ce015d44f0d1d3af29d13cfca9675dd2fecafe65c0bbd061b5d8a93f6eccf",
+                "sha256:c2a038c2eef7739dcdcf4c5680a042d9081a48ba9860120a15ea54aba6af38b6"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-12T05:04:32.210200341Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:2dec7862c4c753b2a039e56abfcd9dfaec6707819e73fc19c85c3b52011b9d55",
+            "size": 856
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/fpga-daq-tools"
+                }
+            ],
+            "Build": [
+                {
+                    "Ref": "dl3iqgwt4sczlp5nnklgnlabh",
+                    "CreatedAt": "2026-10-12T05:04:48.426934418Z"
+                }
+            ]
+        }
+    },
+    {
+        "Id": "sha256:59b40187f510c769a6ba2cfb653f20d465abb2973a23175a6eb00b06ecdbbc0b",
+        "RepoTags": [
+            "fpga-daq-tools:release-audit"
+        ],
+        "RepoDigests": [
+            "fpga-daq-tools@sha256:59b40187f510c769a6ba2cfb653f20d465abb2973a23175a6eb00b06ecdbbc0b"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-12T23:37:21.553078593Z",
+        "Config": {
+            "Env": [
+                "PATH=/opt/venv/bin:/opt/verilator/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "MPLBACKEND=Agg"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "WorkingDir": "/work",
+            "Labels": {
+                "org.opencontainers.image.version": "24.04"
+            }
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 9485911775,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:1e9178dc90058fa454a60803300219ee8c17e515be8718817ed824b96fa1207b",
+                "sha256:8dc776d8abd42957ef848d273c81f0361f0b2bc6c4cf387f2528ebc033f0fd6e",
+                "sha256:5cbe5946e7f107a1b742443a66bed22290423c0dc8b9da52ae7637af97326a9b",
+                "sha256:0d1a2eafc05893c0fb1a68a183babb096900b02920b7efda04a3ce7de37b9f9f",
+                "sha256:ec1390eb18dd3dc5c1350a76377f33718adf8f3660a381ecd04ae9e57960f100",
+                "sha256:c3e6c69c0af2faaecbbb75de04d611afda6c903a101d7e8d939f2d37dcb0dfc0",
+                "sha256:48a448e4c5af09a2670a5477d9b1ecc4eaaa23162f9e454e288f5ccea39eade6",
+                "sha256:5c92e61eedfd416521a69f5fa2702e492d088a3b3d298c45f913d9646073e8d6"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-12T23:39:22.510636677Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:59b40187f510c769a6ba2cfb653f20d465abb2973a23175a6eb00b06ecdbbc0b",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "ye7qlljm3e6pgewomdgggswx3",
+                    "CreatedAt": "2026-10-12T23:39:45.238931007Z"
+                }
+            ]
+        }
+    },
+    {
+        "Id": "sha256:8b297ca2c1864ace86d16781f72d2ffa75888cf2dde860a82677d00d02f0c69e",
+        "RepoTags": [
+            "fpga-daq-eda:2"
+        ],
+        "RepoDigests": [
+            "fpga-daq-eda@sha256:8b297ca2c1864ace86d16781f72d2ffa75888cf2dde860a82677d00d02f0c69e"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-12T05:10:40.607138137Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "MPLBACKEND=Agg"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "WorkingDir": "/work",
+            "Labels": {
+                "org.opencontainers.image.created": "2026-09-27T10:29:55.694692+00:00",
+                "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+                "org.opencontainers.image.title": "ubuntu",
+                "org.opencontainers.image.version": "26.04"
+            }
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 7832129636,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:27df0d1341823cd47a776b3b6dd109273560e03b7e97d771621bfa43623fa39b",
+                "sha256:777d3c203fe3b8bf18121a65c1387256ab12ce9dc54c714e379c3feec611f034",
+                "sha256:cda2965dee6cf18f718dbfc3ddd4f5f87bac340d84530b2661c36d5f3b9b964e",
+                "sha256:501e5ac92918f9edf31eedf34835991086a58fd91c4432768c7bbe2e6076b624"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-12T05:12:26.164540714Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:8b297ca2c1864ace86d16781f72d2ffa75888cf2dde860a82677d00d02f0c69e",
+            "size": 856
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/fpga-daq-eda"
+                }
+            ],
+            "Build": [
+                {
+                    "Ref": "hvhj856kpxgl7ley86q4qksxj",
+                    "CreatedAt": "2026-10-12T05:12:41.626189263Z"
+                }
+            ]
+        }
+    },
+    {
+        "Id": "sha256:d2709a3cce4b0abc56e009a6c0b008e83b97e1aed6b1747ac8152ac3181f7ef3",
+        "RepoTags": [
+            "fpga-daq-analysis:1"
+        ],
+        "RepoDigests": [
+            "fpga-daq-analysis@sha256:d2709a3cce4b0abc56e009a6c0b008e83b97e1aed6b1747ac8152ac3181f7ef3"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-10-12T07:32:52.408720833Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "MPLBACKEND=Agg"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "WorkingDir": "/work",
+            "Labels": {
+                "org.opencontainers.image.created": "2026-09-27T10:29:55.694692+00:00",
+                "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+                "org.opencontainers.image.title": "ubuntu",
+                "org.opencontainers.image.version": "26.04"
+            }
+        },
+        "Architecture": "arm64",
+        "Os": "linux",
+        "Size": 7983109554,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:27df0d1341823cd47a776b3b6dd109273560e03b7e97d771621bfa43623fa39b",
+                "sha256:777d3c203fe3b8bf18121a65c1387256ab12ce9dc54c714e379c3feec611f034",
+                "sha256:cda2965dee6cf18f718dbfc3ddd4f5f87bac340d84530b2661c36d5f3b9b964e",
+                "sha256:501e5ac92918f9edf31eedf34835991086a58fd91c4432768c7bbe2e6076b624",
+                "sha256:09c6a133fa8c531c08c0b14fb94596f4deb3fcea5e507cca69eef27e3413161a"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-12T07:32:53.916495084Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:d2709a3cce4b0abc56e009a6c0b008e83b97e1aed6b1747ac8152ac3181f7ef3",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "deamut172s4ks57s51j1f4p9d",
+                    "CreatedAt": "2026-10-12T07:32:54.241096084Z"
+                }
+            ]
+        }
+    }
+]

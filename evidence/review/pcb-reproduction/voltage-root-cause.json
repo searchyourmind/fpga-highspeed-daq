@@ -1,0 +1,55 @@
+{
+  "status": "FAIL_REQUIREMENTS",
+  "unchanged_bounds_V": [
+    3.135,
+    3.465
+  ],
+  "cases": [
+    {
+      "case": "full_load_low",
+      "terms_V": {
+        "nominal": 3.328,
+        "reference_error": -0.05990399999999996,
+        "divider_ratio_error": -0.017316862979571912,
+        "FB_leakage": -0.0031710600000000003,
+        "output_copper": -0.03716088865437439,
+        "ground_reserve": -0.01,
+        "contact_reserve": -0.025,
+        "dynamic_reserve": -0.04,
+        "line_load_reserve": -0.005
+      },
+      "result_V": 3.1304471883660536,
+      "limit_V": 3.135,
+      "margin_mV": -4.552811633946163
+    },
+    {
+      "case": "light_load_PSM_high",
+      "terms_V": {
+        "nominal": 3.328,
+        "reference_error": 0.09318400000000038,
+        "divider_ratio_error": 0.01825538183642683,
+        "FB_leakage": 0.0031710600000000003,
+        "dynamic_reserve": 0.04,
+        "line_load_reserve": 0.005
+      },
+      "result_V": 3.487610441836427,
+      "limit_V": 3.465,
+      "margin_mV": -22.610441836427242
+    }
+  ],
+  "full_load_PWM_high_budget_V": 3.4541528603010536,
+  "full_load_PWM_high_margin_mV": 10.84713969894624,
+  "permitted_output_drop_for_low_bound_V": 0.032608077020428006,
+  "actual_output_drop_V": 0.03716088865437439,
+  "PSM_high_allowance_left_after_FB_divider_leakage_V": 0.022389558163572687,
+  "required_dynamic_plus_line_load_allowance_V": 0.045,
+  "caveats": [
+    "PSM FB extrema specified at22uF; effective cap16uF stress is outside that table condition, so the existing upper budget is not a complete guarantee.",
+    "FB accuracy, line/load and ripple terms may overlap in a joint mode-specific characterization, but no overlap is subtracted without a qualified envelope.",
+    "5mV line/load,10mV ground,25mV contact and40mV dynamics are explicit design reserves, not vendor-guaranteed measurements.",
+    "Steady current/mode/load consistency is unresolved; conservative composite failure remains.",
+    "Worst lower output lacks4.553mV even with corrected copper. Upper bound cannot be repaired by lower copper drop."
+  ],
+  "decision": "No divider or capacitor substitution adopted without qualification. Retain FAIL; obtain joint envelope or redesign regulation.",
+  "source": "https://www.ti.com/lit/ds/symlink/tps62130.pdf section7.5"
+}

@@ -1,0 +1,74 @@
+./tools/run-eda sh tools/pcb-build.sh
+23:39:35: Debug: Adding duplicate image handler for 'PNG file'
+23:39:35: Debug: Adding duplicate image handler for 'JPEG file'
+23:39:35: Debug: Adding duplicate image handler for 'TIFF file'
+23:39:35: Debug: Adding duplicate image handler for 'GIF file'
+23:39:35: Debug: Adding duplicate image handler for 'PNM file'
+23:39:35: Debug: Adding duplicate image handler for 'PCX file'
+23:39:35: Debug: Adding duplicate image handler for 'IFF file'
+23:39:35: Debug: Adding duplicate image handler for 'Windows icon file'
+23:39:35: Debug: Adding duplicate image handler for 'Windows cursor file'
+23:39:35: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+23:39:35: Debug: Adding duplicate image handler for 'TGA file'
+23:39:35: Debug: Adding duplicate image handler for 'XPM file'
+Planes filled and board saved
+You have run CvPcb for the first time using the new footprint library table method for finding footprints.
+CvPcb has either copied the default table or created an empty table in your home folder.
+You must first configure the library table to include all footprint libraries not included with KiCad.
+See the "Footprint Library Table" section of the CvPcb documentation for more information. Found 0 violations
+Saved ERC Report to /work/hardware/reference_pcie_adapter/outputs/erc.json
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /work/hardware/reference_pcie_adapter/outputs/drc.json
+{
+  "native_pin_contracts": "PASS",
+  "erc_violations": 0,
+  "drc_geometric_violations": 0,
+  "drc_unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "fabrication_released": false,
+  "cad_checks": "PASS",
+  "release_gate": "REVIEW_REQUIRED"
+}
+{
+  "status": "PASS",
+  "scope": "Geometric preservation within 1 um; no electrical-delay/SI claim",
+  "pairs": {
+    "/CLK_N": {
+      "length_mm": 18.459531167507617,
+      "max_baseline_deviation_mm": 0.0,
+      "vias": 0
+    },
+    "/CLK_P": {
+      "length_mm": 18.459531167507617,
+      "max_baseline_deviation_mm": 0.0,
+      "vias": 0
+    },
+    "/RX_N": {
+      "length_mm": 17.838210823947975,
+      "max_baseline_deviation_mm": 7.105427357601002e-15,
+      "vias": 0
+    },
+    "/RX_P": {
+      "length_mm": 17.838210823947975,
+      "max_baseline_deviation_mm": 0.0,
+      "vias": 0
+    },
+    "/TX_N": {
+      "length_mm": 19.10903322370527,
+      "max_baseline_deviation_mm": 1.4210854715202004e-14,
+      "vias": 2
+    },
+    "/TX_P": {
+      "length_mm": 19.10903322370527,
+      "max_baseline_deviation_mm": 1.4210854715202004e-14,
+      "vias": 2
+    }
+  },
+  "inner_signal_tracks": 0,
+  "ground_planes": 2,
+  "local_outer_ground_spreaders": 2,
+  "track_via_items": 424,
+  "pad_count": 183
+}

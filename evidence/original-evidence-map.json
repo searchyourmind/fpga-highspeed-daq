@@ -1,0 +1,498 @@
+{
+  "evidence/pcb/engineering/component-selection.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/component-selection.json",
+    "sha256": "d61f9ffbf9c1f1eba27725bf0fb5c7195833349e769850dde36f6af195a9951f"
+  },
+  "evidence/pcb/engineering/dc-network-before.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/dc-network-before.json",
+    "sha256": "1123439783ab8f6950eb00c0bd81941c2958ce41b8454f574225eb393eef2b06"
+  },
+  "evidence/pcb/engineering/si-width-feasibility.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/si-width-feasibility.json",
+    "sha256": "9bac10aa525fd3dfac89060b99b200b0d09ebe57c53a893c83ce61a8f0370742"
+  },
+  "evidence/pcb/engineering/power-corners.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/power-corners.json",
+    "sha256": "8ca316e1e26dc5dcf07ae121255894bbb6287d033358f387420496a5ddec1034"
+  },
+  "evidence/pcb/engineering/si-independent-review.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/si-independent-review.json",
+    "sha256": "b615b61544077de0ca0be68a161d9279b9848defe3448344fcee5f892c538596"
+  },
+  "evidence/pcb/engineering/adapter-loaded-corner.png": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/adapter-loaded-corner.png",
+    "sha256": "3b445abca45e3ed757dcf47bf412ec51d450ced52a475eada9585cb634da8ab2"
+  },
+  "evidence/pcb/engineering/adapter-transient.png": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/adapter-transient.png",
+    "sha256": "6d8a2bec0a7da99463b173658b778fe8086faa4942788f6f237273bbc09d6215"
+  },
+  "evidence/pcb/engineering/field-solver.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/field-solver.json",
+    "sha256": "26b64bfa5869f8f688c951141a99bcacc533303c23e61d20ee76eeb5b6096069"
+  },
+  "evidence/pcb/engineering/failure-margins.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/failure-margins.json",
+    "sha256": "00bf05b955256b544abe3fca4a4c347b63d0bdb38495e212c82e70cf56934c95"
+  },
+  "evidence/pcb/engineering/thermal-map.png": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/thermal-map.png",
+    "sha256": "0354ba7514257d599744e81c108a6d50d9d6f9c82dbcebf3f1a2b6d5ab64bc6c"
+  },
+  "evidence/pcb/engineering/thermal-exit-requirement.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/thermal-exit-requirement.json",
+    "sha256": "0beea8b747938158498183bdf6055a727ba9b300c0fd33b3ab58c3456e43017b"
+  },
+  "evidence/pcb/engineering/process-window.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/process-window.json",
+    "sha256": "959b7817a8a8a920e1d712bc208fbbf4b3974c6729faafba202603c019a78145"
+  },
+  "evidence/pcb/engineering/dc-analytic-tests.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/dc-analytic-tests.json",
+    "sha256": "c46f62ba9c8b9717e6a2eaa33b4ea41ab8c951a1201117e02dbdaa2d9e5e88e5"
+  },
+  "evidence/pcb/engineering/thermal-all-cases-after.csv": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/thermal-all-cases-after.csv",
+    "sha256": "32fecf09b8a83c39a29cb7cc6c3cb10d70f61fe3231fb7829003736d6f4c11d9"
+  },
+  "evidence/pcb/engineering/cad-geometry.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/cad-geometry.json",
+    "sha256": "d2757afcf444f2ff5a3030f12ae1f5cc1fa4ce12ae2bdd56654c2cbf10b688f1"
+  },
+  "evidence/pcb/engineering/mechanical.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/mechanical.json",
+    "sha256": "71649a3ca7538d6a08bbf30825aa3b00f27e5a098833ace1f8606146757a1bc5"
+  },
+  "evidence/pcb/engineering/field-potential.png": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/field-potential.png",
+    "sha256": "2252f28e392d247450747f6f0d31aade1554e16ff58f5b55db6c6a422138bba6"
+  },
+  "evidence/pcb/engineering/thermal.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/thermal.json",
+    "sha256": "2fe0410153d756d2b0c3743dcefffc004ab2fcf2a5803fc3ba5ff8f2cdb19162"
+  },
+  "evidence/pcb/engineering/thermal-independent-review.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/thermal-independent-review.json",
+    "sha256": "bbeaeea170fc821df83da5dcc6924dba472230a938239c4066ab339963d1333b"
+  },
+  "evidence/pcb/engineering/adapter-loaded-corner.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/adapter-loaded-corner.json",
+    "sha256": "6d151e9a9c44a1ad3393ab397ab7a5206b70ce0606febdc8eef8cf87b4037a3f"
+  },
+  "evidence/pcb/engineering/si-return-paths.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/si-return-paths.json",
+    "sha256": "c5ff6b30c8bf9981999decaf3770282ae9dba0649d45eda889c9824edcca189a"
+  },
+  "evidence/pcb/engineering/dc-network.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/dc-network.json",
+    "sha256": "85637ca5ad771345cccd1c064a76db8fb8173a4cf594e1a23e0ad14d0f65d726"
+  },
+  "evidence/pcb/engineering/thermal-all-cases-before.csv": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/thermal-all-cases-before.csv",
+    "sha256": "ad88b89f6e7cc74d93551517a9a68090a9aaf358bc85444f5acb7b36f5ecc52d"
+  },
+  "evidence/pcb/engineering/adapter-transient.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/adapter-transient.json",
+    "sha256": "4d41770719555ee758d393d15592621851f33b1541cc23c0a3a1cbc0971900f8"
+  },
+  "evidence/pcb/engineering/mechanical-plan.png": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/mechanical-plan.png",
+    "sha256": "8097f034701d396660109ca680dd58a5128f205633b9a3d78856e2d510b10b2d"
+  },
+  "evidence/pcb/engineering/voltage-root-cause.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/voltage-root-cause.json",
+    "sha256": "a1f391284131639b2dc17a868512b52a861229388f10a0482a581f590e7de2ba"
+  },
+  "evidence/pcb/engineering/voltage-feasibility.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/engineering/voltage-feasibility.json",
+    "sha256": "4731a938a9d0e3ab4c2561ca9a3b09896e9b2916b6f009a091c4b27e08befe25"
+  },
+  "evidence/pcb/board-3d.png": {
+    "original": "hardware/reference_pcie_adapter/outputs/board-3d.png",
+    "sha256": "103615217feb561415c60964594bf10e0e12492d9e9906a639165f3ea3afa9e5"
+  },
+  "evidence/pcb/board-layout.svg": {
+    "original": "hardware/reference_pcie_adapter/outputs/board-layout.svg",
+    "sha256": "0237020d63d48ca3cba13b13cd7443c30880fe1484c51355f90b8b41db42a4d4"
+  },
+  "evidence/pcb/schematic-review.pdf": {
+    "original": "hardware/reference_pcie_adapter/outputs/schematic-review.pdf",
+    "sha256": "57fa25251a1236a0c924f289e8decdbf01aae63bb9fb392341b42ad8d78d1921"
+  },
+  "evidence/pcb/check-summary.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/check-summary.json",
+    "sha256": "5ca5e30d3475679ee8231a0681f9823dcc0020d918248012b2c82fdc70e79f6b"
+  },
+  "evidence/pcb/erc.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/erc.json",
+    "sha256": "8a515d27851b8d3169f9c5d0d1657cc5221eca3121582f614e17e7f351b67936"
+  },
+  "evidence/pcb/drc.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/drc.json",
+    "sha256": "d38985ed2e7e5a307eeb169cba8b07bb5e917be80387c56b0936bc08e0e55309"
+  },
+  "evidence/pcb/trace-lengths.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/trace-lengths.json",
+    "sha256": "ac7066c05cd1bb6846be9a0e1ff94585bdd8abf677294e141cb0ff3efdbbcc00"
+  },
+  "evidence/pcb/routing-preservation.json": {
+    "original": "hardware/reference_pcie_adapter/outputs/routing-preservation.json",
+    "sha256": "83cd5d6f5b518cb62ff2df24dfaf8db56f1925ebc6e0ffd074702e00ece36b28"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-A-transient.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-A-transient.log",
+    "sha256": "33071ffccc325c1789c1202670b7408f60f725f8e70a4c54cee211e74fa67bee"
+  },
+  "evidence/review/pcb-reproduction/engineering-report-resume.json": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-report-resume.json",
+    "sha256": "edb3ad1929eaa47f8dadff4380bf34369577ff489fa286889a3c4aeb20a76dd7"
+  },
+  "evidence/review/pcb-reproduction/power-corners.json": {
+    "original": "results/release-audit/clean-PCB-evidence/power-corners.json",
+    "sha256": "77f1aee3716e299191712a4a84e727d82867db668a7e4419b7d34891a70a5ace"
+  },
+  "evidence/review/pcb-reproduction/si-independent-review.json": {
+    "original": "results/release-audit/clean-PCB-evidence/si-independent-review.json",
+    "sha256": "e947d823de94fbc844778ee15c003e9f3fccaf52de6847afd4692c6613f0bb87"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-thermal.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-thermal.log",
+    "sha256": "bafa96cf3e8a23643bdd5006710a5f7c895a4965fc86116e4d5a1a37dfc9f677"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-si_feasibility.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-si_feasibility.log",
+    "sha256": "289e048d47890dbe28614e8689ebae79cc8ecf3fe22e179e26bc6eb07e549f88"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-dc_network.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-dc_network.log",
+    "sha256": "4ae58cd4df294c1cc1da32c291eb8aa7bb9e3084caa6317452de4c48b8291a9c"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-transient-evidence.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-transient-evidence.log",
+    "sha256": "4d41770719555ee758d393d15592621851f33b1541cc23c0a3a1cbc0971900f8"
+  },
+  "evidence/review/pcb-reproduction/engineering-check-summary.json": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-check-summary.json",
+    "sha256": "5277cffe11bd596d2fde4292efd48554b14eaef188127b956b1651c4325b25f6"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-evidence-check.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-evidence-check.log",
+    "sha256": "5277cffe11bd596d2fde4292efd48554b14eaef188127b956b1651c4325b25f6"
+  },
+  "evidence/review/pcb-reproduction/engineering-resume-review-PDF.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-resume-review-PDF.log",
+    "sha256": "397c708640024489055e325d00567e43c72b6335014bffc30519e685b3ee168f"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun.json": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun.json",
+    "sha256": "7cdbd4ede4ca633a7ad18dd84ed5fd02da66eb5f2774b7ce7d0a60a24fccb1ab"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-field_solver.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-field_solver.log",
+    "sha256": "119821994f964734de44801ce91b41f9b5ae850ff2b93b533322df031382634b"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-process_window.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-process_window.log",
+    "sha256": "c35e3b6645b988413acfe8c0305e775fa85d8a2ee123c8d42f9615b53e13fca5"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-geometry_checks.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-geometry_checks.log",
+    "sha256": "74cca5e72cec11e4872babde849a69d922030f29a121b96f461a22d7bb48f116"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-dc_analytic_tests.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-dc_analytic_tests.log",
+    "sha256": "145103e41c47ebdcabd47a0265e99ea74cf4e475c242ed75ae9905bb6c12b436"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-loaded-corner.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-loaded-corner.log",
+    "sha256": "eebc0b78bafdc5dfbe561b542d20b822a0ad21a1a3caa672deff61bba30b16dc"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-loaded-evidence.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-loaded-evidence.log",
+    "sha256": "6d151e9a9c44a1ad3393ab397ab7a5206b70ce0606febdc8eef8cf87b4037a3f"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-component_selection.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-component_selection.log",
+    "sha256": "6502370964fbb3d6af0e606a7c004c74f45154d1d3b20536d945daa98f15957e"
+  },
+  "evidence/review/pcb-reproduction/thermal-independent-review.json": {
+    "original": "results/release-audit/clean-PCB-evidence/thermal-independent-review.json",
+    "sha256": "bbeaeea170fc821df83da5dcc6924dba472230a938239c4066ab339963d1333b"
+  },
+  "evidence/review/pcb-reproduction/adapter-loaded-corner.json": {
+    "original": "results/release-audit/clean-PCB-evidence/adapter-loaded-corner.json",
+    "sha256": "6d151e9a9c44a1ad3393ab397ab7a5206b70ce0606febdc8eef8cf87b4037a3f"
+  },
+  "evidence/review/pcb-reproduction/adapter-transient.json": {
+    "original": "results/release-audit/clean-PCB-evidence/adapter-transient.json",
+    "sha256": "4d41770719555ee758d393d15592621851f33b1541cc23c0a3a1cbc0971900f8"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-review-Markdown.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-review-Markdown.log",
+    "sha256": "28f34c686624fab6fa1a1e8e2ea7f4fddb000c5fc7fce15643f23103533f7ec4"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-export_geometry.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-export_geometry.log",
+    "sha256": "5305b6e9133d1fde930e15d327668b577934d0c4e4d367b63cc9df5d4a05149b"
+  },
+  "evidence/review/pcb-reproduction/engineering-before-report-repair.json": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-before-report-repair.json",
+    "sha256": "49a8900ab60deef200f7824a858ec081fadc9bfe8aa8ed6cea4f75fba5eb1b61"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-model-fetch.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-model-fetch.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-power-corners.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-power-corners.log",
+    "sha256": "1da2b0a7ddbce9a5cce886117142e934b6f36241829e4dfeb8483c1952d6fc35"
+  },
+  "evidence/review/pcb-reproduction/voltage-root-cause.json": {
+    "original": "results/release-audit/clean-PCB-evidence/voltage-root-cause.json",
+    "sha256": "b878c7e1c65a3c5515986c987719015c82a6e42333f88aa8790516ef47910d10"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-views.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-views.log",
+    "sha256": "3000e5e8f40362d28f28ca0bf533be7852668d24511c42effde6e7d98bb99300"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-thermal_exit_requirement.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-thermal_exit_requirement.log",
+    "sha256": "0beea8b747938158498183bdf6055a727ba9b300c0fd33b3ab58c3456e43017b"
+  },
+  "evidence/review/pcb-reproduction/engineering-resume-review-Markdown.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-resume-review-Markdown.log",
+    "sha256": "0699b0088cee559708caae1114fc5a02ec26d4611952a906fd1b8350f74fe633"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-margin-audit.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-margin-audit.log",
+    "sha256": "00bf05b955256b544abe3fca4a4c347b63d0bdb38495e212c82e70cf56934c95"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-cad.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-cad.log",
+    "sha256": "74cb745e26131af26fd5297fabccf5cca517645797450b61ac91f876207c7d65"
+  },
+  "evidence/review/pcb-reproduction/engineering-rerun-voltage-feasibility.log": {
+    "original": "results/release-audit/clean-PCB-evidence/engineering-rerun-voltage-feasibility.log",
+    "sha256": "4731a938a9d0e3ab4c2561ca9a3b09896e9b2916b6f009a091c4b27e08befe25"
+  },
+  "evidence/review/clean-initial-verify.json": {
+    "original": "results/release-audit/clean-initial-verify.json",
+    "sha256": "7b37ea6ad43803d4268dc4efe72262614f1a21447eab26697bffcf2588ad5ecf"
+  },
+  "evidence/review/clean-initial-verify.log": {
+    "original": "results/release-audit/clean-initial-verify.log",
+    "sha256": "f8e021d42626b3908ac4563d1fefbcbff476a6b76533b64d14b97731fb186e88"
+  },
+  "evidence/review/final-clean-verify.json": {
+    "original": "results/release-audit/final-clean-verify.json",
+    "sha256": "4bb153f1d09391049d72fd0ddc3bca27e48542d4204f583f31d83b783794c260"
+  },
+  "evidence/review/final-clean-verify.log": {
+    "original": "results/release-audit/final-clean-verify.log",
+    "sha256": "642d634a0593c726279ccf655075df98317c8dee970ae23056c1212b84a5130f"
+  },
+  "evidence/review/final-clean-timing.json": {
+    "original": "results/release-audit/final-clean-timing.json",
+    "sha256": "3b302accb09171fa58b433a0360b5d627e46c0832d940ca8de225f71c2f42ac9"
+  },
+  "evidence/review/final-clean-timing.log": {
+    "original": "results/release-audit/final-clean-timing.log",
+    "sha256": "628ad65ff9a43582aaf36d038a2788bc0b7eb3b13daf2d9734217b5c31e47a32"
+  },
+  "evidence/review/fresh-tool-image.json": {
+    "original": "results/release-audit/fresh-tool-image.json",
+    "sha256": "97765f619d2ea80e567ece94b6665d13ac51eeee35f1952ae4efd9602c793499"
+  },
+  "evidence/review/fresh-tool-image.log": {
+    "original": "results/release-audit/fresh-tool-image.log",
+    "sha256": "660eb8bd6c1796c2b23cc991e26cc3a076d239a11143db6accd04ebd50ec2f53"
+  },
+  "evidence/review/fresh-versions.json": {
+    "original": "results/release-audit/fresh-versions.json",
+    "sha256": "47a0cb40374f99b2cf36b5cd342740d35a263db43106297e127bc6db993cdaa2"
+  },
+  "evidence/review/fresh-versions.log": {
+    "original": "results/release-audit/fresh-versions.log",
+    "sha256": "a6f5ed42b51bf372a7e960d851ba954be650eae0e76093dec9b9e49ceec3f2cb"
+  },
+  "evidence/review/eda-versions.json": {
+    "original": "results/release-audit/eda-versions.json",
+    "sha256": "e6f4c00e832cdb42ffb235efa059be0b2559d78e6f072d75fdcc5c3abb8dfb06"
+  },
+  "evidence/review/eda-versions.log": {
+    "original": "results/release-audit/eda-versions.log",
+    "sha256": "4037b0c621175d26f95e4512acef5d770c201a707675870ea4ddd133c0f8631b"
+  },
+  "evidence/review/analysis-versions.json": {
+    "original": "results/release-audit/analysis-versions.json",
+    "sha256": "1e1005103e207c3f77b5c6deda3fd324010a07fc87c0f2e252a3899efb33e918"
+  },
+  "evidence/review/analysis-versions.log": {
+    "original": "results/release-audit/analysis-versions.log",
+    "sha256": "89b97ea7b848c3bd969ab058272c0dce89d7a659cff338b073b78b96095ea11b"
+  },
+  "evidence/review/image-identities.json": {
+    "original": "results/release-audit/image-identities.json",
+    "sha256": "625b8acafa77e0ea66dc351b3db8351dc149cd56d9f69097245da8ec978d6fa7"
+  },
+  "evidence/review/image-identities.log": {
+    "original": "results/release-audit/image-identities.log",
+    "sha256": "9cdb235d1899baf1821ed1eb1b42b38a97c91b65bc87c14ec57be300a6472693"
+  },
+  "evidence/review/clean-pcb-rebuild.json": {
+    "original": "results/release-audit/clean-pcb-rebuild.json",
+    "sha256": "be8270e057ae75953ba75100baddabf7b419ed8a355a50b43d46eb7886d89dce"
+  },
+  "evidence/review/clean-pcb-rebuild.log": {
+    "original": "results/release-audit/clean-pcb-rebuild.log",
+    "sha256": "1c93dece33e250dd79baefa39b114d4691a8b3ef77b41cb9b9c610874e42d0c0"
+  },
+  "evidence/review/clean-pcb-draft.json": {
+    "original": "results/release-audit/clean-pcb-draft.json",
+    "sha256": "ac51100a1b3aaf9dc9fe29c13b0838ec2801b28108f089d1ff04219ee5bab202"
+  },
+  "evidence/review/clean-pcb-draft.log": {
+    "original": "results/release-audit/clean-pcb-draft.log",
+    "sha256": "90f2e0d901c1d2b9734bb8989320e71d6e024ddd97149d413e824f5b7fe6d2e1"
+  },
+  "evidence/review/clean-pcb-report-repair.json": {
+    "original": "results/release-audit/clean-pcb-report-repair.json",
+    "sha256": "4ae4db52e2496a56a1fff609ac46d04b121112bdafb691e830fb183af48fde40"
+  },
+  "evidence/review/clean-pcb-report-repair.log": {
+    "original": "results/release-audit/clean-pcb-report-repair.log",
+    "sha256": "604b36481b5310408795f4fe6d4a57e3f12ca30f6d728001b73827d04e8673d5"
+  },
+  "evidence/review/clean-independent.json": {
+    "original": "results/release-audit/clean-independent.json",
+    "sha256": "849319a24c7c778d8d7c0f7130d777efad28c0d01f754aa3f112b922bf9f951a"
+  },
+  "evidence/review/clean-independent.log": {
+    "original": "results/release-audit/clean-independent.log",
+    "sha256": "60658591a2b3f47c2e585a276f3f44bcd45aed22d4433b24f4af7cdcce5867b8"
+  },
+  "evidence/review/clean-report-repeatability.json": {
+    "original": "results/release-audit/clean-report-repeatability.json",
+    "sha256": "9850773cadcad1b45d484d40f2b470f5afd8f1cddb2ba0277aa6cd9e9f9092a9"
+  },
+  "evidence/review/clean-report-repeatability.log": {
+    "original": "results/release-audit/clean-report-repeatability.log",
+    "sha256": "0699b0088cee559708caae1114fc5a02ec26d4611952a906fd1b8350f74fe633"
+  },
+  "evidence/review/clean-assets-wave.json": {
+    "original": "results/release-audit/clean-assets-wave.json",
+    "sha256": "318ecd853a76d5dab024fd20e9dd023c90a107dd4a44788bfb6708304d7cdbb3"
+  },
+  "evidence/review/clean-assets-wave.log": {
+    "original": "results/release-audit/clean-assets-wave.log",
+    "sha256": "7f3631b93c2caf58e91152b1ee7c8dd5792047bddaac86f67d4fd4e48f015c33"
+  },
+  "evidence/review/clean-assets.json": {
+    "original": "results/release-audit/clean-assets.json",
+    "sha256": "9558ce5f20da73dffb2466a7cd5363bd3c52f1a5bbbf88387d41c8d1effb8c1c"
+  },
+  "evidence/review/clean-assets.log": {
+    "original": "results/release-audit/clean-assets.log",
+    "sha256": "908ba55d7953015895d87be44607bdd7b4c20590c73c25a56033c65a58760067"
+  },
+  "evidence/review/clean-portfolio.json": {
+    "original": "results/release-audit/clean-portfolio.json",
+    "sha256": "daf5a1f20cf213f8d2884e529ad76d222774f336bd4b07d8b97a75eca843d4bb"
+  },
+  "evidence/review/clean-portfolio.log": {
+    "original": "results/release-audit/clean-portfolio.log",
+    "sha256": "c53a28d8f76864afb558f4f0f10ed3f0d6ff822064f74d2f4375594f5c03c319"
+  },
+  "evidence/review/mutation-final.json": {
+    "original": "results/release-audit/mutation-final.json",
+    "sha256": "e6325411bbe5b8b701d59063acfc08d99d826b4d05a2119d15aa6401747ba4db"
+  },
+  "evidence/review/mutation-final.log": {
+    "original": "results/release-audit/mutation-final.log",
+    "sha256": "d0c17b9b52bbe37df9b0c61e13630b7e16a29d551d26c436c3f5c45995f241a2"
+  },
+  "evidence/review/reproduction-summary.json": {
+    "original": "results/release-audit/reproduction-summary.json",
+    "sha256": "c6de1d6702deee63363cec7d495a7dc16100c2c2169326862e82cddca8342568"
+  },
+  "evidence/review/independent-oracles.json": {
+    "original": "results/release-audit/independent-oracles.json",
+    "sha256": "f37306e2e947415cf0a8b94e4f4b1bb817b9797b741b037136ed852c3ffa1eeb"
+  },
+  "evidence/review/mutation-summary.json": {
+    "original": "results/release-audit/mutation-summary.json",
+    "sha256": "42a894e4b1ef8a556b834cee00754e4b6ae2071de54836511f8c506bb2ca9769"
+  },
+  "evidence/review/starter-provenance.json": {
+    "original": "results/release-audit/starter-provenance.json",
+    "sha256": "1e1e122789dae015e6f84ff1f12377dde9d8c4c122466fa808851b58d9c83638"
+  },
+  "evidence/review/pdf-validation.json": {
+    "original": "results/release-audit/pdf-validation.json",
+    "sha256": "7e3a189662397f3f5641eded3b3c2bbad6db27c1c0c5c8efae08ecb0046eb7d8"
+  },
+  "evidence/review/mutation-sample_stride.log": {
+    "original": "results/release-audit/mutation-sample_stride.log",
+    "sha256": "466d6965afd6f61e4fd5471eeb6bd4da7e056f919b4c7e45eae66a13d6db4d06"
+  },
+  "evidence/review/mutation-check.log": {
+    "original": "results/release-audit/mutation-check.log",
+    "sha256": "d0c17b9b52bbe37df9b0c61e13630b7e16a29d551d26c436c3f5c45995f241a2"
+  },
+  "evidence/review/mutation-saturation.log": {
+    "original": "results/release-audit/mutation-saturation.log",
+    "sha256": "d1ca47fa1e191e1df962b65ec0a97743551abcd2fac57f3967ba2ada4656d5d8"
+  },
+  "evidence/review/mutation-packet_boundary.log": {
+    "original": "results/release-audit/mutation-packet_boundary.log",
+    "sha256": "f27e7b77ac40a087819c0914094b67d12f9aa6bffb104c63b1f7ba3c705bd93a"
+  },
+  "evidence/review/mutation-host_crc.log": {
+    "original": "results/release-audit/mutation-host_crc.log",
+    "sha256": "e26ef519526c8c69a1be3e797aecee502762842f3f24f8ed1ed84d224073194c"
+  },
+  "evidence/review/mutation-memory_bounds.log": {
+    "original": "results/release-audit/mutation-memory_bounds.log",
+    "sha256": "2ef47e7cfe11b2c9bd86a6289df64f9572a80ca0655158951cd5e99cdad410d6"
+  },
+  "evidence/review/mutation-ring_wrap.log": {
+    "original": "results/release-audit/mutation-ring_wrap.log",
+    "sha256": "5a4c2b61cb27c381935cc4e3f6343effbc67be2241b05fc399e7e0a3a98761cd"
+  },
+  "evidence/debug/boundary-before-fix.xml": {
+    "original": "results/system-audit/boundary-before-fix.xml",
+    "sha256": "ff8f0c3ac394f74a734f3eb29d8b3557933dbe1f5c42ac3b081c9a624d17113d"
+  },
+  "evidence/debug/runner-failure-probe.xml": {
+    "original": "results/system-audit/runner-failure-probe.xml",
+    "sha256": "81ef31a5935468041b8538a6c03f25cc8b633ecb880d94c520cafa64eebadf5c"
+  },
+  "evidence/debug/runner-failure-gate.json": {
+    "original": "results/system-audit/runner-failure-gate.json",
+    "sha256": "60f5d6ad674114a75499bd0bea9642c7782bf8d03a65454267c6b3131db102cf"
+  },
+  "evidence/debug/junit-fail-closed-proof.json": {
+    "original": "results/system-audit/junit-fail-closed-proof.json",
+    "sha256": "b3919d50c4a4ab9d6cf8d95596f9cf3c3bd7eb78ff7ee6fb7a80f1afe663425e"
+  },
+  "evidence/debug/system-boundary-before-fix.log": {
+    "original": "results/simulation_logs/system-boundary-before-fix.log",
+    "sha256": "18c9fc4ea7a684903f21ad77e9f65b33aaae700f911ffe82134b31f70351e478"
+  },
+  "evidence/debug/runner-failure-gate-console.log": {
+    "original": "results/simulation_logs/runner-failure-gate-console.log",
+    "sha256": "525637ef1801f08b3eeb03ee8a5cec2c6cfc54a258175151ed43430d8cd7f524"
+  },
+  "evidence/debug/junit-fail-closed-proof.log": {
+    "original": "results/simulation_logs/junit-fail-closed-proof.log",
+    "sha256": "120bf84d951aecec1dd14f914387107e8d85da10f31715d37a76b0be2b63ba4f"
+  },
+  "evidence/core/daq_top.vcd.gz": {
+    "original": "results/waveforms/daq_top.vcd.gz",
+    "sha256": "51aaefdc7576808289bbfb110bf0e6672a822f5d15a3262cb07599c96672278d"
+  },
+  "portfolio/Independent_Release_Review.pdf": {
+    "original": "output/pdf/Independent_Release_Review.pdf",
+    "sha256": "1842ba375b558ce16022b8ba6c796648e863fc756fcb692b279fe24aff1b6ad8"
+  }
+}

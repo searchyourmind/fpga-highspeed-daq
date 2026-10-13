@@ -1,0 +1,80 @@
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.257 MB sources in 12 modules, into 0.350 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.035 s (elab=0.001, cvt=0.018, bld=0.000); cpu 0.025 s on 1 threads; alloced 20.375 MB
+make: Entering directory '/work/build/mutation'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o daq_top
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/mutation'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791852794
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_end_to_end.e2e_fixed_seed_matrix (1/6)
+   159.00ns INFO     cocotb.daq_top                     E2E seed=11 source=1 sink=1 cycles=30 DATA_MATCH
+   433.00ns WARNING  ..eed_matrix.e2e_fixed_seed_matrix seed=11 n=3
+                                                        assert [19, 281474976776284, 0] == [19, 281474976776284, 844424930263205]
+                                                         +  where [19, 281474976776284, 0] = <sim.host_model.receiver.Host object at 0xffff9c4df230>.records
+                                                         +    where <sim.host_model.receiver.Host object at 0xffff9c4df230> = <test_end_to_end.Bench object at 0xffff9c27ce00>.host
+                                                        Traceback (most recent call last):
+                                                          File "/work/tb/test_end_to_end.py", line 112, in e2e_fixed_seed_matrix
+                                                            assert b.host.records==expected, f'seed={seed} n={n}'
+                                                        AssertionError: seed=11 n=3
+                                                        assert [19, 281474976776284, 0] == [19, 281474976776284, 844424930263205]
+                                                         +  where [19, 281474976776284, 0] = <sim.host_model.receiver.Host object at 0xffff9c4df230>.records
+                                                         +    where <sim.host_model.receiver.Host object at 0xffff9c4df230> = <test_end_to_end.Bench object at 0xffff9c27ce00>.host
+   433.00ns WARNING  cocotb.regression                  test_end_to_end.e2e_fixed_seed_matrix failed
+   433.00ns INFO     cocotb.regression                  running test_end_to_end.invalid_descriptors_and_recovery (2/6)
+  1977.00ns INFO     cocotb.regression                  test_end_to_end.invalid_descriptors_and_recovery passed
+  1977.00ns INFO     cocotb.regression                  running test_end_to_end.long_backpressure_and_descriptor_order (3/6)
+  5176.00ns WARNING  ..ackpressure_and_descriptor_order assert ([(0, 0)] == [(0, 0)] and [5910974512955392, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...] == [0, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...])
+                                                         +  where [(0, 0)] = <test_end_to_end.Bench object at 0xffff9c25bf50>.completions
+                                                         +  and   [5910974512955392, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...] = <sim.host_model.receiver.Host object at 0xffff9c27ec30>.records
+                                                         +    where <sim.host_model.receiver.Host object at 0xffff9c27ec30> = <test_end_to_end.Bench object at 0xffff9c25bf50>.host
+                                                         +  and   [0, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...] = records(32, 3, 0)
+                                                        Traceback (most recent call last):
+                                                          File "/work/tb/test_end_to_end.py", line 147, in long_backpressure_and_descriptor_order
+                                                            assert b.completions==[(tag,0)] and b.host.records==records(32,3,tag)
+                                                        AssertionError: assert ([(0, 0)] == [(0, 0)] and [5910974512955392, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...] == [0, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...])
+                                                         +  where [(0, 0)] = <test_end_to_end.Bench object at 0xffff9c25bf50>.completions
+                                                         +  and   [5910974512955392, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...] = <sim.host_model.receiver.Host object at 0xffff9c27ec30>.records
+                                                         +    where <sim.host_model.receiver.Host object at 0xffff9c27ec30> = <test_end_to_end.Bench object at 0xffff9c25bf50>.host
+                                                         +  and   [0, 65536, 281474976841728, 562949953617920, 562949953683456, 844424930459648, ...] = records(32, 3, 0)
+  5176.00ns WARNING  cocotb.regression                  test_end_to_end.long_backpressure_and_descriptor_order failed
+  5176.00ns INFO     cocotb.regression                  running test_end_to_end.memory_faults_abort_and_next_job (4/6)
+  8662.00ns INFO     cocotb.regression                  test_end_to_end.memory_faults_abort_and_next_job passed
+  8662.00ns INFO     cocotb.regression                  running test_end_to_end.reset_inflight_at_multiple_stages (5/6)
+ 15227.00ns INFO     cocotb.regression                  test_end_to_end.reset_inflight_at_multiple_stages passed
+ 15227.00ns INFO     cocotb.regression                  running test_end_to_end.transport_corruption_is_detected (6/6)
+ 15760.00ns INFO     cocotb.regression                  test_end_to_end.transport_corruption_is_detected passed
+ 15760.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_end_to_end.e2e_fixed_seed_matrix                    FAIL         433.00           0.00      87465.50  **
+                                                        ** test_end_to_end.invalid_descriptors_and_recovery         PASS        1544.00           0.01     108718.00  **
+                                                        ** test_end_to_end.long_backpressure_and_descriptor_order   FAIL        3199.00           0.03     108272.64  **
+                                                        ** test_end_to_end.memory_faults_abort_and_next_job         PASS        3486.00           0.03     109759.96  **
+                                                        ** test_end_to_end.reset_inflight_at_multiple_stages        PASS        6565.00           0.06     112212.98  **
+                                                        ** test_end_to_end.transport_corruption_is_detected         PASS         533.00           0.00     112520.84  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=6 PASS=4 FAIL=2 SKIP=0                                        15760.00           0.15     108425.14  **
+                                                        ****************************************************************************************************************
+- :0: Verilog $finish
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/work/tools/rtl_tests.py", line 31, in run
+    count=require_pass(result_path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/tools/check_junit.py", line 12, in require_pass
+    raise RuntimeError(f'{p}: tests={len(cases)}, failures/errors={len(failures)}, skipped={len(skipped)}')
+RuntimeError: /work/results/mutation.xml: tests=6, failures/errors=2, skipped=0

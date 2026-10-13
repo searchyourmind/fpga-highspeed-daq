@@ -1,0 +1,523 @@
+{
+  "status": "ANALYZED",
+  "scope": "Track/via resistor network; pads ideal; GND/contact/cable drop excluded. Fixed 2A stress per net; trace temperature formula is legacy IPC-2221 screening, not IPC-2152/thermal qualification.",
+  "output": {
+    "net": "/SSD_3V3",
+    "nodes": 40,
+    "branches": 44,
+    "temperature_C": 125,
+    "rho_ohm_m": 2.4354086000000002e-08,
+    "outer_copper_min_um": 30,
+    "via_plating_min_um": 20,
+    "max_kcl_residual_A": 7.294817586559593e-15,
+    "equal_load_2A": {
+      "max_drop_V": 0.0298470172485145,
+      "loss_W": 0.05329554248381894,
+      "legacy_max_deltaT_C": 9.851201570638466,
+      "worst_branches": [
+        {
+          "track_index": 39,
+          "current_A": 1.4670339517533815,
+          "drop_V": 0.009726029334834243,
+          "loss_W": 0.014268415249951191,
+          "legacy_deltaT_C": 0.6946679568786003,
+          "width_mm": 3.0,
+          "length_mm": 24.5
+        },
+        {
+          "track_index": 47,
+          "current_A": 1.4670339517533868,
+          "drop_V": 0.006023420051165026,
+          "loss_W": 0.008836561720731214,
+          "legacy_deltaT_C": 2.755468186367287,
+          "width_mm": 1.3,
+          "length_mm": 6.575
+        },
+        {
+          "track_index": 2,
+          "current_A": 0.5329660482466655,
+          "drop_V": 0.008832173617812357,
+          "loss_W": 0.004707248670513907,
+          "legacy_deltaT_C": 0.9864582361213781,
+          "width_mm": 0.6,
+          "length_mm": 12.2481
+        },
+        {
+          "track_index": 31,
+          "current_A": 1.4670339517533866,
+          "drop_V": 0.002807078080331201,
+          "loss_W": 0.004118078849068592,
+          "legacy_deltaT_C": 0.6946679568786056,
+          "width_mm": 3.0,
+          "length_mm": 7.071067812
+        },
+        {
+          "track_index": 61,
+          "current_A": 1.467033951753382,
+          "drop_V": 0.0017864135512960858,
+          "loss_W": 0.00262072933162369,
+          "legacy_deltaT_C": 0.6946679568786006,
+          "width_mm": 3.0,
+          "length_mm": 4.5
+        },
+        {
+          "track_index": 56,
+          "current_A": 1.4670339517533864,
+          "drop_V": 0.0015879231567076369,
+          "loss_W": 0.002329537183665516,
+          "legacy_deltaT_C": 9.851201570638466,
+          "width_mm": 0.6,
+          "length_mm": 0.8
+        },
+        {
+          "track_index": 7,
+          "current_A": 0.5329660482466658,
+          "drop_V": 0.004008925296117686,
+          "loss_W": 0.0021366210727879376,
+          "legacy_deltaT_C": 0.9864582361213796,
+          "width_mm": 0.6,
+          "length_mm": 5.559414935
+        },
+        {
+          "track_index": 4,
+          "current_A": 0.5329660482466658,
+          "drop_V": 0.0034806702777948136,
+          "loss_W": 0.0018550790832059262,
+          "legacy_deltaT_C": 0.9864582361213796,
+          "width_mm": 0.6,
+          "length_mm": 4.82685231
+        }
+      ]
+    },
+    "load_distribution_corners": 126,
+    "worst_distribution_2A": {
+      "max_drop_V": 0.03716088865437439,
+      "loss_W": 0.06832498309816566,
+      "legacy_max_deltaT_C": 10.36152097318511,
+      "worst_branches": [
+        {
+          "track_index": 39,
+          "current_A": 1.483504493693667,
+          "drop_V": 0.009835224472329441,
+          "loss_W": 0.01459059970118665,
+          "legacy_deltaT_C": 0.7125199720237579,
+          "width_mm": 3.0,
+          "length_mm": 24.5
+        },
+        {
+          "track_index": 47,
+          "current_A": 1.483504493693672,
+          "drop_V": 0.006091045611199335,
+          "loss_W": 0.009036093535507333,
+          "legacy_deltaT_C": 2.8262799451477845,
+          "width_mm": 1.3,
+          "length_mm": 6.575
+        },
+        {
+          "track_index": 55,
+          "current_A": 1.2500000000000053,
+          "drop_V": 0.0052820291770861345,
+          "loss_W": 0.006602536471357697,
+          "legacy_deltaT_C": 0.4827854733879689,
+          "width_mm": 3.0,
+          "length_mm": 15.6157
+        },
+        {
+          "track_index": 2,
+          "current_A": 0.5164955063063806,
+          "drop_V": 0.008559228115046055,
+          "loss_W": 0.00442080285887252,
+          "legacy_deltaT_C": 0.9185326963398017,
+          "width_mm": 0.6,
+          "length_mm": 12.2481
+        },
+        {
+          "track_index": 31,
+          "current_A": 1.4835044936936688,
+          "drop_V": 0.002838593436329938,
+          "loss_W": 0.004211066118564816,
+          "legacy_deltaT_C": 0.71251997202376,
+          "width_mm": 3.0,
+          "length_mm": 7.071067812
+        },
+        {
+          "track_index": 23,
+          "current_A": 1.4999999999999962,
+          "drop_V": 0.0023826414136666613,
+          "loss_W": 0.0035739621204999832,
+          "legacy_deltaT_C": 10.361520973184883,
+          "width_mm": 0.6,
+          "length_mm": 1.1740000000000002
+        },
+        {
+          "track_index": 29,
+          "current_A": 1.5000000000000109,
+          "drop_V": 0.002185624220978684,
+          "loss_W": 0.00327843633146805,
+          "legacy_deltaT_C": 10.36152097318511,
+          "width_mm": 0.6,
+          "length_mm": 1.076923628
+        },
+        {
+          "track_index": 28,
+          "current_A": 1.4999999999999998,
+          "drop_V": 0.002101351720366667,
+          "loss_W": 0.0031520275805500004,
+          "legacy_deltaT_C": 10.361520973184934,
+          "width_mm": 0.6,
+          "length_mm": 1.0354
+        }
+      ],
+      "loaded_pins": [
+        "14",
+        "70",
+        "72",
+        "74"
+      ]
+    }
+  },
+  "input": {
+    "net": "/EXT_5V",
+    "nodes": 42,
+    "branches": 43,
+    "temperature_C": 125,
+    "rho_ohm_m": 2.4354086000000002e-08,
+    "outer_copper_min_um": 30,
+    "via_plating_min_um": 20,
+    "max_kcl_residual_A": 3.797565003001511e-13,
+    "equal_load_2A": {
+      "max_drop_V": 0.06358845222108947,
+      "loss_W": 0.12717690444212215,
+      "legacy_max_deltaT_C": 19.923938133363585,
+      "worst_branches": [
+        {
+          "track_index": 42,
+          "current_A": 1.9999999999988358,
+          "drop_V": 0.010147535833327427,
+          "loss_W": 0.02029507166664304,
+          "legacy_deltaT_C": 12.402528131716762,
+          "width_mm": 0.8,
+          "length_mm": 5.0
+        },
+        {
+          "track_index": 27,
+          "current_A": 1.9999999999988356,
+          "drop_V": 0.008610469679853077,
+          "loss_W": 0.017220939359696128,
+          "legacy_deltaT_C": 12.402528131716757,
+          "width_mm": 0.8,
+          "length_mm": 4.242640687
+        },
+        {
+          "track_index": 36,
+          "current_A": 1.9999999999988358,
+          "drop_V": 0.008422454741661764,
+          "loss_W": 0.016844909483313724,
+          "legacy_deltaT_C": 12.402528131716762,
+          "width_mm": 0.8,
+          "length_mm": 4.15
+        },
+        {
+          "track_index": 0,
+          "current_A": 1.9999999999999956,
+          "drop_V": 0.007149277245777762,
+          "loss_W": 0.01429855449155549,
+          "legacy_deltaT_C": 19.923938133362597,
+          "width_mm": 0.6,
+          "length_mm": 2.642
+        },
+        {
+          "track_index": 30,
+          "current_A": 1.9999999999988365,
+          "drop_V": 0.006088521499996457,
+          "loss_W": 0.012177042999985831,
+          "legacy_deltaT_C": 12.40252813171677,
+          "width_mm": 0.8,
+          "length_mm": 3.0
+        },
+        {
+          "track_index": 35,
+          "current_A": 1.9999999999988365,
+          "drop_V": 0.006088521499996457,
+          "loss_W": 0.012177042999985831,
+          "legacy_deltaT_C": 12.40252813171677,
+          "width_mm": 0.8,
+          "length_mm": 3.0
+        },
+        {
+          "track_index": 41,
+          "current_A": 1.9999999999988367,
+          "drop_V": 0.004305234840941294,
+          "loss_W": 0.00861046968187758,
+          "legacy_deltaT_C": 12.402528131716775,
+          "width_mm": 0.8,
+          "length_mm": 2.121320344
+        },
+        {
+          "track_index": 29,
+          "current_A": 1.9999999999988336,
+          "drop_V": 0.004305234840941287,
+          "loss_W": 0.008610469681877552,
+          "legacy_deltaT_C": 12.402528131716728,
+          "width_mm": 0.8,
+          "length_mm": 2.121320344
+        }
+      ]
+    },
+    "load_distribution_corners": 0,
+    "worst_distribution_2A": {
+      "max_drop_V": 0.06358845222108947,
+      "loss_W": 0.12717690444212215,
+      "legacy_max_deltaT_C": 19.923938133363585,
+      "worst_branches": [
+        {
+          "track_index": 42,
+          "current_A": 1.9999999999988358,
+          "drop_V": 0.010147535833327427,
+          "loss_W": 0.02029507166664304,
+          "legacy_deltaT_C": 12.402528131716762,
+          "width_mm": 0.8,
+          "length_mm": 5.0
+        },
+        {
+          "track_index": 27,
+          "current_A": 1.9999999999988356,
+          "drop_V": 0.008610469679853077,
+          "loss_W": 0.017220939359696128,
+          "legacy_deltaT_C": 12.402528131716757,
+          "width_mm": 0.8,
+          "length_mm": 4.242640687
+        },
+        {
+          "track_index": 36,
+          "current_A": 1.9999999999988358,
+          "drop_V": 0.008422454741661764,
+          "loss_W": 0.016844909483313724,
+          "legacy_deltaT_C": 12.402528131716762,
+          "width_mm": 0.8,
+          "length_mm": 4.15
+        },
+        {
+          "track_index": 0,
+          "current_A": 1.9999999999999956,
+          "drop_V": 0.007149277245777762,
+          "loss_W": 0.01429855449155549,
+          "legacy_deltaT_C": 19.923938133362597,
+          "width_mm": 0.6,
+          "length_mm": 2.642
+        },
+        {
+          "track_index": 30,
+          "current_A": 1.9999999999988365,
+          "drop_V": 0.006088521499996457,
+          "loss_W": 0.012177042999985831,
+          "legacy_deltaT_C": 12.40252813171677,
+          "width_mm": 0.8,
+          "length_mm": 3.0
+        },
+        {
+          "track_index": 35,
+          "current_A": 1.9999999999988365,
+          "drop_V": 0.006088521499996457,
+          "loss_W": 0.012177042999985831,
+          "legacy_deltaT_C": 12.40252813171677,
+          "width_mm": 0.8,
+          "length_mm": 3.0
+        },
+        {
+          "track_index": 41,
+          "current_A": 1.9999999999988367,
+          "drop_V": 0.004305234840941294,
+          "loss_W": 0.00861046968187758,
+          "legacy_deltaT_C": 12.402528131716775,
+          "width_mm": 0.8,
+          "length_mm": 2.121320344
+        },
+        {
+          "track_index": 29,
+          "current_A": 1.9999999999988336,
+          "drop_V": 0.004305234840941287,
+          "loss_W": 0.008610469681877552,
+          "legacy_deltaT_C": 12.402528131716728,
+          "width_mm": 0.8,
+          "length_mm": 2.121320344
+        }
+      ]
+    }
+  },
+  "output_75C_comparison": {
+    "net": "/SSD_3V3",
+    "nodes": 40,
+    "branches": 44,
+    "temperature_C": 75,
+    "rho_ohm_m": 2.0966426e-08,
+    "outer_copper_min_um": 30,
+    "via_plating_min_um": 20,
+    "max_kcl_residual_A": 2.020605904817785e-14,
+    "equal_load_2A": {
+      "max_drop_V": 0.025695289014816117,
+      "loss_W": 0.045882117999286945,
+      "legacy_max_deltaT_C": 9.851201570637793,
+      "worst_branches": [
+        {
+          "track_index": 39,
+          "current_A": 1.4670339517533393,
+          "drop_V": 0.008373136003651523,
+          "loss_W": 0.012283674800005057,
+          "legacy_deltaT_C": 0.6946679568785548,
+          "width_mm": 3.0,
+          "length_mm": 24.5
+        },
+        {
+          "track_index": 47,
+          "current_A": 1.4670339517533426,
+          "drop_V": 0.005185560680440396,
+          "loss_W": 0.007607393577083226,
+          "legacy_deltaT_C": 2.7554681863670982,
+          "width_mm": 1.3,
+          "length_mm": 6.575
+        },
+        {
+          "track_index": 2,
+          "current_A": 0.5329660482466494,
+          "drop_V": 0.007603615860476532,
+          "loss_W": 0.0040524690975437235,
+          "legacy_deltaT_C": 0.9864582361213106,
+          "width_mm": 0.6,
+          "length_mm": 12.2481
+        },
+        {
+          "track_index": 31,
+          "current_A": 1.4670339517533386,
+          "drop_V": 0.0024166127543232066,
+          "loss_W": 0.003545252958832294,
+          "legacy_deltaT_C": 0.6946679568785542,
+          "width_mm": 3.0,
+          "length_mm": 7.071067812
+        },
+        {
+          "track_index": 61,
+          "current_A": 1.4670339517533428,
+          "drop_V": 0.001537922939446202,
+          "loss_W": 0.0022561851673478786,
+          "legacy_deltaT_C": 0.6946679568785586,
+          "width_mm": 3.0,
+          "length_mm": 4.5
+        },
+        {
+          "track_index": 56,
+          "current_A": 1.4670339517533424,
+          "drop_V": 0.0013670426128410678,
+          "loss_W": 0.0020054979265314464,
+          "legacy_deltaT_C": 9.851201570637793,
+          "width_mm": 0.6,
+          "length_mm": 0.8
+        },
+        {
+          "track_index": 7,
+          "current_A": 0.5329660482466493,
+          "drop_V": 0.0034512826948454125,
+          "loss_W": 0.0018394164992538058,
+          "legacy_deltaT_C": 0.98645823612131,
+          "width_mm": 0.6,
+          "length_mm": 5.559414935
+        },
+        {
+          "track_index": 4,
+          "current_A": 0.53296604824665,
+          "drop_V": 0.002996508093540535,
+          "loss_W": 0.0015970370771534017,
+          "legacy_deltaT_C": 0.9864582361213128,
+          "width_mm": 0.6,
+          "length_mm": 4.82685231
+        }
+      ]
+    },
+    "load_distribution_corners": 126,
+    "worst_distribution_2A": {
+      "max_drop_V": 0.03199179891481717,
+      "loss_W": 0.05882095932809287,
+      "legacy_max_deltaT_C": 10.36152097318505,
+      "worst_branches": [
+        {
+          "track_index": 39,
+          "current_A": 1.4835044936936241,
+          "drop_V": 0.008467142067761373,
+          "loss_W": 0.012561043306266322,
+          "legacy_deltaT_C": 0.7125199720237112,
+          "width_mm": 3.0,
+          "length_mm": 24.5
+        },
+        {
+          "track_index": 47,
+          "current_A": 1.4835044936936272,
+          "drop_V": 0.005243779506643435,
+          "loss_W": 0.007779170462044086,
+          "legacy_deltaT_C": 2.82627994514759,
+          "width_mm": 1.3,
+          "length_mm": 6.575
+        },
+        {
+          "track_index": 55,
+          "current_A": 1.249999999999994,
+          "drop_V": 0.004547297479002756,
+          "loss_W": 0.0056841218487534186,
+          "legacy_deltaT_C": 0.482785473387959,
+          "width_mm": 3.0,
+          "length_mm": 15.6157
+        },
+        {
+          "track_index": 2,
+          "current_A": 0.5164955063063642,
+          "drop_V": 0.0073686371515328825,
+          "loss_W": 0.0038058679763688613,
+          "legacy_deltaT_C": 0.9185326963397353,
+          "width_mm": 0.6,
+          "length_mm": 12.2481
+        },
+        {
+          "track_index": 31,
+          "current_A": 1.4835044936936248,
+          "drop_V": 0.0024437443157134114,
+          "loss_W": 0.0036253056737990982,
+          "legacy_deltaT_C": 0.712519972023712,
+          "width_mm": 3.0,
+          "length_mm": 7.071067812
+        },
+        {
+          "track_index": 23,
+          "current_A": 1.499999999999997,
+          "drop_V": 0.002051215343666663,
+          "loss_W": 0.0030768230154999882,
+          "legacy_deltaT_C": 10.36152097318489,
+          "width_mm": 0.6,
+          "length_mm": 1.1740000000000002
+        },
+        {
+          "track_index": 29,
+          "current_A": 1.5000000000000058,
+          "drop_V": 0.0018816032961761348,
+          "loss_W": 0.002822404944264213,
+          "legacy_deltaT_C": 10.361520973185032,
+          "width_mm": 0.6,
+          "length_mm": 1.076923628
+        },
+        {
+          "track_index": 28,
+          "current_A": 1.500000000000007,
+          "drop_V": 0.001809053123366676,
+          "loss_W": 0.0027135796850500265,
+          "legacy_deltaT_C": 10.36152097318505,
+          "width_mm": 0.6,
+          "length_mm": 1.0354
+        }
+      ],
+      "loaded_pins": [
+        "14",
+        "70",
+        "72",
+        "74"
+      ]
+    }
+  }
+}

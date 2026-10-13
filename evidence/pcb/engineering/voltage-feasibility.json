@@ -1,0 +1,9 @@
+{
+  "scope": "Fixed 10kohm bottom resistor, original FB/temperature/leakage and all voltage/drop reserves. Algebraic feasible interval, not another SPICE model.",
+  "lower_bound_required_Rtop_ohm": 31658.435570937196,
+  "upper_bound_allowed_Rtop_ohm": 31327.315809973512,
+  "overlap_ohm": -331.1197609636838,
+  "divider_only_solution_exists": false,
+  "requirements_relaxed": false,
+  "decision": "Retain divider; do not retarget one rail bound at the expense of the other. Jointly qualified dynamic/regulation limits or power topology changes are required."
+}

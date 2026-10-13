@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852624" />
+    <testcase name="deliberate_failure" classname="failure_probe_83d13a8efcac459cab8e3846e2ec6580" file="/work/tb/failure_probe_83d13a8efcac459cab8e3846e2ec6580.py" lineno="2" time="0.000244140625" sim_time_ns="0.0" ratio_time="0.0">
+      <failure error_type="AssertionError" error_msg="intentional runner gate probe&#10;assert False" />
+    </testcase>
+  </testsuite>
+</testsuites>

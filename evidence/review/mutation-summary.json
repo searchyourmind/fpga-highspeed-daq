@@ -1,0 +1,137 @@
+{
+  "scope": "Selected deliberate defects, isolated copies only; not a coverage percentage or production tests. No production RTL/model files modified.",
+  "cases": [
+    {
+      "mutation": "sample_stride",
+      "file": "rtl/sensor_source.sv",
+      "original": "32'd73",
+      "modified": "32'd74",
+      "return_code": 1,
+      "watchdog_used": false,
+      "detected_by_runtime_checks": true,
+      "failed_cases": [
+        [
+          "e2e_fixed_seed_matrix",
+          null
+        ],
+        [
+          "invalid_descriptors_and_recovery",
+          null
+        ],
+        [
+          "long_backpressure_and_descriptor_order",
+          null
+        ],
+        [
+          "memory_faults_abort_and_next_job",
+          null
+        ],
+        [
+          "reset_inflight_at_multiple_stages",
+          null
+        ]
+      ],
+      "elapsed_s": 4.97
+    },
+    {
+      "mutation": "saturation",
+      "file": "rtl/stream_processor.sv",
+      "original": "16'hffff",
+      "modified": "16'hfffe",
+      "return_code": 1,
+      "watchdog_used": false,
+      "detected_by_runtime_checks": true,
+      "failed_cases": [
+        [
+          "streaming_frames_gain_stalls_and_reset",
+          null
+        ]
+      ],
+      "elapsed_s": 4.06
+    },
+    {
+      "mutation": "ring_wrap",
+      "file": "rtl/dma_writer.sv",
+      "original": "RING_WORDS-1",
+      "modified": "RING_WORDS-2",
+      "return_code": 1,
+      "watchdog_used": false,
+      "detected_by_runtime_checks": true,
+      "failed_cases": [
+        [
+          "e2e_fixed_seed_matrix",
+          null
+        ],
+        [
+          "long_backpressure_and_descriptor_order",
+          null
+        ]
+      ],
+      "elapsed_s": 4.3
+    },
+    {
+      "mutation": "packet_boundary",
+      "file": "rtl/tlp_packetizer.sv",
+      "original": "(bounded < page_words) ? bounded : page_words",
+      "modified": "bounded + (page_words & 16'd0)",
+      "return_code": 124,
+      "watchdog_used": true,
+      "detected_by_runtime_checks": true,
+      "failed_cases": [
+        [
+          "packet_boundary_split",
+          null
+        ],
+        [
+          "final_address_space_record",
+          null
+        ],
+        [
+          "next_descriptor_before_previous_host_delivery",
+          null
+        ],
+        [
+          "large_ring_stress_and_repeated_jobs",
+          null
+        ]
+      ],
+      "elapsed_s": 15.42
+    },
+    {
+      "mutation": "host_crc",
+      "file": "sim/pcie_transaction/transport.py",
+      "original": "if self.crc != checksum:",
+      "modified": "if False and self.crc != checksum:",
+      "return_code": 1,
+      "watchdog_used": false,
+      "detected_by_runtime_checks": true,
+      "failed_cases": [
+        [
+          "test_host_rejects_faults[crc]",
+          "Failed: DID NOT RAISE <class 'sim.pcie_transaction.transport.ProtocolError'>"
+        ],
+        [
+          "test_link_corruption_and_reset",
+          "Failed: DID NOT RAISE <class 'sim.pcie_transaction.transport.ProtocolError'>"
+        ]
+      ],
+      "elapsed_s": 0.48
+    },
+    {
+      "mutation": "memory_bounds",
+      "file": "sim/ddr_behavioral/memory.py",
+      "original": "address + length * 8 > self.capacity",
+      "modified": "address + length * 8 > self.capacity + 64",
+      "return_code": 1,
+      "watchdog_used": false,
+      "detected_by_runtime_checks": true,
+      "failed_cases": [
+        [
+          "test_memory_bad_request_is_atomic[120-2-data2]",
+          "assert (False)\n +  where False = Response(data=(), error=False, due=3).error\n +    where Response(data=(), error=False, due=3) = consume(3)\n +      where consume = <sim.ddr_behavioral.memory.Memory object at 0xffffb3dcd550>.consume"
+        ]
+      ],
+      "elapsed_s": 0.47
+    }
+  ]
+}

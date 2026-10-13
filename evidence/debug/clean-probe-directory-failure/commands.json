@@ -1,0 +1,188 @@
+[
+  {
+    "label": "snapshot",
+    "command": [
+      "python3",
+      "tools/portfolio_release.py",
+      "snapshot",
+      "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/source"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:53.502768+00:00",
+    "elapsed_s": 0.111,
+    "return_code": 0,
+    "log": "snapshot.log"
+  },
+  {
+    "label": "git-init",
+    "command": [
+      "git",
+      "init",
+      "-b",
+      "portfolio-candidate"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/source",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:53.614473+00:00",
+    "elapsed_s": 0.028,
+    "return_code": 0,
+    "log": "git-init.log"
+  },
+  {
+    "label": "git-add",
+    "command": [
+      "git",
+      "add",
+      "--pathspec-from-file=release/tracked-files.txt"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/source",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:53.642407+00:00",
+    "elapsed_s": 0.222,
+    "return_code": 0,
+    "log": "git-add.log"
+  },
+  {
+    "label": "git-commit",
+    "command": [
+      "git",
+      "-c",
+      "user.name=Local verification",
+      "-c",
+      "user.email=verification@example.invalid",
+      "commit",
+      "-m",
+      "Portfolio verification snapshot"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/source",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:53.865098+00:00",
+    "elapsed_s": 0.053,
+    "return_code": 0,
+    "log": "git-commit.log"
+  },
+  {
+    "label": "git-clone",
+    "command": [
+      "git",
+      "clone",
+      "--local",
+      "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/source",
+      "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:53.917976+00:00",
+    "elapsed_s": 0.207,
+    "return_code": 0,
+    "log": "git-clone.log"
+  },
+  {
+    "label": "versions",
+    "command": [
+      "./tools/run",
+      "bash",
+      "tools/versions.sh"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:54.191634+00:00",
+    "elapsed_s": 2.323,
+    "return_code": 0,
+    "log": "versions.log"
+  },
+  {
+    "label": "image",
+    "command": [
+      "docker",
+      "image",
+      "inspect",
+      "fpga-daq-tools:release-audit",
+      "--format",
+      "{{.Id}} {{.Os}}/{{.Architecture}}"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:56.515223+00:00",
+    "elapsed_s": 0.038,
+    "return_code": 0,
+    "log": "image.log"
+  },
+  {
+    "label": "verify",
+    "command": [
+      "make",
+      "verify"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:49:56.553594+00:00",
+    "elapsed_s": 24.319,
+    "return_code": 0,
+    "log": "verify.log"
+  },
+  {
+    "label": "timing",
+    "command": [
+      "make",
+      "timing"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:50:20.874307+00:00",
+    "elapsed_s": 1.677,
+    "return_code": 0,
+    "log": "timing.log"
+  },
+  {
+    "label": "oracles",
+    "command": [
+      "./tools/run",
+      "python",
+      "tools/independence_audit.py"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:50:22.552617+00:00",
+    "elapsed_s": 0.156,
+    "return_code": 0,
+    "log": "oracles.log"
+  },
+  {
+    "label": "failure-gate",
+    "command": [
+      "./tools/run",
+      "python",
+      "tools/test_failure_gate.py"
+    ],
+    "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run1/checkout",
+    "environment": {
+      "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+    },
+    "start_UTC": "2026-10-13T00:50:22.710023+00:00",
+    "elapsed_s": 1.671,
+    "return_code": 1,
+    "log": "failure-gate.log"
+  }
+]

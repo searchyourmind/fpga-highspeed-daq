@@ -1,0 +1,672 @@
+{
+  "scope": "Unchanged limits3.135..3.465V,125C,81..99ohm. All thermal rows and both voltage bounds are explicit. Wide fanout/no-mask are local sensitivity cases, not a full channel result.",
+  "baseline_rev03": {
+    "voltage": [
+      {
+        "case": "full-load lower composite",
+        "actual_V": 3.108211047698562,
+        "limit_V": 3.135,
+        "margin_mV": -26.788952301437963,
+        "root_cause": "Reference/resistor errors plus output copper, ground, contact, dynamic and line/load budgets"
+      },
+      {
+        "case": "PSM upper plus dynamic composite",
+        "actual_V": 3.487610441836427,
+        "limit_V": 3.465,
+        "margin_mV": -22.610441836427242,
+        "root_cause": "PSM feedback upper bound plus resistor/leakage and dynamic allowance; simultaneous occurrence is not established"
+      }
+    ],
+    "thermal_cases": [
+      {
+        "case_id": 0,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 79.15052912963958,
+        "limit_C": 125,
+        "margin_C": 45.84947087036042,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 1,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 100.62922276128249,
+        "limit_C": 125,
+        "margin_C": 24.37077723871751,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 2,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 104.29915430291823,
+        "limit_C": 125,
+        "margin_C": 20.700845697081775,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 3,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 125.77784793456111,
+        "limit_C": 125,
+        "margin_C": -0.7778479345611089,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 4,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 66.82537852111264,
+        "limit_C": 125,
+        "margin_C": 58.17462147888736,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 5,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 76.04541511168902,
+        "limit_C": 125,
+        "margin_C": 48.954584888310976,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 6,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 87.45380614042875,
+        "limit_C": 125,
+        "margin_C": 37.54619385957125,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 7,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 96.67384273100517,
+        "limit_C": 125,
+        "margin_C": 28.326157268994834,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 8,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 94.15052912963958,
+        "limit_C": 125,
+        "margin_C": 30.84947087036042,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 9,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 115.62922276128249,
+        "limit_C": 125,
+        "margin_C": 9.370777238717508,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 10,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 119.29915430291823,
+        "limit_C": 125,
+        "margin_C": 5.700845697081775,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 11,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 140.77784793456112,
+        "limit_C": 125,
+        "margin_C": -15.777847934561123,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 12,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 81.82537852111264,
+        "limit_C": 125,
+        "margin_C": 43.17462147888736,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 13,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 91.04541511168902,
+        "limit_C": 125,
+        "margin_C": 33.954584888310976,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 14,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 102.45380614042875,
+        "limit_C": 125,
+        "margin_C": 22.546193859571247,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 15,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 111.67384273100517,
+        "limit_C": 125,
+        "margin_C": 13.326157268994834,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 16,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 114.15052912963958,
+        "limit_C": 125,
+        "margin_C": 10.84947087036042,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 17,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 135.62922276128248,
+        "limit_C": 125,
+        "margin_C": -10.629222761282477,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 18,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 139.29915430291825,
+        "limit_C": 125,
+        "margin_C": -14.299154302918254,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 19,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 160.77784793456112,
+        "limit_C": 125,
+        "margin_C": -35.77784793456112,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 20,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 101.82537852111264,
+        "limit_C": 125,
+        "margin_C": 23.17462147888736,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 21,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 111.04541511168902,
+        "limit_C": 125,
+        "margin_C": 13.954584888310976,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 22,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 122.45380614042875,
+        "limit_C": 125,
+        "margin_C": 2.5461938595712468,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 23,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 131.67384273100518,
+        "limit_C": 125,
+        "margin_C": -6.67384273100518,
+        "result": "FAIL"
+      }
+    ],
+    "thermal_failing_count": 6,
+    "impedance": [
+      {
+        "case": "low_Z",
+        "width_mm": 0.155,
+        "gap_mm": 0.137,
+        "dielectric_mm": 0.08946,
+        "er": 4.3,
+        "Zdiff_ohm": 83.29021718625414,
+        "lower_margin_ohm": 2.2902171862541394,
+        "upper_margin_ohm": 15.70978281374586,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case": "high_Z",
+        "width_mm": 0.125,
+        "gap_mm": 0.167,
+        "dielectric_mm": 0.10934,
+        "er": 3.9,
+        "Zdiff_ohm": 106.12570400550061,
+        "lower_margin_ohm": 25.12570400550061,
+        "upper_margin_ohm": -7.125704005500609,
+        "result": "FAIL_LOCAL_CROSS_SECTION"
+      },
+      {
+        "case": "no_mask",
+        "width_mm": 0.14,
+        "gap_mm": 0.152,
+        "dielectric_mm": 0.0994,
+        "er": 4.1,
+        "Zdiff_ohm": 98.49026874773497,
+        "lower_margin_ohm": 17.490268747734973,
+        "upper_margin_ohm": 0.509731252265027,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case": "wide_fanout",
+        "width_mm": 0.14,
+        "gap_mm": 0.36,
+        "dielectric_mm": 0.0994,
+        "er": 4.1,
+        "Zdiff_ohm": 104.13461707431439,
+        "lower_margin_ohm": 23.13461707431439,
+        "upper_margin_ohm": -5.1346170743143915,
+        "result": "FAIL_LOCAL_CROSS_SECTION"
+      }
+    ]
+  },
+  "corrected_copper_rev03_1": {
+    "voltage": [
+      {
+        "case": "full-load lower composite",
+        "actual_V": 3.1304471883660536,
+        "limit_V": 3.135,
+        "margin_mV": -4.552811633946163,
+        "root_cause": "Reference/resistor errors plus output copper, ground, contact, dynamic and line/load budgets"
+      },
+      {
+        "case": "PSM upper plus dynamic composite",
+        "actual_V": 3.487610441836427,
+        "limit_V": 3.465,
+        "margin_mV": -22.610441836427242,
+        "root_cause": "PSM feedback upper bound plus resistor/leakage and dynamic allowance; simultaneous occurrence is not established"
+      }
+    ],
+    "thermal_cases": [
+      {
+        "case_id": 0,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 77.61776037965419,
+        "limit_C": 125,
+        "margin_C": 47.382239620345814,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 1,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 99.75796707308594,
+        "limit_C": 125,
+        "margin_C": 25.242032926914064,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 2,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 102.24088555028331,
+        "limit_C": 125,
+        "margin_C": 22.75911444971669,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 3,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 124.38109224371503,
+        "limit_C": 125,
+        "margin_C": 0.618907756284969,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 4,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 66.13688900802664,
+        "limit_C": 125,
+        "margin_C": 58.86311099197336,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 5,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 75.82701622900228,
+        "limit_C": 125,
+        "margin_C": 49.17298377099772,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 6,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 86.54109109736622,
+        "limit_C": 125,
+        "margin_C": 38.45890890263378,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 7,
+        "ambient_C": 25.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 96.23121831834183,
+        "limit_C": 125,
+        "margin_C": 28.76878168165817,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 8,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 92.61776037965419,
+        "limit_C": 125,
+        "margin_C": 32.382239620345814,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 9,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 114.75796707308594,
+        "limit_C": 125,
+        "margin_C": 10.242032926914064,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 10,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 117.24088555028331,
+        "limit_C": 125,
+        "margin_C": 7.759114449716691,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 11,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 139.38109224371505,
+        "limit_C": 125,
+        "margin_C": -14.381092243715045,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 12,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 81.13688900802666,
+        "limit_C": 125,
+        "margin_C": 43.86311099197334,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 13,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 90.82701622900228,
+        "limit_C": 125,
+        "margin_C": 34.17298377099772,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 14,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 101.54109109736622,
+        "limit_C": 125,
+        "margin_C": 23.45890890263378,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 15,
+        "ambient_C": 40.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 111.23121831834183,
+        "limit_C": 125,
+        "margin_C": 13.768781681658169,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 16,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 112.61776037965419,
+        "limit_C": 125,
+        "margin_C": 12.382239620345814,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 17,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 134.75796707308595,
+        "limit_C": 125,
+        "margin_C": -9.75796707308595,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 18,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 137.2408855502833,
+        "limit_C": 125,
+        "margin_C": -12.24088555028331,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 19,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 5.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 159.38109224371505,
+        "limit_C": 125,
+        "margin_C": -34.381092243715045,
+        "result": "FAIL"
+      },
+      {
+        "case_id": 20,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 101.13688900802666,
+        "limit_C": 125,
+        "margin_C": 23.863110991973343,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 21,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 0.6,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 110.82701622900228,
+        "limit_C": 125,
+        "margin_C": 14.172983770997718,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 22,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 0.0,
+        "estimated_regulator_junction_C": 121.54109109736622,
+        "limit_C": 125,
+        "margin_C": 3.4589089026337803,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case_id": 23,
+        "ambient_C": 60.0,
+        "h_each_side_W_m2K": 10.0,
+        "assumed_regulator_loss_W": 1.0,
+        "assumed_SSD_heat_into_carrier_W": 1.65,
+        "estimated_regulator_junction_C": 131.23121831834183,
+        "limit_C": 125,
+        "margin_C": -6.231218318341831,
+        "result": "FAIL"
+      }
+    ],
+    "thermal_failing_count": 5,
+    "impedance": [
+      {
+        "case": "low_Z",
+        "width_mm": 0.155,
+        "gap_mm": 0.137,
+        "dielectric_mm": 0.08946,
+        "er": 4.3,
+        "Zdiff_ohm": 83.29021718625414,
+        "lower_margin_ohm": 2.2902171862541394,
+        "upper_margin_ohm": 15.70978281374586,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case": "high_Z",
+        "width_mm": 0.125,
+        "gap_mm": 0.167,
+        "dielectric_mm": 0.10934,
+        "er": 3.9,
+        "Zdiff_ohm": 106.12570400550061,
+        "lower_margin_ohm": 25.12570400550061,
+        "upper_margin_ohm": -7.125704005500609,
+        "result": "FAIL_LOCAL_CROSS_SECTION"
+      },
+      {
+        "case": "no_mask",
+        "width_mm": 0.14,
+        "gap_mm": 0.152,
+        "dielectric_mm": 0.0994,
+        "er": 4.1,
+        "Zdiff_ohm": 98.49026874773497,
+        "lower_margin_ohm": 17.490268747734973,
+        "upper_margin_ohm": 0.509731252265027,
+        "result": "PASS_SCREEN"
+      },
+      {
+        "case": "wide_fanout",
+        "width_mm": 0.14,
+        "gap_mm": 0.36,
+        "dielectric_mm": 0.0994,
+        "er": 4.1,
+        "Zdiff_ohm": 104.13461707431439,
+        "lower_margin_ohm": 23.13461707431439,
+        "upper_margin_ohm": -5.1346170743143915,
+        "result": "FAIL_LOCAL_CROSS_SECTION"
+      }
+    ]
+  },
+  "remaining_gates": [
+    "Composite voltage budget, not vendor-guaranteed transient/MLCC bounds",
+    "Weak-convection thermal limits and SSD temperature",
+    "Broad-process and fanout impedance, cable/connector3D channel",
+    "Full part/assembly/mating approval"
+  ],
+  "requirements_relaxed": false
+}

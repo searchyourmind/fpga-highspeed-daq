@@ -1,0 +1,27 @@
+TPS62130 manufacturer transient reference, 12V to 3.3V
+.include vendor/tps62130_trans.lib
+Vinput vin 0 PWL(0 0 20u 12)
+Ven en 0 PWL(0 0 100u 0 110u 3.3)
+* Model pin order: PVIN1 PVIN2 AVIN EN SS_TR DEF FSW PGND2 PGND1 ETPAD AGND PG FB VOS SW3 SW2 SW1
+Xreg vin vin vin en ss 0 0 0 0 0 0 pg fb out sw sw sw TPS62130_TRANS
+Css ss 0 1n
+Rpg out pg 100k
+Cin vin 0 20u
+L1 sw lx 2.2u
+Rdcr lx out 0.035
+Cout out cesr 44u
+Resr cesr 0 0.01
+Rtop out fb 312k
+Rbottom fb 0 100k
+Rload out 0 6.6
+Istep out 0 PULSE(0 0.5 0.75m 10u 10u 0.2m 2m)
+.options method=gear reltol=0.003
+.save v(out) v(pg) i(L1)
+.control
+set wr_singlescale
+set wr_vecnames
+tran 50n 1.2m 0 100n
+wrdata transient.txt v(out) v(pg) i(L1)
+quit
+.endc
+.end

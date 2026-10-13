@@ -1,0 +1,31 @@
+Reference,Value,Footprint,Note
+J1,TE 1-1734839-6 (top contact),Connector_FFC-FPC:TE_1-1734839-6_1x16-1MP_P0.5mm_Horizontal,Superseded part; replacement qualification required
+J2,TE 1-2199230-4 M-key,DAQ:TE_M2_M_1-2199230-4,Custom footprint from TE G-2199230 B3 sheet 3; review before release
+J3,External regulated 5V / 3A,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,No reverse-polarity or hot-plug protection: external current-limited source only
+U1,TPS62130ARGTR,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,3.328V nominal; <=2A SSD; 8 thermal vias; assembly review pending
+U2,NC7SB3157P6X,Package_TO_SOT_SMD:SOT-363_SC-70-6,S=0 grounds SSD CLKREQ; S=1 connects host
+Q1,DMG1012T-7,Package_TO_SOT_SMD:SOT-523,
+Q2,DMG1012T-7,Package_TO_SOT_SMD:SOT-523,
+Q3,DMG1012T-7,Package_TO_SOT_SMD:SOT-523,
+J4,Optional 32.768kHz input,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,External oscillator footprint/part not selected; SSD-dependent requirement remains open
+H5,Wurth 9774025243R / M2 / H2.5mm,Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H2.5mm_9774025243,SMT support; height and insertion datum require mating-card confirmation
+L1,2.2uH XAL4020-222MEC,Inductor_SMD:L_Coilcraft_XAL4020-XXX,
+C1,10uF 25V X7R,Capacitor_SMD:C_1206_3216Metric,
+C2,10uF 25V X7R,Capacitor_SMD:C_1206_3216Metric,
+C3,22uF 10V X7R,Capacitor_SMD:C_1206_3216Metric,
+C4,22uF 10V X7R,Capacitor_SMD:C_1206_3216Metric,
+C5,100nF,Capacitor_SMD:C_0402_1005Metric,
+C6,3.3nF soft start,Capacitor_SMD:C_0402_1005Metric,
+C7,100nF,Capacitor_SMD:C_0402_1005Metric,
+C8,100nF,Capacitor_SMD:C_0402_1005Metric,
+R1,31.6k 0.1% 25ppm,Resistor_SMD:R_0402_1005Metric,
+R2,10k 0.1% 25ppm,Resistor_SMD:R_0402_1005Metric,
+R3,100k,Resistor_SMD:R_0402_1005Metric,
+R4,10k,Resistor_SMD:R_0402_1005Metric,
+R5,3.6k 1%,Resistor_SMD:R_0402_1005Metric,
+R6,6.8k 1%,Resistor_SMD:R_0402_1005Metric,
+R7,33R,Resistor_SMD:R_0402_1005Metric,
+R8,2.2k,Resistor_SMD:R_0402_1005Metric,
+R9,10k,Resistor_SMD:R_0402_1005Metric,
+R10,10k,Resistor_SMD:R_0402_1005Metric,
+R11,33R,Resistor_SMD:R_0402_1005Metric,

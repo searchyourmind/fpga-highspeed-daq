@@ -1,0 +1,6 @@
+(version 1)
+(rule "Minimum via" (constraint via_diameter (min 0.4mm)))
+(rule "Minimum drill" (constraint hole_size (min 0.2mm)))
+(rule "Minimum trace" (constraint track_width (min 0.127mm)))
+(rule "Copper clearance" (constraint clearance (min 0.1mm)))
+(rule "PCIe pair gap" (condition "A.NetName == '/CLK_P' || A.NetName == '/CLK_N' || A.NetName == '/RX_P' || A.NetName == '/RX_N' || A.NetName == '/TX_P' || A.NetName == '/TX_N'") (constraint diff_pair_gap (min 0.15mm) (opt 0.15mm) (max 0.36mm)))

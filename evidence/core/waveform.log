@@ -1,0 +1,54 @@
+./tools/run python tools/rtl_tests.py e2e
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.002 s (elab=0.000, cvt=0.000, bld=0.000); cpu 0.001 s on 1 threads; alloced 17.207 MB
+make: Entering directory '/work/build/daq_top'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/work/build/daq_top'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791852695
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_end_to_end.e2e_fixed_seed_matrix (1/6)
+   159.00ns INFO     cocotb.daq_top                     E2E seed=11 source=1 sink=1 cycles=30 DATA_MATCH
+   433.00ns INFO     cocotb.daq_top                     E2E seed=11 source=3 sink=3 cycles=53 DATA_MATCH
+  1482.00ns INFO     cocotb.daq_top                     E2E seed=11 source=9 sink=9 cycles=208 DATA_MATCH
+  2991.00ns INFO     cocotb.daq_top                     E2E seed=11 source=31 sink=31 cycles=300 DATA_MATCH
+  7510.00ns INFO     cocotb.daq_top                     E2E seed=11 source=32 sink=32 cycles=902 DATA_MATCH
+  7669.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=1 sink=1 cycles=30 DATA_MATCH
+  7953.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=3 sink=3 cycles=55 DATA_MATCH
+  9022.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=9 sink=9 cycles=212 DATA_MATCH
+ 10481.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=31 sink=31 cycles=290 DATA_MATCH
+ 15075.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=32 sink=32 cycles=917 DATA_MATCH
+ 15234.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=1 sink=1 cycles=30 DATA_MATCH
+ 15513.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=3 sink=3 cycles=54 DATA_MATCH
+ 16627.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=9 sink=9 cycles=221 DATA_MATCH
+ 18111.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=31 sink=31 cycles=295 DATA_MATCH
+ 22785.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=32 sink=32 cycles=933 DATA_MATCH
+ 22785.00ns INFO     cocotb.regression                  test_end_to_end.e2e_fixed_seed_matrix passed
+ 22785.00ns INFO     cocotb.regression                  running test_end_to_end.invalid_descriptors_and_recovery (2/6)
+ 24329.00ns INFO     cocotb.regression                  test_end_to_end.invalid_descriptors_and_recovery passed
+ 24329.00ns INFO     cocotb.regression                  running test_end_to_end.long_backpressure_and_descriptor_order (3/6)
+ 40193.00ns INFO     cocotb.regression                  test_end_to_end.long_backpressure_and_descriptor_order passed
+ 40193.00ns INFO     cocotb.regression                  running test_end_to_end.memory_faults_abort_and_next_job (4/6)
+ 43679.00ns INFO     cocotb.regression                  test_end_to_end.memory_faults_abort_and_next_job passed
+ 43679.00ns INFO     cocotb.regression                  running test_end_to_end.reset_inflight_at_multiple_stages (5/6)
+ 50244.00ns INFO     cocotb.regression                  test_end_to_end.reset_inflight_at_multiple_stages passed
+ 50244.00ns INFO     cocotb.regression                  running test_end_to_end.transport_corruption_is_detected (6/6)
+ 50777.00ns INFO     cocotb.regression                  test_end_to_end.transport_corruption_is_detected passed
+ 50777.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_end_to_end.e2e_fixed_seed_matrix                    PASS       22785.00           0.20     114430.10  **
+                                                        ** test_end_to_end.invalid_descriptors_and_recovery         PASS        1544.00           0.01     109491.86  **
+                                                        ** test_end_to_end.long_backpressure_and_descriptor_order   PASS       15864.00           0.14     113515.83  **
+                                                        ** test_end_to_end.memory_faults_abort_and_next_job         PASS        3486.00           0.03     115214.88  **
+                                                        ** test_end_to_end.reset_inflight_at_multiple_stages        PASS        6565.00           0.06     114370.95  **
+                                                        ** test_end_to_end.transport_corruption_is_detected         PASS         533.00           0.00     112413.34  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=6 PASS=6 FAIL=0 SKIP=0                                        50777.00           0.45     113592.48  **
+                                                        ****************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS daq_top: 6 cases

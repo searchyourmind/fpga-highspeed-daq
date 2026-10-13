@@ -1,0 +1,9 @@
+read_json synthesis/reports/daq_top.json
+hierarchy -check -top daq_top
+flatten
+clean
+check -assert
+scc -expect 0
+tee -o synthesis/reports/longest-path.txt ltp -noff
+tee -o synthesis/reports/flattened-stat.json stat -json
+write_json synthesis/reports/flattened.json

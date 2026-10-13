@@ -1,0 +1,11 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852773" />
+    <testcase name="e2e_fixed_seed_matrix" classname="test_end_to_end" file="/work/tb/test_end_to_end.py" lineno="102" time="0.21221446990966797" sim_time_ns="22785.0" ratio_time="107367.79640756236" />
+    <testcase name="invalid_descriptors_and_recovery" classname="test_end_to_end" file="/work/tb/test_end_to_end.py" lineno="128" time="0.01815652847290039" sim_time_ns="1544.0" ratio_time="85038.28263781285" />
+    <testcase name="long_backpressure_and_descriptor_order" classname="test_end_to_end" file="/work/tb/test_end_to_end.py" lineno="140" time="0.15346837043762207" sim_time_ns="15864.0" ratio_time="103369.83415385906" />
+    <testcase name="memory_faults_abort_and_next_job" classname="test_end_to_end" file="/work/tb/test_end_to_end.py" lineno="149" time="0.031141042709350586" sim_time_ns="3486.0" ratio_time="111942.30175707232" />
+    <testcase name="reset_inflight_at_multiple_stages" classname="test_end_to_end" file="/work/tb/test_end_to_end.py" lineno="159" time="0.05744361877441406" sim_time_ns="6565.0" ratio_time="114285.97536275194" />
+    <testcase name="transport_corruption_is_detected" classname="test_end_to_end" file="/work/tb/test_end_to_end.py" lineno="170" time="0.0047342777252197266" sim_time_ns="533.0" ratio_time="112583.17127461349" />
+  </testsuite>
+</testsuites>

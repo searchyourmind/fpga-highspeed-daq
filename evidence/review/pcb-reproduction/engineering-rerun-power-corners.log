@@ -1,0 +1,46 @@
+{
+  "cases": 108,
+  "budget": {
+    "nominal_V": 3.3280000000000003,
+    "feedback_low_V": 3.247608077020428,
+    "feedback_PSM_high_V": 3.442610441836427,
+    "temp_tolerance_resistors": 0.0035,
+    "FB_leakage_max_A": 1e-07,
+    "copper_drop_V": 0.03716088865437439,
+    "reserve_note": "40mV transient reserve exceeds nominal35mV and executed loaded external-component corner25.1mV regulator excursions; no joint silicon/temperature/process qualification. Ground/contact reserves unverified.",
+    "explicit_unverified_reserves": {
+      "ground_drop_V": 0.01,
+      "contact_drop_V": 0.025,
+      "ripple_transient_peak_V": 0.04,
+      "line_load_regulation_V": 0.005
+    },
+    "loaded_min_V": 3.1304471883660536,
+    "idle_max_V": 3.487610441836427,
+    "allowed_V": [
+      3.135,
+      3.465
+    ],
+    "tolerance_budget_pass": false,
+    "assumed_switching_floor_Hz": 2000000.0,
+    "screened_Lmin_H": 1.232e-06,
+    "estimated_worst_ripple_A": 0.5027044049496695,
+    "estimated_inductor_peak_A": 2.251352202474835,
+    "current_limit_min_room_A": 3.6,
+    "current_limit_max_room_A": 4.9,
+    "Isat_typ_25C_A": 5.6,
+    "normal_peak_below_min_limit": true,
+    "current_limit_caveat": "TI current-limit table condition12V25C; delay overshoot and hot Isat not covered; no short-circuit qualification",
+    "Cin_effective_requirement_uF": 12,
+    "Cout_screened_effective_uF": [
+      16,
+      52.8
+    ],
+    "efficiency_assumption": 0.85,
+    "input_budget_A": 1.683997469955724,
+    "SS_nominal_s": 0.00165,
+    "SS_extreme_s": [
+      0.0011103125000000002,
+      0.0022687500000000004
+    ]
+  }
+}

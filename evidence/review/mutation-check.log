@@ -1,0 +1,6 @@
+sample_stride 1 True
+saturation 1 True
+ring_wrap 1 True
+packet_boundary 124 True
+host_crc 1 True
+memory_bounds 1 True

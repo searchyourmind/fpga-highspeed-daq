@@ -1,0 +1,36 @@
+{
+  "scope": "Proposed tolerance acceptance only, not vendor commitment: trace etch +/-5um with gap changing oppositely, dielectric height +/-3%, er+/-0.1, same fixed mask model. Other tolerances omitted.",
+  "cases": [
+    {
+      "w": 0.145,
+      "g": 0.147,
+      "h": 0.096418,
+      "er": 4.2,
+      "step": 0.0025,
+      "Zdiff_ohm": 90.0139009762778,
+      "Cdiff_pF_per_m": 62.31457173104917,
+      "C0diff_pF_per_m": 22.036865087699503,
+      "epsilon_effective": 2.827742125890302,
+      "unknowns": 120921,
+      "relative_residual": 6.654822780786526e-16,
+      "energy_charge_error": 3.5638159090467525e-14,
+      "case": "controlled_low"
+    },
+    {
+      "w": 0.135,
+      "g": 0.157,
+      "h": 0.102382,
+      "er": 4.0,
+      "step": 0.0025,
+      "Zdiff_ohm": 98.11117999058719,
+      "Cdiff_pF_per_m": 55.79537681339319,
+      "C0diff_pF_per_m": 20.716833761413973,
+      "epsilon_effective": 2.6932386220772098,
+      "unknowns": 119830,
+      "relative_residual": 9.509834437365906e-16,
+      "energy_charge_error": 3.097522238704187e-14,
+      "case": "controlled_high"
+    }
+  ],
+  "both_within_81_to_99": true
+}

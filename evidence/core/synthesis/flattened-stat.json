@@ -1,0 +1,55 @@
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\daq_top": {
+         "num_wires":         1760,
+         "num_wire_bits":     9758,
+         "num_pub_wires":     242,
+         "num_pub_wire_bits": 3958,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6433,
+         "num_cells_by_type": {
+            "$_AND_": 1695,
+            "$_DFFE_PP_": 512,
+            "$_DFF_P_": 10,
+            "$_MUX_": 1146,
+            "$_NOT_": 439,
+            "$_OR_": 814,
+            "$_SDFFE_PN0P_": 739,
+            "$_SDFFE_PN1P_": 2,
+            "$_SDFFE_PP0P_": 68,
+            "$_SDFF_PN0_": 114,
+            "$_SDFF_PP0_": 2,
+            "$_XOR_": 892
+         }
+      }
+   },
+      "design": {
+         "num_wires":         1760,
+         "num_wire_bits":     9758,
+         "num_pub_wires":     242,
+         "num_pub_wire_bits": 3958,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6433,
+         "num_cells_by_type": {
+            "$_AND_": 1695,
+            "$_DFFE_PP_": 512,
+            "$_DFF_P_": 10,
+            "$_MUX_": 1146,
+            "$_NOT_": 439,
+            "$_OR_": 814,
+            "$_SDFFE_PN0P_": 739,
+            "$_SDFFE_PN1P_": 2,
+            "$_SDFFE_PP0P_": 68,
+            "$_SDFF_PN0_": 114,
+            "$_SDFF_PP0_": 2,
+            "$_XOR_": 892
+         }
+      }
+}
+

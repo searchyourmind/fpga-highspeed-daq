@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "pages": 4,
+  "pdf_sha256": "1842ba375b558ce16022b8ba6c796648e863fc756fcb692b279fe24aff1b6ad8",
+  "text_and_page_checks": "PASS",
+  "visual_review": "All4 pages rendered with bundled Poppler and inspected; final page4 image size increased and re-inspected",
+  "scope": "Current independent review; historicalPDF/PPTX not part of portable release"
+}

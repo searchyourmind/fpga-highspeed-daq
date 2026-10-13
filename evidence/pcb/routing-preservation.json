@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "Geometric preservation within 1 um; no electrical-delay/SI claim",
+  "pairs": {
+    "/CLK_N": {
+      "length_mm": 18.459531167507617,
+      "max_baseline_deviation_mm": 0.0,
+      "vias": 0
+    },
+    "/CLK_P": {
+      "length_mm": 18.459531167507617,
+      "max_baseline_deviation_mm": 0.0,
+      "vias": 0
+    },
+    "/RX_N": {
+      "length_mm": 17.838210823947975,
+      "max_baseline_deviation_mm": 7.105427357601002e-15,
+      "vias": 0
+    },
+    "/RX_P": {
+      "length_mm": 17.838210823947975,
+      "max_baseline_deviation_mm": 0.0,
+      "vias": 0
+    },
+    "/TX_N": {
+      "length_mm": 19.10903322370527,
+      "max_baseline_deviation_mm": 1.4210854715202004e-14,
+      "vias": 2
+    },
+    "/TX_P": {
+      "length_mm": 19.10903322370527,
+      "max_baseline_deviation_mm": 1.4210854715202004e-14,
+      "vias": 2
+    }
+  },
+  "inner_signal_tracks": 0,
+  "ground_planes": 2,
+  "local_outer_ground_spreaders": 2,
+  "track_via_items": 424,
+  "pad_count": 183
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PARTIAL",
+  "completed": [
+    "Generic synthesis and hierarchy checks",
+    "Flattened combinational-loop count zero",
+    "All mapped generic flip-flops use top clk",
+    "Longest combinational topological path with FFs excluded"
+  ],
+  "longest_path_cells": 42,
+  "generic_flip_flops": 1447,
+  "clock_domains_seen": 1,
+  "nanosecond_STA_executed": false,
+  "setup_hold_slack": null,
+  "fmax_MHz": null,
+  "remaining": "A selected FPGA/device/speed grade, vendor delay models and placement/routing are absent. Example SDC is an unapproved100MHz scenario, not a timing result.",
+  "source_sha256": {
+    "rtl/counter.sv": "68f2753e5083168238194c9b9b60fb0e7f9232da5fdae72ad82ce4cb0d47e433",
+    "rtl/daq_top.sv": "d4f8cf4a137fa1292ba9c941eb5be96f007e9ac6d51a34eafc93c739a448a4ec",
+    "rtl/dma_descriptor.sv": "57df2201e5299b6a3c124a81a6da01f6acc9563f32abba4643300d73796e4161",
+    "rtl/dma_reader.sv": "8d8703de4f00a25f9a45366999f4ad55f1a1423ca26f314f152384aee5adc387",
+    "rtl/dma_writer.sv": "43c38f7fdf5cf876de17d21ce34647b6fec26f9766ba4f7789f51c136f6921d0",
+    "rtl/sensor_source.sv": "effc03aa77be9cd66a472f3387e5758157c4d46c950ab4ffb467fee28747af28",
+    "rtl/stream_fifo.sv": "9c5449a6057b84840e9586b2fc5a4e3f28c8424a6ca2eec194033ce3fcdb7c4c",
+    "rtl/stream_processor.sv": "b9dc5ae9b51b166f0f46b996f3400ae32e338c4590934ff1249e7ca22af27c3f",
+    "rtl/stream_to_mem.sv": "c06d90577517001bbb2fc678ec8ca21d3314051327aa07fbed0972119db7ab37",
+    "rtl/streaming_top.sv": "a4790034b13bca0c4787d35ad02db651715de518d904f4a5009831aaf8e75797",
+    "rtl/tlp_packetizer.sv": "2156af0b46fa10e509ce8063ebb88974737507ca16cd6d2dfdd43faede833db9"
+  }
+}

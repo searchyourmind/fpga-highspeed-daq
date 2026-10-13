@@ -1,0 +1,94 @@
+{
+  "status": "PASS_MODEL_CHECKS",
+  "raw_points": 6455898,
+  "end_s": 0.00305,
+  "source_sha256": "7b0bbca9a7c03efaeae44da88fdb77cf3abd4aa023b6cc0b2fdd59139f4eea9f",
+  "model": "TI TPS62130A SLVM893A unmodified, room-temperature internal behavior",
+  "scope": "4.65V input; L=1.232uH, DCR=75mohm, Cout=16uF, ESR=10mohm; 18.5804443272mohm equivalent output board path extracted at125C. 0.5A resistive baseline plus1.5A current pulse. External parts are stressed; this is not a hot regulator model, process sweep, worst feedback error, ground/contact drop, loop stability or silicon qualification.",
+  "windows": {
+    "pre_step": {
+      "start_s": 0.00195,
+      "end_s": 0.00205,
+      "points": 244997,
+      "regulator": {
+        "min_V": 3.32570723,
+        "max_V": 3.32988624,
+        "mean_V": 3.327268252357815
+      },
+      "load": {
+        "min_V": 3.31644925,
+        "max_V": 3.32061663,
+        "mean_V": 3.318005929055136
+      },
+      "PG_min_V": 4.64845052,
+      "PG_max_V": 4.64845052,
+      "inductor_peak_A": 0.701579492
+    },
+    "load_step": {
+      "start_s": 0.00209,
+      "end_s": 0.0025,
+      "points": 880507,
+      "regulator": {
+        "min_V": 3.30324661,
+        "max_V": 3.35228132,
+        "mean_V": 3.3271655497544073
+      },
+      "load": {
+        "min_V": 3.26635272,
+        "max_V": 3.34294936,
+        "mean_V": 3.296888293908825
+      },
+      "PG_min_V": 4.64845052,
+      "PG_max_V": 4.64845052,
+      "inductor_peak_A": 2.21930591
+    },
+    "post_step": {
+      "start_s": 0.0026,
+      "end_s": 0.00275,
+      "points": 367568,
+      "regulator": {
+        "min_V": 3.32570307,
+        "max_V": 3.32990262,
+        "mean_V": 3.3272673278598752
+      },
+      "load": {
+        "min_V": 3.3164451,
+        "max_V": 3.32063296,
+        "mean_V": 3.318005007019585
+      },
+      "PG_min_V": 4.64845052,
+      "PG_max_V": 4.64845052,
+      "inductor_peak_A": 0.701484488
+    },
+    "disabled": {
+      "start_s": 0.00285,
+      "end_s": 0.00305,
+      "points": 2010,
+      "regulator": {
+        "min_V": 0.343810552,
+        "max_V": 2.23102106,
+        "mean_V": 1.009135700846803
+      },
+      "load": {
+        "min_V": 0.342853465,
+        "max_V": 2.22481043,
+        "mean_V": 1.006326507014088
+      },
+      "PG_min_V": 0.0687192118,
+      "PG_max_V": 0.0687192118,
+      "inductor_peak_A": 2.26765451e-07
+    }
+  },
+  "checks": {
+    "pre_step_load_within_5pct": true,
+    "load_event_within_5pct": true,
+    "steady_PG_high": true,
+    "disabled_PG_low": true,
+    "peak_current_below_room_limit": true
+  },
+  "regulator_event_peak_excursion_V": 0.025013067642184694,
+  "existing_40mV_reserve_margin_V": 0.014986932357815307,
+  "event_load_lower_margin_V": 0.1313527200000002,
+  "event_load_upper_margin_V": 0.12205063999999988,
+  "overall_inductor_peak_A": 2.21930591
+}

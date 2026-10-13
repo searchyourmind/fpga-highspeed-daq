@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "single_track": true,
+    "parallel_tracks": true,
+    "disconnected_graph_rejected": true
+  },
+  "status": "PASS"
+}

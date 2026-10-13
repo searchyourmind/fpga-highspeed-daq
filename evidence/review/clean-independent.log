@@ -1,0 +1,142 @@
+./tools/run python hardware/reference_pcie_adapter/analysis/voltage_root_cause.py
+{
+  "status": "FAIL_REQUIREMENTS",
+  "unchanged_bounds_V": [
+    3.135,
+    3.465
+  ],
+  "cases": [
+    {
+      "case": "full_load_low",
+      "terms_V": {
+        "nominal": 3.328,
+        "reference_error": -0.05990399999999996,
+        "divider_ratio_error": -0.017316862979571912,
+        "FB_leakage": -0.0031710600000000003,
+        "output_copper": -0.03716088865437439,
+        "ground_reserve": -0.01,
+        "contact_reserve": -0.025,
+        "dynamic_reserve": -0.04,
+        "line_load_reserve": -0.005
+      },
+      "result_V": 3.1304471883660536,
+      "limit_V": 3.135,
+      "margin_mV": -4.552811633946163
+    },
+    {
+      "case": "light_load_PSM_high",
+      "terms_V": {
+        "nominal": 3.328,
+        "reference_error": 0.09318400000000038,
+        "divider_ratio_error": 0.01825538183642683,
+        "FB_leakage": 0.0031710600000000003,
+        "dynamic_reserve": 0.04,
+        "line_load_reserve": 0.005
+      },
+      "result_V": 3.487610441836427,
+      "limit_V": 3.465,
+      "margin_mV": -22.610441836427242
+    }
+  ],
+  "full_load_PWM_high_budget_V": 3.4541528603010536,
+  "full_load_PWM_high_margin_mV": 10.84713969894624,
+  "permitted_output_drop_for_low_bound_V": 0.032608077020428006,
+  "actual_output_drop_V": 0.03716088865437439,
+  "PSM_high_allowance_left_after_FB_divider_leakage_V": 0.022389558163572687,
+  "required_dynamic_plus_line_load_allowance_V": 0.045,
+  "caveats": [
+    "PSM FB extrema specified at22uF; effective cap16uF stress is outside that table condition, so the existing upper budget is not a complete guarantee.",
+    "FB accuracy, line/load and ripple terms may overlap in a joint mode-specific characterization, but no overlap is subtracted without a qualified envelope.",
+    "5mV line/load,10mV ground,25mV contact and40mV dynamics are explicit design reserves, not vendor-guaranteed measurements.",
+    "Steady current/mode/load consistency is unresolved; conservative composite failure remains.",
+    "Worst lower output lacks4.553mV even with corrected copper. Upper bound cannot be repaired by lower copper drop."
+  ],
+  "decision": "No divider or capacitor substitution adopted without qualification. Retain FAIL; obtain joint envelope or redesign regulation.",
+  "source": "https://www.ti.com/lit/ds/symlink/tps62130.pdf section7.5"
+}
+./tools/run-analysis python3 hardware/reference_pcie_adapter/analysis/thermal_independent_review.py
+{
+  "status": "FAIL_REQUIREMENTS",
+  "corrected_failing_count": 6,
+  "worst_corrected": {
+    "outer_copper_um": 30,
+    "average_board_C": 110.48076923092064,
+    "candidate_sink_total_K_W": null,
+    "mesh_mm": 0.5,
+    "ambient_C": 60.0,
+    "h_each_side_W_m2K": 5.0,
+    "inner_plane_coverage_factor": 0.5,
+    "assumed_regulator_loss_W": 1.0,
+    "assumed_inductor_loss_W": 0.25,
+    "assumed_SSD_heat_into_carrier_W": 1.65,
+    "assumed_copper_loss_W": 0.25,
+    "SSD_region_board_max_C": 125.36897453756902,
+    "feedback_region_board_max_C": 129.61089521713797,
+    "pcb_hotspot_C": 153.1163993883335,
+    "estimated_regulator_junction_C": 160.57520642458908,
+    "regulator_limit_C": 125,
+    "within_125C": false,
+    "energy_balance_relative_error": 2.999378523327323e-12,
+    "via_to_nearest_plane_K_W": 2.5681820362555836,
+    "case_id": 19,
+    "margin_C": -35.575206424589084
+  },
+  "worst_corrected_mesh_delta_C": 0.2726916297917512,
+  "loss_attribution_worst35um_0p5mm": [
+    {
+      "source": "regulator",
+      "board_rise_at_full_regulator_hotspot_C": 52.567257956602376,
+      "junction_path_rise_C": 7.458807036255585
+    },
+    {
+      "source": "inductor",
+      "board_rise_at_full_regulator_hotspot_C": 8.536352208937357,
+      "junction_path_rise_C": 0.0
+    },
+    {
+      "source": "SSD_coupling",
+      "board_rise_at_full_regulator_hotspot_C": 22.378781280042208,
+      "junction_path_rise_C": 0.0
+    },
+    {
+      "source": "copper",
+      "board_rise_at_full_regulator_hotspot_C": 6.753428239715924,
+      "junction_path_rise_C": 0.0
+    }
+  ],
+  "superposition_max_error_C": 9.947598300641403e-14,
+  "uniform_source_exact_solution_error_C": 1.1411316336307209e-11
+}
+./tools/run-analysis python3 hardware/reference_pcie_adapter/analysis/si_independent_review.py
+legacy_reproduction 94.30072252528552
+Cu30um 95.72897275710966
+Cu40p64um 92.79237706245162
+mask_manufacturer_rect 89.86695425592598
+etched_top 96.21810470547605
+coplanar_0p15 92.85226312035616
+coplanar_0p30 94.1368182261746
+manufacturer_reference_combined 90.32909350818782
+3313_0.13_0.1_low 78.078301968494
+3313_0.13_0.1_high 101.19647128416248
+3313_0.15_0.2_low 84.48348327515373
+3313_0.15_0.2_high 107.24352138699862
+3313_0.17_0.3_low 82.69548449763764
+3313_0.17_0.3_high 105.09238801894548
+7628_0.3_0.2_low 81.82995138273577
+7628_0.3_0.2_high 97.57463702285575
+7628_0.32_0.3_low 84.41014496002443
+7628_0.32_0.3_high 100.77135050829634
+7628_0.34_0.4_low 84.38577418314932
+7628_0.34_0.4_high 100.66020717281592
+1080_0.12_0.1_low 73.87735232916071
+1080_0.12_0.1_high 98.28514475676558
+current3313_low_manufacturer_Cu0.03 82.76929401971053
+current3313_low_manufacturer_Cu0.04064 79.9071746958037
+current3313_high_manufacturer_Cu0.03 105.07402112677941
+current3313_high_manufacturer_Cu0.04064 101.1990051424179
+candidate7628_low_manufacturer_Cu0.03 81.13353285971363
+candidate7628_low_manufacturer_Cu0.04064 79.2574108513164
+candidate7628_high_manufacturer_Cu0.03 96.33767468754358
+candidate7628_high_manufacturer_Cu0.04064 94.23121927869077
+python3 tools/write_independent_review.py
+Wrote independent PCB review with signed margins and retained failures

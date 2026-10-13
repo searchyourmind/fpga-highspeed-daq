@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791831400" />
+    <testcase name="packet_boundary_split" classname="test_e2e_extended" file="/work/tb/test_e2e_extended.py" lineno="6" time="0.0069141387939453125" sim_time_ns="624.0" ratio_time="90249.8515862069">
+      <failure error_type="AssertionError" error_msg="First packet must end at the4KiB boundary&#10;assert 32 == 8&#10; +  where 32 = Packet(address=8184, tag=9, length=32, payload=(133, 66180, 132227, 198274), last=False, crc=1823009180).length" />
+    </testcase>
+  </testsuite>
+</testsuites>

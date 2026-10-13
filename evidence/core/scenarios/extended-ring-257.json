@@ -1,0 +1,92 @@
+[
+  {
+    "seed": 77,
+    "job": 0,
+    "ring_words": 257,
+    "records": 257,
+    "cycles": 6549,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 77,
+    "job": 1,
+    "ring_words": 257,
+    "records": 256,
+    "cycles": 6425,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 77,
+    "job": 2,
+    "ring_words": 257,
+    "records": 255,
+    "cycles": 6451,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 412,
+    "job": 0,
+    "ring_words": 257,
+    "records": 257,
+    "cycles": 6598,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 412,
+    "job": 1,
+    "ring_words": 257,
+    "records": 256,
+    "cycles": 6529,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 412,
+    "job": 2,
+    "ring_words": 257,
+    "records": 255,
+    "cycles": 6433,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 20261012,
+    "job": 0,
+    "ring_words": 257,
+    "records": 257,
+    "cycles": 6593,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 20261012,
+    "job": 1,
+    "ring_words": 257,
+    "records": 256,
+    "cycles": 6446,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  },
+  {
+    "seed": 20261012,
+    "job": 2,
+    "ring_words": 257,
+    "records": 255,
+    "cycles": 6427,
+    "packets": 33,
+    "max_fifo": 3,
+    "status": "MATCH"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "status": "PASS_GEOMETRY",
+  "scope": "Actual filled inner-plane projection and return-via distance. Via antipads exempted within0.36mm of own launch; no3D EM result.",
+  "reference_plane_void_segments": [],
+  "TX_transitions": [
+    {
+      "net": "/TX_N",
+      "xy": [
+        67.175,
+        42.025
+      ],
+      "nearest_GND_via_center_mm": 0.6604922406811456,
+      "within_1mm": true
+    },
+    {
+      "net": "/TX_N",
+      "xy": [
+        60.675,
+        31.05
+      ],
+      "nearest_GND_via_center_mm": 0.8902246907382405,
+      "within_1mm": true
+    },
+    {
+      "net": "/TX_P",
+      "xy": [
+        61.325,
+        31.05
+      ],
+      "nearest_GND_via_center_mm": 0.8902246907382405,
+      "within_1mm": true
+    },
+    {
+      "net": "/TX_P",
+      "xy": [
+        67.825,
+        42.025
+      ],
+      "nearest_GND_via_center_mm": 0.6604922406811456,
+      "within_1mm": true
+    }
+  ],
+  "reference_plane_areas_mm2": {
+    "F.Cu": 4012.4188985548712,
+    "B.Cu": 4228.189011089179,
+    "In1.Cu": 6012.773108357095,
+    "In2.Cu": 6012.773108357095
+  },
+  "return_via_design_target_mm": 1.0
+}

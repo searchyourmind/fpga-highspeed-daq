@@ -1,0 +1,111 @@
+{
+  "mechanical": {
+    "status": "PASS_2D",
+    "board_mm": [
+      80,
+      78,
+      1.6
+    ],
+    "outline_mm": [
+      20,
+      20,
+      100,
+      98
+    ],
+    "card_nominal_mm": [
+      22,
+      42
+    ],
+    "card_bbox_mm": [
+      54.0,
+      48.25,
+      76.0,
+      90.25
+    ],
+    "tolerance_expansion_mm": 0.35,
+    "minimum_card_to_board_edge_mm": 7.400000000000006,
+    "other_footprints_in_card_envelope": [],
+    "mounting_centers_mm": {
+      "H1": [
+        24.0,
+        24.0
+      ],
+      "H4": [
+        96.0,
+        94.0
+      ],
+      "H3": [
+        24.0,
+        94.0
+      ],
+      "H2": [
+        96.0,
+        24.0
+      ],
+      "H5": [
+        65.0,
+        90.25
+      ]
+    },
+    "standoff": "2.48mm lower card plane REF from TE; 2.5mm support candidate. Final mating-height tolerance and actual SSD drawing still open. H5 is Wurth9774025243R SMT support at a candidate mating datum; library footprint includes a 3mm NPTH center clearance.",
+    "card_tip_from_TE_peg_mm": -1.75,
+    "card_end_and_notch_center_Y_mm": 90.25,
+    "height_envelope_above_carrier_mm": 6.5,
+    "height_scope": "Reserved envelope >=2.48mm card underside + up to3.65mm example double-sided module + tolerance. Includes no enclosure. Connector4.2mm max, header~8.4mm separately.",
+    "sources": {
+      "TE_drawing": "https://cdn.sparkfun.com/assets/9/c/e/b/6/MicroMod_M.2_Connector_Datasheet_TE_2199230-4.pdf",
+      "module_envelope": "https://globalamericaninc.com/wp-content/uploads/2023/04/2242-NVMe-with-DRAM-MLC-1.pdf"
+    },
+    "pi_HAT_compatible_claim": false
+  },
+  "si": {
+    "status": "PASS_GEOMETRY",
+    "scope": "Actual filled inner-plane projection and return-via distance. Via antipads exempted within0.36mm of own launch; no3D EM result.",
+    "reference_plane_void_segments": [],
+    "TX_transitions": [
+      {
+        "net": "/TX_N",
+        "xy": [
+          67.175,
+          42.025
+        ],
+        "nearest_GND_via_center_mm": 0.6604922406811456,
+        "within_1mm": true
+      },
+      {
+        "net": "/TX_N",
+        "xy": [
+          60.675,
+          31.05
+        ],
+        "nearest_GND_via_center_mm": 0.8902246907382405,
+        "within_1mm": true
+      },
+      {
+        "net": "/TX_P",
+        "xy": [
+          61.325,
+          31.05
+        ],
+        "nearest_GND_via_center_mm": 0.8902246907382405,
+        "within_1mm": true
+      },
+      {
+        "net": "/TX_P",
+        "xy": [
+          67.825,
+          42.025
+        ],
+        "nearest_GND_via_center_mm": 0.6604922406811456,
+        "within_1mm": true
+      }
+    ],
+    "reference_plane_areas_mm2": {
+      "F.Cu": 4012.4188985548712,
+      "B.Cu": 4228.189011089179,
+      "In1.Cu": 6012.773108357095,
+      "In2.Cu": 6012.773108357095
+    },
+    "return_via_design_target_mm": 1.0
+  }
+}

@@ -1,0 +1,9 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852763" />
+    <testcase name="basic_order" classname="test_stream_fifo" file="/work/tb/test_stream_fifo.py" lineno="59" time="0.0003528594970703125" sim_time_ns="52.0" ratio_time="147367.43783783785" />
+    <testcase name="full_then_resume" classname="test_stream_fifo" file="/work/tb/test_stream_fifo.py" lineno="75" time="0.00040221214294433594" sim_time_ns="102.0" ratio_time="253597.5151155898" />
+    <testcase name="random_backpressure" classname="test_stream_fifo" file="/work/tb/test_stream_fifo.py" lineno="98" time="0.006226778030395508" sim_time_ns="1717.0" ratio_time="275744.5329861776" />
+    <testcase name="reset_flushes_pending_words" classname="test_stream_fifo" file="/work/tb/test_stream_fifo.py" lineno="125" time="0.00015234947204589844" sim_time_ns="39.0" ratio_time="255990.38497652582" />
+  </testsuite>
+</testsuites>

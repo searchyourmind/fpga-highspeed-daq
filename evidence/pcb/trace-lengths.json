@@ -1,0 +1,16 @@
+{
+  "scope": "Actual CAD centerline lengths, excluding via/connector delay",
+  "length_mm": {
+    "CLK_N": 18.459531167507617,
+    "CLK_P": 18.459531167507617,
+    "RX_N": 17.838210823947975,
+    "RX_P": 17.838210823947975,
+    "TX_N": 19.10903322370527,
+    "TX_P": 19.10903322370527
+  },
+  "skew_mm": {
+    "CLK": 0.0,
+    "RX": 0.0,
+    "TX": 0.0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "commands": [
+    {
+      "label": "waveform",
+      "command": [
+        "env",
+        "WAVES=1",
+        "make",
+        "e2e"
+      ],
+      "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run2/checkout",
+      "environment": {
+        "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+      },
+      "start_UTC": "2026-10-13T00:51:35.683735+00:00",
+      "elapsed_s": 0.742,
+      "return_code": 0,
+      "log": "waveform.log"
+    },
+    {
+      "label": "assets",
+      "command": [
+        "make",
+        "release-assets"
+      ],
+      "cwd": "/Users/qizheng/Documents/Codex/2026-10-11/gen/fpga-highspeed-daq/build/portfolio-finalization/run2/checkout",
+      "environment": {
+        "DAQ_TOOLS_IMAGE": "fpga-daq-tools:release-audit"
+      },
+      "start_UTC": "2026-10-13T00:51:36.426793+00:00",
+      "elapsed_s": 1.452,
+      "return_code": 0,
+      "log": "assets.log"
+    }
+  ],
+  "color_label_correction_receipt": "asset-labels.json",
+  "scope": "Actual clean-run waveform/figure generation; later label/color correction separately recorded. Raw VCD hash is unchanged."
+}

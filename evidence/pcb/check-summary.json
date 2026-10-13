@@ -1,0 +1,10 @@
+{
+  "native_pin_contracts": "PASS",
+  "erc_violations": 0,
+  "drc_geometric_violations": 0,
+  "drc_unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "fabrication_released": false,
+  "cad_checks": "PASS",
+  "release_gate": "REVIEW_REQUIRED"
+}

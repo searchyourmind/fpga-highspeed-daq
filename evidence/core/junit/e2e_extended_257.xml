@@ -1,0 +1,9 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852778" />
+    <testcase name="packet_boundary_split" classname="test_e2e_extended" file="/work/tb/test_e2e_extended.py" lineno="18" time="0.006185054779052734" sim_time_ns="619.0" ratio_time="100079.95435972554" />
+    <testcase name="final_address_space_record" classname="test_e2e_extended" file="/work/tb/test_e2e_extended.py" lineno="27" time="0.0013275146484375" sim_time_ns="139.0" ratio_time="104706.94252873563" />
+    <testcase name="next_descriptor_before_previous_host_delivery" classname="test_e2e_extended" file="/work/tb/test_e2e_extended.py" lineno="33" time="0.14101719856262207" sim_time_ns="16689.0" ratio_time="118347.26664626549" />
+    <testcase name="large_ring_stress_and_repeated_jobs" classname="test_e2e_extended" file="/work/tb/test_e2e_extended.py" lineno="52" time="2.689546823501587" sim_time_ns="292282.0" ratio_time="108673.32646749422" />
+  </testsuite>
+</testsuites>

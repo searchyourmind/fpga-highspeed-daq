@@ -1,0 +1,307 @@
+{
+  "revision": "0.3",
+  "purchasing_authorized": false,
+  "components": [
+    {
+      "reference": "J1",
+      "value": "TE 1-1734839-6 (top contact)",
+      "footprint": "Connector_FFC-FPC:TE_1-1734839-6_1x16-1MP_P0.5mm_Horizontal",
+      "manufacturer": "TE Connectivity",
+      "mpn": "1-1734839-6",
+      "source": "https://www.te.com/en/product-1-1734839-6.html",
+      "selection_status": "LEGACY_HOLD",
+      "qualification_note": "Existing exact top-contact16pin0.5mm footprint retained. Manufacturer marks superseded. Molex5034801600 is an alternate candidate only, NOT drop-in; cable orientation and pad mapping require redesign/review."
+    },
+    {
+      "reference": "J2",
+      "value": "TE 1-2199230-4 M-key",
+      "footprint": "DAQ:TE_M2_M_1-2199230-4",
+      "manufacturer": "TE Connectivity",
+      "mpn": "1-2199230-4",
+      "source": "https://www.te.com/en/product-1-2199230-4.html",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "M-key,4.2mm body height. Available TE RevB3 drawing inspected; slot lower datum2.48mm REF. Current part-specific approval and mating card remain gates."
+    },
+    {
+      "reference": "J3",
+      "value": "External regulated 5V / 3A",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "manufacturer": "Samtec",
+      "mpn": "TSW-102-07-G-S",
+      "source": "https://www.samtec.com/products/tsw-102-07-g-s",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "2.54mm2pin0.635mm square post; actual cable/receptacle must be >=3A rated. Unkeyed, current-limited regulated5V only; not hot-plug/reverse protected."
+    },
+    {
+      "reference": "U1",
+      "value": "TPS62130ARGTR",
+      "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS62130ARGTR",
+      "source": "https://www.ti.com/lit/ds/symlink/tps62130.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "A variant required; 3A regulator, 125C recommended junction max. Actual TI A transient model included via fetch script."
+    },
+    {
+      "reference": "U2",
+      "value": "NC7SB3157P6X",
+      "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+      "manufacturer": "onsemi",
+      "mpn": "NC7SB3157P6X",
+      "source": "https://www.onsemi.com/pdf/datasheet/nc7sb3157-d.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "5V-powered analog switch; missing external supply requires complete sequence/IO review."
+    },
+    {
+      "reference": "Q1",
+      "value": "DMG1012T-7",
+      "footprint": "Package_TO_SOT_SMD:SOT-523",
+      "manufacturer": "Diodes Inc.",
+      "mpn": "DMG1012T-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG1012T.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "20V N-MOSFET,SOT523; same topology as official Pi reference. Not a complete missing-supply qualification."
+    },
+    {
+      "reference": "Q2",
+      "value": "DMG1012T-7",
+      "footprint": "Package_TO_SOT_SMD:SOT-523",
+      "manufacturer": "Diodes Inc.",
+      "mpn": "DMG1012T-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG1012T.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "20V N-MOSFET,SOT523; same topology as official Pi reference. Not a complete missing-supply qualification."
+    },
+    {
+      "reference": "Q3",
+      "value": "DMG1012T-7",
+      "footprint": "Package_TO_SOT_SMD:SOT-523",
+      "manufacturer": "Diodes Inc.",
+      "mpn": "DMG1012T-7",
+      "source": "https://www.diodes.com/datasheet/download/DMG1012T.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "20V N-MOSFET,SOT523; same topology as official Pi reference. Not a complete missing-supply qualification."
+    },
+    {
+      "reference": "J4",
+      "value": "Optional 32.768kHz input",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "manufacturer": "Samtec",
+      "mpn": "TSW-103-07-G-S",
+      "source": "https://www.samtec.com/products/tsw-103-07-g-s",
+      "selection_status": "DNP_DEFAULT",
+      "qualification_note": "Optional external3.3V CMOS32.768kHz input. Baseline restricts SSD to one not requiring host SUSCLK; no oscillator is fitted or claimed."
+    },
+    {
+      "reference": "H5",
+      "value": "Wurth 9774025243R / M2 / H2.5mm",
+      "footprint": "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H2.5mm_9774025243",
+      "manufacturer": "Wurth Elektronik",
+      "mpn": "9774025243R",
+      "source": "https://www.we-online.com/components/products/datasheet/9774025243R.pdf",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "M2 internal-thread SMT spacer,2.5mm height; actual KiCad library footprint. TE lower slot datum2.48mm REF implies nominal+0.02mm. Final height tolerance/SSD approval still required."
+    },
+    {
+      "reference": "L1",
+      "value": "2.2uH XAL4020-222MEC",
+      "footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+      "manufacturer": "Coilcraft",
+      "mpn": "XAL4020-222MEC",
+      "source": "https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "2.2uH +/-20%; DCR max38.7mOhm at25C; Isat typ5.6A at30% drop; Irms4A for20C rise. Fault/hot-bias qualification remains required; values are not guaranteed hot saturation limits."
+    },
+    {
+      "reference": "C1",
+      "value": "10uF 25V X7R",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "manufacturer": "TDK",
+      "mpn": "C3216X7R1E106K160AB",
+      "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1E106K160AB",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "10uF +/-10%,25V,X7R,1206. Analysis requires >=6uF each under bias/temp/aging; 12uF total used in SPICE. Vendor DC-bias curve export unavailable; this is an acceptance requirement, not measured data."
+    },
+    {
+      "reference": "C2",
+      "value": "10uF 25V X7R",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "manufacturer": "TDK",
+      "mpn": "C3216X7R1E106K160AB",
+      "source": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X7R1E106K160AB",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "10uF +/-10%,25V,X7R,1206. Analysis requires >=6uF each under bias/temp/aging; 12uF total used in SPICE. Vendor DC-bias curve export unavailable; this is an acceptance requirement, not measured data."
+    },
+    {
+      "reference": "C3",
+      "value": "22uF 10V X7R",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "manufacturer": "Murata",
+      "mpn": "GRM31CR71A226KE15L",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71A226KE15-01CA.pdf",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "22uF +/-10%,10V,X7R,1206. 16..52.8uF total effective screening; vendor DC-bias acceptance remains open. TI LC table considers +20/-50% around nominal; no claim that nominal equals effective."
+    },
+    {
+      "reference": "C4",
+      "value": "22uF 10V X7R",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "manufacturer": "Murata",
+      "mpn": "GRM31CR71A226KE15L",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CR71A226KE15-01CA.pdf",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "22uF +/-10%,10V,X7R,1206. 16..52.8uF total effective screening; vendor DC-bias acceptance remains open. TI LC table considers +20/-50% around nominal; no claim that nominal equals effective."
+    },
+    {
+      "reference": "C5",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "manufacturer": "Murata",
+      "mpn": "GRM155R71C104KA88D",
+      "source": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R71C104KA88%23",
+      "selection_status": "SELECTED",
+      "qualification_note": "100nF,+/-10%,16V,X7R,0402; local bypass."
+    },
+    {
+      "reference": "C6",
+      "value": "3.3nF soft start",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "manufacturer": "Murata",
+      "mpn": "GRM155R71H332KA01D",
+      "source": "https://www.ti.com/lit/ug/snvu180a/snvu180a.pdf",
+      "selection_status": "SELECTED_CONDITIONAL",
+      "qualification_note": "3.3nF,+/-10%,50V,X7R,0402; MPN confirmed in TI evaluation-board BOM. Allow tolerance/temp/aging in soft-start estimate; lifecycle confirmation remains required."
+    },
+    {
+      "reference": "C7",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "manufacturer": "Murata",
+      "mpn": "GRM155R71C104KA88D",
+      "source": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R71C104KA88%23",
+      "selection_status": "SELECTED",
+      "qualification_note": "100nF,+/-10%,16V,X7R,0402; local bypass."
+    },
+    {
+      "reference": "C8",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "manufacturer": "Murata",
+      "mpn": "GRM155R71C104KA88D",
+      "source": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM155R71C104KA88%23",
+      "selection_status": "SELECTED",
+      "qualification_note": "100nF,+/-10%,16V,X7R,0402; local bypass."
+    },
+    {
+      "reference": "R1",
+      "value": "31.6k 0.1% 25ppm",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Vishay",
+      "mpn": "TNPW040231K6BEED",
+      "source": "https://www.vishay.com/docs/28758/tnpw.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "0.1%,25ppm/K,0402. Feedback ratio3.16 compensates trace drop; divider impedance reduced approximately10x to reduce worst-case FB leakage error."
+    },
+    {
+      "reference": "R2",
+      "value": "10k 0.1% 25ppm",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Vishay",
+      "mpn": "TNPW040210K0BEED",
+      "source": "https://www.vishay.com/docs/28758/tnpw.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "0.1%,25ppm/K,0402. Feedback ratio3.16 compensates trace drop; divider impedance reduced approximately10x to reduce worst-case FB leakage error."
+    },
+    {
+      "reference": "R3",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-07100KL",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R4",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-0710KL",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R5",
+      "value": "3.6k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-073K6L",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R6",
+      "value": "6.8k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-076K8L",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R7",
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-0733RL",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R8",
+      "value": "2.2k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-072K2L",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R9",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-0710KL",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R10",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-0710KL",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    },
+    {
+      "reference": "R11",
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "manufacturer": "Yageo",
+      "mpn": "RC0402FR-0733RL",
+      "source": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf",
+      "selection_status": "SELECTED",
+      "qualification_note": "1%,0402,1/16W minimum. Check full resistance code and current manufacturer approval sheet before purchase; no ordering performed."
+    }
+  ],
+  "gate": "CONDITIONAL_ENGINEERING_BOM_NOT_PURCHASE_RELEASE"
+}

@@ -1,0 +1,193 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `synthesis/scripts/structural-timing.ys' --
+
+1. Executing JSON frontend.
+Importing module stream_to_mem from JSON tree.
+Importing module stream_processor from JSON tree.
+Importing module sensor_source from JSON tree.
+Importing module daq_top from JSON tree.
+Importing module $paramod\tlp_packetizer\MAX_WORDS=s32'00000000000000000000000000000100 from JSON tree.
+Importing module $paramod\streaming_top\FIFO_DEPTH=s32'00000000000000000000000000001000 from JSON tree.
+Importing module $paramod\dma_writer\RING_WORDS=s32'00000000000000000000000000100000 from JSON tree.
+Importing module $paramod\dma_reader\RING_WORDS=s32'00000000000000000000000000100000 from JSON tree.
+Importing module $paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\dma_descriptor from JSON tree.
+Importing module $paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\stream_fifo from JSON tree.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \daq_top
+Used module:     $paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\dma_descriptor
+Used module:     $paramod\tlp_packetizer\MAX_WORDS=s32'00000000000000000000000000000100
+Used module:     $paramod\dma_reader\RING_WORDS=s32'00000000000000000000000000100000
+Used module:     $paramod\streaming_top\FIFO_DEPTH=s32'00000000000000000000000000001000
+Used module:         $paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\stream_fifo
+Used module:         \stream_to_mem
+Used module:         \stream_processor
+Used module:         \sensor_source
+Used module:     $paramod\dma_writer\RING_WORDS=s32'00000000000000000000000000100000
+
+2.2. Analyzing design hierarchy..
+Top module:  \daq_top
+Used module:     $paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\dma_descriptor
+Used module:     $paramod\tlp_packetizer\MAX_WORDS=s32'00000000000000000000000000000100
+Used module:     $paramod\dma_reader\RING_WORDS=s32'00000000000000000000000000100000
+Used module:     $paramod\streaming_top\FIFO_DEPTH=s32'00000000000000000000000000001000
+Used module:         $paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\stream_fifo
+Used module:         \stream_to_mem
+Used module:         \stream_processor
+Used module:         \sensor_source
+Used module:     $paramod\dma_writer\RING_WORDS=s32'00000000000000000000000000100000
+Removed 0 unused modules.
+
+3. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\stream_fifo.
+Deleting now unused module $paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\dma_descriptor.
+Deleting now unused module $paramod\dma_reader\RING_WORDS=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\dma_writer\RING_WORDS=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\streaming_top\FIFO_DEPTH=s32'00000000000000000000000000001000.
+Deleting now unused module $paramod\tlp_packetizer\MAX_WORDS=s32'00000000000000000000000000000100.
+Deleting now unused module sensor_source.
+Deleting now unused module stream_processor.
+Deleting now unused module stream_to_mem.
+<suppressed ~9 debug messages>
+Removed 4 unused cells and 8 unused wires.
+
+4. Executing CHECK pass (checking for obvious problems).
+Checking module daq_top...
+Found and reported 0 problems.
+
+5. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module daq_top.
+Found and expected 0 SCCs.
+
+6. Executing LTP pass (find longest path).
+
+Longest topological path in daq_top (length=42):
+    0: \stream_i.source_i.m_data [20]
+    1: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3967.t1 [5] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$5816)
+    2: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3967.t3 [5] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$5784)
+    3: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3967.X [5] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$5752)
+    4: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3973.t1 [6] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$5977)
+    5: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3973.t3 [6] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$5945)
+    6: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3973.X [6] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$5913)
+    7: $flatten\stream_i.\source_i.$auto$maccmap.cc:114:fulladd$3976.Y [7] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6058)
+    8: $flatten\stream_i.\source_i.$auto$maccmap.cc:240:synth$3977.X [7] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6091)
+    9: $flatten\stream_i.\source_i.$techmap$auto$maccmap.cc:240:synth$3977.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$4192_Y (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6166)
+   10: $flatten\stream_i.\source_i.$techmap$auto$maccmap.cc:240:synth$3977.lcu.$and$/usr/bin/../share/yosys/techmap.v:240$4208_Y (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6158)
+   11: $flatten\stream_i.\source_i.$auto$maccmap.cc:240:synth$3977.CO [7] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6196)
+   12: $flatten\stream_i.\source_i.$techmap$auto$maccmap.cc:240:synth$3977.lcu.$and$/usr/bin/../share/yosys/techmap.v:248$4247_Y (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6182)
+   13: $flatten\stream_i.\source_i.$auto$maccmap.cc:240:synth$3977.CO [8] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6209)
+   14: \stream_i.processor_i.s_data [9] (via $flatten\stream_i.\source_i.$auto$simplemap.cc:75:simplemap_bitop$6076)
+   15: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2290.B [12] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$2520)
+   16: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2290.t1 [12] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3463)
+   17: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2290.Y [12] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3535)
+   18: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2293.t3 [12] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3175)
+   19: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2293.X [12] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3223)
+   20: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2299.t1 [13] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3008)
+   21: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2299.t3 [13] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3056)
+   22: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2299.X [13] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3104)
+   23: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2302.t1 [14] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$2889)
+   24: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2302.t3 [14] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$2937)
+   25: $flatten\stream_i.\processor_i.$auto$maccmap.cc:114:fulladd$2302.X [14] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$2985)
+   26: $flatten\stream_i.\processor_i.$auto$maccmap.cc:240:synth$2303.X [15] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$2866)
+   27: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$2703_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3600)
+   28: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$2727_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3607)
+   29: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$2739_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3610)
+   30: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:240$2743_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3593)
+   31: $flatten\stream_i.\processor_i.$auto$maccmap.cc:240:synth$2303.CO [15] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3653)
+   32: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:248$2752_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3614)
+   33: $flatten\stream_i.\processor_i.$auto$maccmap.cc:240:synth$2303.CO [19] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3656)
+   34: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:248$2767_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3619)
+   35: $flatten\stream_i.\processor_i.$auto$maccmap.cc:240:synth$2303.CO [21] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3661)
+   36: $flatten\stream_i.\processor_i.$techmap$auto$maccmap.cc:240:synth$2303.lcu.$and$/usr/bin/../share/yosys/techmap.v:248$2800_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3630)
+   37: $flatten\stream_i.\processor_i.$auto$maccmap.cc:240:synth$2303.CO [22] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$3672)
+   38: \stream_i.processor_i.product [23] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:75:simplemap_bitop$2627)
+   39: $flatten\stream_i.\processor_i.$auto$simplemap.cc:117:simplemap_reduce$2309 [3] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:126:simplemap_reduce$2313)
+   40: $flatten\stream_i.\processor_i.$auto$simplemap.cc:117:simplemap_reduce$2314 [1] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:126:simplemap_reduce$2316)
+   41: $flatten\stream_i.\processor_i.$reduce_or$rtl/stream_processor.sv:20$154_Y (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:126:simplemap_reduce$2318)
+   42: $flatten\stream_i.\processor_i.$ternary$rtl/stream_processor.sv:20$155_Y [15] (via $flatten\stream_i.\processor_i.$auto$simplemap.cc:267:simplemap_mux$2334)
+   ff: \stream_i.processor_i.m_data [15] (via $flatten\stream_i.\processor_i.$auto$ff.cc:266:slice$2352)
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\daq_top": {
+         "num_wires":         1760,
+         "num_wire_bits":     9758,
+         "num_pub_wires":     242,
+         "num_pub_wire_bits": 3958,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6433,
+         "num_cells_by_type": {
+            "$_AND_": 1695,
+            "$_DFFE_PP_": 512,
+            "$_DFF_P_": 10,
+            "$_MUX_": 1146,
+            "$_NOT_": 439,
+            "$_OR_": 814,
+            "$_SDFFE_PN0P_": 739,
+            "$_SDFFE_PN1P_": 2,
+            "$_SDFFE_PP0P_": 68,
+            "$_SDFF_PN0_": 114,
+            "$_SDFF_PP0_": 2,
+            "$_XOR_": 892
+         }
+      }
+   },
+      "design": {
+         "num_wires":         1760,
+         "num_wire_bits":     9758,
+         "num_pub_wires":     242,
+         "num_pub_wire_bits": 3958,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6433,
+         "num_cells_by_type": {
+            "$_AND_": 1695,
+            "$_DFFE_PP_": 512,
+            "$_DFF_P_": 10,
+            "$_MUX_": 1146,
+            "$_NOT_": 439,
+            "$_OR_": 814,
+            "$_SDFFE_PN0P_": 739,
+            "$_SDFFE_PN1P_": 2,
+            "$_SDFFE_PP0P_": 68,
+            "$_SDFF_PN0_": 114,
+            "$_SDFF_PP0_": 2,
+            "$_XOR_": 892
+         }
+      }
+}
+
+7. Executing JSON backend.
+
+End of script. Logfile hash: 2ff3b9afe3, CPU: user 0.23s system 0.01s, MEM: 59.17 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 26% 2x read_json (0 sec), 20% 1x flatten (0 sec), ...

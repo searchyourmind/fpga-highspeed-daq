@@ -1,0 +1,59 @@
+{
+  "status": "PASS_2D",
+  "board_mm": [
+    80,
+    78,
+    1.6
+  ],
+  "outline_mm": [
+    20,
+    20,
+    100,
+    98
+  ],
+  "card_nominal_mm": [
+    22,
+    42
+  ],
+  "card_bbox_mm": [
+    54.0,
+    48.25,
+    76.0,
+    90.25
+  ],
+  "tolerance_expansion_mm": 0.35,
+  "minimum_card_to_board_edge_mm": 7.400000000000006,
+  "other_footprints_in_card_envelope": [],
+  "mounting_centers_mm": {
+    "H4": [
+      96.0,
+      94.0
+    ],
+    "H1": [
+      24.0,
+      24.0
+    ],
+    "H2": [
+      96.0,
+      24.0
+    ],
+    "H5": [
+      65.0,
+      90.25
+    ],
+    "H3": [
+      24.0,
+      94.0
+    ]
+  },
+  "standoff": "2.48mm lower card plane REF from TE; 2.5mm support candidate. Final mating-height tolerance and actual SSD drawing still open. H5 is Wurth9774025243R SMT support at a candidate mating datum; library footprint includes a 3mm NPTH center clearance.",
+  "card_tip_from_TE_peg_mm": -1.75,
+  "card_end_and_notch_center_Y_mm": 90.25,
+  "height_envelope_above_carrier_mm": 6.5,
+  "height_scope": "Reserved envelope >=2.48mm card underside + up to3.65mm example double-sided module + tolerance. Includes no enclosure. Connector4.2mm max, header~8.4mm separately.",
+  "sources": {
+    "TE_drawing": "https://cdn.sparkfun.com/assets/9/c/e/b/6/MicroMod_M.2_Connector_Datasheet_TE_2199230-4.pdf",
+    "module_envelope": "https://globalamericaninc.com/wp-content/uploads/2023/04/2242-NVMe-with-DRAM-MLC-1.pdf"
+  },
+  "pi_HAT_compatible_claim": false
+}

@@ -1,0 +1,29 @@
+{
+  "production_tests": 63,
+  "pytest": 39,
+  "cocotb": 24,
+  "failures": 0,
+  "skips": 0,
+  "matrix_scenarios": 33,
+  "scenario_status": "MATCH",
+  "junit_counts": {
+    "counter.xml": 1,
+    "daq_top.xml": 6,
+    "e2e_extended_257.xml": 4,
+    "e2e_extended_32.xml": 4,
+    "fifo_depth_1.xml": 1,
+    "fifo_depth_16.xml": 1,
+    "fifo_depth_3.xml": 1,
+    "fifo_depth_8.xml": 1,
+    "models.xml": 39,
+    "stream_fifo.xml": 4,
+    "streaming_top.xml": 1
+  },
+  "generic_flip_flops": 1447,
+  "topological_path_cells": 42,
+  "device_STA": "NOT_EXECUTED",
+  "preserved_original_evidence_files": 124,
+  "production_source_unchanged": true,
+  "markdown_links": "PASS",
+  "source": "generated outputs"
+}

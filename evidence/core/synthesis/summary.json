@@ -1,0 +1,15 @@
+{
+  "scope": "Generic synthesis only; no target, timing closure, LUT or Fmax claim",
+  "cells_by_module": {
+    "$paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\\stream_fifo": 1048,
+    "$paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\\dma_descriptor": 888,
+    "$paramod\\dma_reader\\RING_WORDS=s32'00000000000000000000000000100000": 529,
+    "$paramod\\dma_writer\\RING_WORDS=s32'00000000000000000000000000100000": 447,
+    "$paramod\\streaming_top\\FIFO_DEPTH=s32'00000000000000000000000000001000": 12,
+    "$paramod\\tlp_packetizer\\MAX_WORDS=s32'00000000000000000000000000000100": 1568,
+    "daq_top": 148,
+    "sensor_source": 915,
+    "stream_processor": 823,
+    "stream_to_mem": 68
+  }
+}

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852765" />
+    <testcase name="depth_wrap_stability_and_concurrency" classname="test_fifo_extended" file="/work/tb/test_fifo_extended.py" lineno="7" time="0.05583977699279785" sim_time_ns="15639.0" ratio_time="280069.1700831309" />
+  </testsuite>
+</testsuites>

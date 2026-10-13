@@ -1,0 +1,5 @@
+{
+  "known_failed_test_returns_nonzero": true,
+  "exit_code": 1,
+  "fixture": "results/system-audit/boundary-before-fix.xml"
+}

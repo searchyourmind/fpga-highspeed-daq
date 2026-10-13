@@ -1,0 +1,64 @@
+{
+  "status": "PASS_MODEL_CHECKS",
+  "model": "TI TPS62130A SLVM893A unmodified",
+  "scope": "5V input, nominal component values, 0.5A resistive base plus1.5A pulse. Output at regulator before PCB/contact drops. Nominal25C model only. No efficiency or hardware compliance claim.",
+  "raw_points": 6605420,
+  "end_s": 0.00305,
+  "source_sha256": "7ef5dfcf1e73e6cacd9095fb26c735a187fbf0a59c820fe0aed2e3ccd474fef9",
+  "checks": {
+    "duration": true,
+    "pre_step_in_5pct": true,
+    "step_in_5pct_at_regulator": true,
+    "steady_PG_high": true,
+    "disabled_PG_low": true,
+    "peak_current_below_room_min_limit": true
+  },
+  "windows": {
+    "pre_step": {
+      "start_s": 0.00195,
+      "end_s": 0.00205,
+      "points": 268843,
+      "min_V": 3.32616055,
+      "max_V": 3.32874772,
+      "time_weighted_mean_V": 3.3272702865381008,
+      "PG_min_V": 4.99833389,
+      "PG_max_V": 4.99833389,
+      "inductor_peak_A": 0.627641659
+    },
+    "load_step": {
+      "start_s": 0.00209,
+      "end_s": 0.0025,
+      "points": 1007049,
+      "min_V": 3.29294385,
+      "max_V": 3.36212748,
+      "time_weighted_mean_V": 3.3272840631900045,
+      "PG_min_V": 4.99833389,
+      "PG_max_V": 4.99833389,
+      "inductor_peak_A": 2.19409619
+    },
+    "post_step": {
+      "start_s": 0.0026,
+      "end_s": 0.00275,
+      "points": 404375,
+      "min_V": 3.32614876,
+      "max_V": 3.32873022,
+      "time_weighted_mean_V": 3.3272604913101302,
+      "PG_min_V": 4.99833389,
+      "PG_max_V": 4.99833389,
+      "inductor_peak_A": 0.627772751
+    },
+    "disabled": {
+      "start_s": 0.00285,
+      "end_s": 0.00305,
+      "points": 2001,
+      "min_V": 0.635644752,
+      "max_V": 2.48514496,
+      "time_weighted_mean_V": 1.3564886130717035,
+      "PG_min_V": 0.0738916256,
+      "PG_max_V": 0.0738916256,
+      "inductor_peak_A": 5.85116244e-08
+    }
+  },
+  "overall_inductor_peak_A": 2.19409619,
+  "first_3V135_s": 0.00166554273
+}

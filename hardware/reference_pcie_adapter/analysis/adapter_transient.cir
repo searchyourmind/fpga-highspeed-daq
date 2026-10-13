@@ -1,0 +1,27 @@
+Adapter TPS62130A official TI SLVM893A model; 5V / 3.328V / 2A
+.include ../../power_tree/vendor/tps62130a_trans.lib
+Vinput vin 0 PWL(0 0 20u 5)
+Ven en 0 PWL(0 0 100u 0 110u 3.3 2.8m 3.3 2.81m 0)
+* Order exactly as TI subcircuit, distinct from non-A model.
+Xreg 0 vin 0 en 0 fb 0 pg 0 0 vin vin ss sw sw sw out TPS62130A_TRANS
+Css ss 0 3.3n
+Rpg vin pg 10k
+Cin vin 0 12u
+L1 sw lx 2.2u
+Rdcr lx out 0.050
+Cout out cesr 22u
+Resr cesr 0 0.01
+Rtop out fb 31.6k
+Rbottom fb 0 10k
+Rload out 0 6.656
+Istep out 0 PULSE(0 1.5 2.1m 10u 10u 0.3m 10m)
+.options method=gear reltol=0.003
+.save v(out) v(pg) i(L1) v(en)
+.control
+set wr_singlescale
+set wr_vecnames
+tran 100n 3.05m 0 100n
+wrdata ../../../build/review-r03/adapter-transient.txt v(out) v(pg) i(L1) v(en)
+quit
+.endc
+.end

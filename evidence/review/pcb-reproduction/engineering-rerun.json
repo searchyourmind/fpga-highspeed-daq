@@ -1,0 +1,256 @@
+[
+  {
+    "stage": "cad",
+    "command": [
+      "make",
+      "pcb"
+    ],
+    "exit_code": 0,
+    "seconds": 5.5969462394714355,
+    "log": "results/simulation_logs/engineering-rerun-cad.log"
+  },
+  {
+    "stage": "views",
+    "command": [
+      "./tools/run-eda",
+      "sh",
+      "tools/pcb-views.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 1.5103960037231445,
+    "log": "results/simulation_logs/engineering-rerun-views.log"
+  },
+  {
+    "stage": "model-fetch",
+    "command": [
+      "./tools/run",
+      "python",
+      "hardware/power_tree/fetch_models.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.968674898147583,
+    "log": "results/simulation_logs/engineering-rerun-model-fetch.log"
+  },
+  {
+    "stage": "export_geometry",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/export_geometry.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.024256706237793,
+    "log": "results/simulation_logs/engineering-rerun-export_geometry.log"
+  },
+  {
+    "stage": "component_selection",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/component_selection.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.32651805877685547,
+    "log": "results/simulation_logs/engineering-rerun-component_selection.log"
+  },
+  {
+    "stage": "dc_network",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/dc_network.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.8048210144042969,
+    "log": "results/simulation_logs/engineering-rerun-dc_network.log"
+  },
+  {
+    "stage": "dc_analytic_tests",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/dc_analytic_tests.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.5804920196533203,
+    "log": "results/simulation_logs/engineering-rerun-dc_analytic_tests.log"
+  },
+  {
+    "stage": "geometry_checks",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/geometry_checks.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.1169569492340088,
+    "log": "results/simulation_logs/engineering-rerun-geometry_checks.log"
+  },
+  {
+    "stage": "field_solver",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/field_solver.py"
+    ],
+    "exit_code": 0,
+    "seconds": 16.265558004379272,
+    "log": "results/simulation_logs/engineering-rerun-field_solver.log"
+  },
+  {
+    "stage": "process_window",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/process_window.py"
+    ],
+    "exit_code": 0,
+    "seconds": 3.6002421379089355,
+    "log": "results/simulation_logs/engineering-rerun-process_window.log"
+  },
+  {
+    "stage": "si_feasibility",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/si_feasibility.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.4437150955200195,
+    "log": "results/simulation_logs/engineering-rerun-si_feasibility.log"
+  },
+  {
+    "stage": "thermal",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/thermal.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.96431303024292,
+    "log": "results/simulation_logs/engineering-rerun-thermal.log"
+  },
+  {
+    "stage": "thermal_exit_requirement",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/thermal_exit_requirement.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.4421112537384033,
+    "log": "results/simulation_logs/engineering-rerun-thermal_exit_requirement.log"
+  },
+  {
+    "stage": "power-corners",
+    "command": [
+      "./tools/run",
+      "python",
+      "hardware/reference_pcie_adapter/analysis/power_corners.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.7817792892456055,
+    "log": "results/simulation_logs/engineering-rerun-power-corners.log"
+  },
+  {
+    "stage": "A-transient",
+    "command": [
+      "./tools/run",
+      "bash",
+      "-c",
+      "cd hardware/reference_pcie_adapter/analysis/; timeout 1800 ngspice -b adapter_transient.cir"
+    ],
+    "exit_code": 0,
+    "seconds": 1329.5422713756561,
+    "log": "results/simulation_logs/engineering-rerun-A-transient.log"
+  },
+  {
+    "stage": "transient-evidence",
+    "command": [
+      "./tools/run",
+      "python",
+      "hardware/reference_pcie_adapter/analysis/transient_evidence.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.270289897918701,
+    "log": "results/simulation_logs/engineering-rerun-transient-evidence.log"
+  },
+  {
+    "stage": "loaded-corner",
+    "command": [
+      "./tools/run",
+      "bash",
+      "-c",
+      "cd hardware/reference_pcie_adapter/analysis/; timeout 1800 ngspice -b adapter_loaded_corner.cir"
+    ],
+    "exit_code": 0,
+    "seconds": 584.1815390586853,
+    "log": "results/simulation_logs/engineering-rerun-loaded-corner.log"
+  },
+  {
+    "stage": "loaded-evidence",
+    "command": [
+      "./tools/run",
+      "python",
+      "hardware/reference_pcie_adapter/analysis/loaded_transient_evidence.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.6720449924468994,
+    "log": "results/simulation_logs/engineering-rerun-loaded-evidence.log"
+  },
+  {
+    "stage": "voltage-feasibility",
+    "command": [
+      "./tools/run",
+      "python",
+      "hardware/reference_pcie_adapter/analysis/voltage_feasibility.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.1600489616394043,
+    "log": "results/simulation_logs/engineering-rerun-voltage-feasibility.log"
+  },
+  {
+    "stage": "margin-audit",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/review_margins.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.14125275611877441,
+    "log": "results/simulation_logs/engineering-rerun-margin-audit.log"
+  },
+  {
+    "stage": "evidence-check",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/check_evidence.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.1507248878479004,
+    "log": "results/simulation_logs/engineering-rerun-evidence-check.log"
+  },
+  {
+    "stage": "review-Markdown",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/write_review.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.35328006744384766,
+    "log": "results/simulation_logs/engineering-resume-review-Markdown.log"
+  },
+  {
+    "stage": "review-PDF",
+    "command": [
+      "./tools/run-analysis",
+      "python3",
+      "hardware/reference_pcie_adapter/analysis/report.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.3824732303619385,
+    "log": "results/simulation_logs/engineering-resume-review-PDF.log"
+  }
+]

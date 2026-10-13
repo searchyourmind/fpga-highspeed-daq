@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/work/hardware/reference_pcie_adapter/analysis/write_review.py", line 5, in <module>
+    p=H/'ENGINEERING_REVIEW.md';old=p.read_text();references=old[old.index('## Primary references'):old.index('## Reproduction')]
+                                                                                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+ValueError: substring not found

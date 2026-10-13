@@ -1,0 +1,2 @@
+./tools/run python tools/release_assets.py
+Architecture, 33-scenario benchmark and real VCD excerpt generated

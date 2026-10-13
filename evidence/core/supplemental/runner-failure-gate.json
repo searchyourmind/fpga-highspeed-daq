@@ -1,0 +1,6 @@
+{
+  "actual_cocotb_failure_returns_nonzero": true,
+  "exit_code": 1,
+  "intentional_test": "temporary fixture: deliberate_failure",
+  "scope": "Generated temporary fixture, removed afterward. Excluded from passing production test counts."
+}

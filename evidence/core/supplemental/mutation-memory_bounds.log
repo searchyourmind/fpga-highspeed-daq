@@ -1,0 +1,22 @@
+.....F............................                                       [100%]
+=================================== FAILURES ===================================
+________________ test_memory_bad_request_is_atomic[120-2-data2] ________________
+
+address = 120, length = 2, data = (1, 2)
+
+    @pytest.mark.parametrize('address,length,data',[(-8,1,(1,)),(1,1,(1,)),(120,2,(1,2)),(0,0,()),(0,9,tuple(range(9))),(0,2,(1,)),(0,1,(-1,))])
+    def test_memory_bad_request_is_atomic(address,length,data):
+        m=Memory(capacity=128,refresh_period=0,refresh_cycles=0)
+        before=m.words.copy()
+        m.accept(0,True,address,data,length)
+>       assert m.consume(3).error and m.words==before
+E       assert (False)
+E        +  where False = Response(data=(), error=False, due=3).error
+E        +    where Response(data=(), error=False, due=3) = consume(3)
+E        +      where consume = <sim.ddr_behavioral.memory.Memory object at 0xffff87e4da90>.consume
+
+tests/test_models.py:25: AssertionError
+---------------- generated xml file: /work/results/mutation.xml ----------------
+=========================== short test summary info ============================
+FAILED tests/test_models.py::test_memory_bad_request_is_atomic[120-2-data2]
+1 failed, 33 passed in 0.04s

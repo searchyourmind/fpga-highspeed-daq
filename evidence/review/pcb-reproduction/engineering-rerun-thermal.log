@@ -1,0 +1,24 @@
+{
+  "status": "PASS_NUMERICS",
+  "mesh_last_delta_T_C": 0.27409625800274284,
+  "worst": {
+    "candidate_sink_total_K_W": null,
+    "mesh_mm": 1.0,
+    "ambient_C": 60.0,
+    "h_each_side_W_m2K": 5.0,
+    "inner_plane_coverage_factor": 0.5,
+    "assumed_regulator_loss_W": 1.0,
+    "assumed_inductor_loss_W": 0.25,
+    "assumed_SSD_heat_into_carrier_W": 1.65,
+    "assumed_copper_loss_W": 0.25,
+    "SSD_region_board_max_C": 124.71702292395439,
+    "feedback_region_board_max_C": 127.85344283076323,
+    "pcb_hotspot_C": 151.92228520745945,
+    "estimated_regulator_junction_C": 159.38109224371505,
+    "regulator_limit_C": 125,
+    "within_125C": false,
+    "energy_balance_relative_error": 6.509237593377293e-13,
+    "via_to_nearest_plane_K_W": 2.5681820362555836
+  },
+  "conditional_40C_ambient_cases_pass": false
+}

@@ -1,0 +1,227 @@
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "$paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\\stream_fifo": {
+         "num_wires":         83,
+         "num_wire_bits":     1208,
+         "num_pub_wires":     22,
+         "num_pub_wire_bits": 662,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1048,
+         "num_cells_by_type": {
+            "$_AND_": 32,
+            "$_DFFE_PP_": 512,
+            "$_MUX_": 457,
+            "$_NOT_": 15,
+            "$_OR_": 9,
+            "$_SDFFE_PN0P_": 10,
+            "$_SDFF_PN0_": 3,
+            "$_XOR_": 10
+         }
+      },
+      "$paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\\dma_descriptor": {
+         "num_wires":         386,
+         "num_wire_bits":     1247,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 325,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         888,
+         "num_cells_by_type": {
+            "$_AND_": 328,
+            "$_DFF_P_": 4,
+            "$_MUX_": 9,
+            "$_NOT_": 166,
+            "$_OR_": 135,
+            "$_SDFFE_PN0P_": 147,
+            "$_XOR_": 99
+         }
+      },
+      "$paramod\\dma_reader\\RING_WORDS=s32'00000000000000000000000000100000": {
+         "num_wires":         194,
+         "num_wire_bits":     718,
+         "num_pub_wires":     24,
+         "num_pub_wire_bits": 303,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         529,
+         "num_cells_by_type": {
+            "$_AND_": 147,
+            "$_MUX_": 53,
+            "$_NOT_": 30,
+            "$_OR_": 92,
+            "$_SDFFE_PN0P_": 128,
+            "$_SDFFE_PP0P_": 3,
+            "$_SDFF_PN0_": 1,
+            "$_SDFF_PP0_": 1,
+            "$_XOR_": 74
+         }
+      },
+      "$paramod\\dma_writer\\RING_WORDS=s32'00000000000000000000000000100000": {
+         "num_wires":         178,
+         "num_wire_bits":     702,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 302,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         447,
+         "num_cells_by_type": {
+            "$_AND_": 140,
+            "$_MUX_": 49,
+            "$_NOT_": 27,
+            "$_OR_": 89,
+            "$_SDFFE_PN0P_": 64,
+            "$_SDFFE_PP0P_": 2,
+            "$_SDFF_PN0_": 1,
+            "$_SDFF_PP0_": 1,
+            "$_XOR_": 74
+         }
+      },
+      "$paramod\\streaming_top\\FIFO_DEPTH=s32'00000000000000000000000000001000": {
+         "num_wires":         20,
+         "num_wire_bits":     335,
+         "num_pub_wires":     20,
+         "num_pub_wire_bits": 335,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         12,
+         "num_cells_by_type": {
+            "$_SDFFE_PN0P_": 8,
+            "$paramod$c7c66004a70ac741ac42ce0b8e79a34d8fe84b1c\\stream_fifo": 1,
+            "sensor_source": 1,
+            "stream_processor": 1,
+            "stream_to_mem": 1
+         }
+      },
+      "$paramod\\tlp_packetizer\\MAX_WORDS=s32'00000000000000000000000000000100": {
+         "num_wires":         359,
+         "num_wire_bits":     1954,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 523,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1568,
+         "num_cells_by_type": {
+            "$_AND_": 352,
+            "$_MUX_": 496,
+            "$_NOT_": 119,
+            "$_OR_": 139,
+            "$_SDFFE_PN0P_": 180,
+            "$_SDFF_PN0_": 109,
+            "$_XOR_": 173
+         }
+      },
+      "\\daq_top": {
+         "num_wires":         137,
+         "num_wire_bits":     1056,
+         "num_pub_wires":     67,
+         "num_pub_wire_bits": 978,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         148,
+         "num_cells_by_type": {
+            "$_AND_": 26,
+            "$_DFF_P_": 6,
+            "$_MUX_": 34,
+            "$_NOT_": 22,
+            "$_OR_": 30,
+            "$_SDFFE_PN0P_": 24,
+            "$_SDFFE_PN1P_": 1,
+            "$paramod$f911bb9432bdd6a131ee31596b85da70c1cb09db\\dma_descriptor": 1,
+            "$paramod\\dma_reader\\RING_WORDS=s32'00000000000000000000000000100000": 1,
+            "$paramod\\dma_writer\\RING_WORDS=s32'00000000000000000000000000100000": 1,
+            "$paramod\\streaming_top\\FIFO_DEPTH=s32'00000000000000000000000000001000": 1,
+            "$paramod\\tlp_packetizer\\MAX_WORDS=s32'00000000000000000000000000000100": 1
+         }
+      },
+      "\\sensor_source": {
+         "num_wires":         280,
+         "num_wire_bits":     1174,
+         "num_pub_wires":     16,
+         "num_pub_wire_bits": 231,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         915,
+         "num_cells_by_type": {
+            "$_AND_": 284,
+            "$_MUX_": 33,
+            "$_NOT_": 59,
+            "$_OR_": 196,
+            "$_SDFFE_PN0P_": 48,
+            "$_SDFFE_PN1P_": 1,
+            "$_SDFFE_PP0P_": 63,
+            "$_SDFF_PN0_": 1,
+            "$_XOR_": 230
+         }
+      },
+      "\\stream_processor": {
+         "num_wires":         118,
+         "num_wire_bits":     1236,
+         "num_pub_wires":     10,
+         "num_pub_wire_bits": 166,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         823,
+         "num_cells_by_type": {
+            "$_AND_": 386,
+            "$_MUX_": 16,
+            "$_NOT_": 1,
+            "$_OR_": 123,
+            "$_SDFFE_PN0P_": 65,
+            "$_XOR_": 232
+         }
+      },
+      "\\stream_to_mem": {
+         "num_wires":         13,
+         "num_wire_bits":     136,
+         "num_pub_wires":     11,
+         "num_pub_wire_bits": 134,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         68,
+         "num_cells_by_type": {
+            "$_AND_": 1,
+            "$_NOT_": 1,
+            "$_OR_": 1,
+            "$_SDFFE_PN0P_": 65
+         }
+      }
+   },
+      "design": {
+         "num_wires":         1768,
+         "num_wire_bits":     9766,
+         "num_pub_wires":     243,
+         "num_pub_wire_bits": 3959,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6437,
+         "num_cells_by_type": {
+            "$_AND_": 1696,
+            "$_DFFE_PP_": 512,
+            "$_DFF_P_": 10,
+            "$_MUX_": 1147,
+            "$_NOT_": 440,
+            "$_OR_": 814,
+            "$_SDFFE_PN0P_": 739,
+            "$_SDFFE_PN1P_": 2,
+            "$_SDFFE_PP0P_": 68,
+            "$_SDFF_PN0_": 115,
+            "$_SDFF_PP0_": 2,
+            "$_XOR_": 892
+         }
+      }
+}
+

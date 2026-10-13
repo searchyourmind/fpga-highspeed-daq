@@ -1,0 +1,415 @@
+./tools/run python tools/lint.py
+LINT counter
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.008 MB in 4 C++ files needing 0.000 MB
+- Verilator: Walltime 0.010 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.004 s on 1 threads; alloced 19.012 MB
+LINT daq_top
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.076 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.033 s (elab=0.001, cvt=0.011, bld=0.000); cpu 0.012 s on 1 threads; alloced 19.547 MB
+LINT dma_descriptor
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.023 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.010 s (elab=0.001, cvt=0.001, bld=0.000); cpu 0.005 s on 1 threads; alloced 19.230 MB
+LINT dma_reader
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.016 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.011 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.005 s on 1 threads; alloced 19.230 MB
+LINT dma_writer
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.019 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.013 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.005 s on 1 threads; alloced 19.223 MB
+LINT sensor_source
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.019 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.019 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.005 s on 1 threads; alloced 19.227 MB
+LINT stream_fifo
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.022 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.009 s (elab=0.001, cvt=0.001, bld=0.000); cpu 0.005 s on 1 threads; alloced 19.230 MB
+LINT stream_processor
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.020 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.013 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.004 s on 1 threads; alloced 19.230 MB
+LINT stream_to_mem
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.017 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.014 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.004 s on 1 threads; alloced 19.230 MB
+LINT streaming_top
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.037 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.022 s (elab=0.001, cvt=0.004, bld=0.000); cpu 0.007 s on 1 threads; alloced 19.227 MB
+LINT tlp_packetizer
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.256 MB sources in 12 modules, into 0.028 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.012 s (elab=0.001, cvt=0.002, bld=0.000); cpu 0.006 s on 1 threads; alloced 19.223 MB
+./tools/run python -m pytest -q tests --junitxml=results/models.xml
+.......................................                                  [100%]
+----------------- generated xml file: /work/results/models.xml -----------------
+39 passed in 0.04s
+./tools/run python tools/rtl_tests.py all
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.023 MB sources in 2 modules, into 0.040 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.016 s (elab=0.000, cvt=0.008, bld=0.000); cpu 0.004 s on 1 threads; alloced 18.207 MB
+make: Entering directory '/work/build/counter'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o counter
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/counter'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847944
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_counter.counter_increments_and_holds (1/1)
+    54.00ns INFO     cocotb.regression                  test_counter.counter_increments_and_holds passed
+    54.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_counter.counter_increments_and_holds   PASS          54.00           0.00     191294.27  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                              54.00           0.00      65802.56  **
+                                                        ***************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS counter: 1 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.025 MB sources in 2 modules, into 0.060 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.012 s (elab=0.000, cvt=0.004, bld=0.000); cpu 0.006 s on 1 threads; alloced 18.344 MB
+make: Entering directory '/work/build/stream_fifo'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o stream_fifo
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/stream_fifo'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847946
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_stream_fifo.basic_order (1/4)
+    52.00ns INFO     cocotb.regression                  test_stream_fifo.basic_order passed
+    52.00ns INFO     cocotb.regression                  running test_stream_fifo.full_then_resume (2/4)
+   154.00ns INFO     cocotb.regression                  test_stream_fifo.full_then_resume passed
+   154.00ns INFO     cocotb.regression                  running test_stream_fifo.random_backpressure (3/4)
+  1871.00ns INFO     cocotb.regression                  test_stream_fifo.random_backpressure passed
+  1871.00ns INFO     cocotb.regression                  running test_stream_fifo.reset_flushes_pending_words (4/4)
+  1910.00ns INFO     cocotb.regression                  test_stream_fifo.reset_flushes_pending_words passed
+  1910.00ns INFO     cocotb.regression                  ******************************************************************************************************
+                                                        ** TEST                                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ******************************************************************************************************
+                                                        ** test_stream_fifo.basic_order                   PASS          52.00           0.00     150728.27  **
+                                                        ** test_stream_fifo.full_then_resume              PASS         102.00           0.00     248154.88  **
+                                                        ** test_stream_fifo.random_backpressure           PASS        1717.00           0.01     276783.12  **
+                                                        ** test_stream_fifo.reset_flushes_pending_words   PASS          39.00           0.00     270376.62  **
+                                                        ******************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                               1910.00           0.01     235683.95  **
+                                                        ******************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS stream_fifo: 4 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.025 MB sources in 2 modules, into 0.059 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.010 s (elab=0.000, cvt=0.003, bld=0.000); cpu 0.005 s on 1 threads; alloced 18.340 MB
+make: Entering directory '/work/build/fifo_depth_1'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o stream_fifo
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/fifo_depth_1'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847948
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_fifo_extended.depth_wrap_stability_and_concurrency (1/1)
+ 15639.00ns INFO     cocotb.regression                  test_fifo_extended.depth_wrap_stability_and_concurrency passed
+ 15639.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_fifo_extended.depth_wrap_stability_and_concurrency   PASS       15639.00           0.06     271431.67  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         15639.00           0.06     268819.80  **
+                                                        *****************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS fifo_depth_1: 1 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.025 MB sources in 2 modules, into 0.059 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.010 s (elab=0.000, cvt=0.004, bld=0.000); cpu 0.005 s on 1 threads; alloced 18.340 MB
+make: Entering directory '/work/build/fifo_depth_3'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o stream_fifo
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/fifo_depth_3'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847949
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_fifo_extended.depth_wrap_stability_and_concurrency (1/1)
+ 15659.00ns INFO     cocotb.regression                  test_fifo_extended.depth_wrap_stability_and_concurrency passed
+ 15659.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_fifo_extended.depth_wrap_stability_and_concurrency   PASS       15659.00           0.06     258520.19  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         15659.00           0.06     255732.92  **
+                                                        *****************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS fifo_depth_3: 1 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.025 MB sources in 2 modules, into 0.060 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.010 s (elab=0.000, cvt=0.004, bld=0.000); cpu 0.005 s on 1 threads; alloced 18.340 MB
+make: Entering directory '/work/build/fifo_depth_8'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o stream_fifo
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/fifo_depth_8'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847951
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_fifo_extended.depth_wrap_stability_and_concurrency (1/1)
+ 15704.00ns INFO     cocotb.regression                  test_fifo_extended.depth_wrap_stability_and_concurrency passed
+ 15704.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_fifo_extended.depth_wrap_stability_and_concurrency   PASS       15704.00           0.06     267628.34  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         15704.00           0.06     265098.16  **
+                                                        *****************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS fifo_depth_8: 1 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.025 MB sources in 2 modules, into 0.061 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.011 s (elab=0.000, cvt=0.003, bld=0.000); cpu 0.005 s on 1 threads; alloced 18.344 MB
+make: Entering directory '/work/build/fifo_depth_16'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o stream_fifo
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/fifo_depth_16'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847952
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_fifo_extended.depth_wrap_stability_and_concurrency (1/1)
+ 15784.00ns INFO     cocotb.regression                  test_fifo_extended.depth_wrap_stability_and_concurrency passed
+ 15784.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_fifo_extended.depth_wrap_stability_and_concurrency   PASS       15784.00           0.06     273851.98  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         15784.00           0.06     271360.04  **
+                                                        *****************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS fifo_depth_16: 1 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.257 MB sources in 12 modules, into 0.134 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.017 s (elab=0.001, cvt=0.006, bld=0.000); cpu 0.010 s on 1 threads; alloced 19.250 MB
+make: Entering directory '/work/build/streaming_top'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o streaming_top
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/streaming_top'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847954
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_streaming.streaming_frames_gain_stalls_and_reset (1/1)
+ 14723.00ns INFO     cocotb.regression                  test_streaming.streaming_frames_gain_stalls_and_reset passed
+ 14723.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_streaming.streaming_frames_gain_stalls_and_reset   PASS       14723.00           0.05     315460.92  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       14723.00           0.05     311134.53  **
+                                                        ***************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS streaming_top: 1 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.257 MB sources in 12 modules, into 0.350 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.026 s (elab=0.001, cvt=0.013, bld=0.000); cpu 0.018 s on 1 threads; alloced 20.379 MB
+make: Entering directory '/work/build/daq_top'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o daq_top
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/daq_top'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847956
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_end_to_end.e2e_fixed_seed_matrix (1/6)
+   159.00ns INFO     cocotb.daq_top                     E2E seed=11 source=1 sink=1 cycles=30 DATA_MATCH
+   433.00ns INFO     cocotb.daq_top                     E2E seed=11 source=3 sink=3 cycles=53 DATA_MATCH
+  1482.00ns INFO     cocotb.daq_top                     E2E seed=11 source=9 sink=9 cycles=208 DATA_MATCH
+  2991.00ns INFO     cocotb.daq_top                     E2E seed=11 source=31 sink=31 cycles=300 DATA_MATCH
+  7510.00ns INFO     cocotb.daq_top                     E2E seed=11 source=32 sink=32 cycles=902 DATA_MATCH
+  7669.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=1 sink=1 cycles=30 DATA_MATCH
+  7953.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=3 sink=3 cycles=55 DATA_MATCH
+  9022.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=9 sink=9 cycles=212 DATA_MATCH
+ 10481.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=31 sink=31 cycles=290 DATA_MATCH
+ 15075.00ns INFO     cocotb.daq_top                     E2E seed=2026 source=32 sink=32 cycles=917 DATA_MATCH
+ 15234.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=1 sink=1 cycles=30 DATA_MATCH
+ 15513.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=3 sink=3 cycles=54 DATA_MATCH
+ 16627.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=9 sink=9 cycles=221 DATA_MATCH
+ 18111.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=31 sink=31 cycles=295 DATA_MATCH
+ 22785.00ns INFO     cocotb.daq_top                     E2E seed=99173 source=32 sink=32 cycles=933 DATA_MATCH
+ 22785.00ns INFO     cocotb.regression                  test_end_to_end.e2e_fixed_seed_matrix passed
+ 22785.00ns INFO     cocotb.regression                  running test_end_to_end.invalid_descriptors_and_recovery (2/6)
+ 24329.00ns INFO     cocotb.regression                  test_end_to_end.invalid_descriptors_and_recovery passed
+ 24329.00ns INFO     cocotb.regression                  running test_end_to_end.long_backpressure_and_descriptor_order (3/6)
+ 40193.00ns INFO     cocotb.regression                  test_end_to_end.long_backpressure_and_descriptor_order passed
+ 40193.00ns INFO     cocotb.regression                  running test_end_to_end.memory_faults_abort_and_next_job (4/6)
+ 43679.00ns INFO     cocotb.regression                  test_end_to_end.memory_faults_abort_and_next_job passed
+ 43679.00ns INFO     cocotb.regression                  running test_end_to_end.reset_inflight_at_multiple_stages (5/6)
+ 50244.00ns INFO     cocotb.regression                  test_end_to_end.reset_inflight_at_multiple_stages passed
+ 50244.00ns INFO     cocotb.regression                  running test_end_to_end.transport_corruption_is_detected (6/6)
+ 50777.00ns INFO     cocotb.regression                  test_end_to_end.transport_corruption_is_detected passed
+ 50777.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_end_to_end.e2e_fixed_seed_matrix                    PASS       22785.00           0.22     103377.94  **
+                                                        ** test_end_to_end.invalid_descriptors_and_recovery         PASS        1544.00           0.01     107635.63  **
+                                                        ** test_end_to_end.long_backpressure_and_descriptor_order   PASS       15864.00           0.14     111343.70  **
+                                                        ** test_end_to_end.memory_faults_abort_and_next_job         PASS        3486.00           0.03     111497.56  **
+                                                        ** test_end_to_end.reset_inflight_at_multiple_stages        PASS        6565.00           0.06     113631.83  **
+                                                        ** test_end_to_end.transport_corruption_is_detected         PASS         533.00           0.00     111778.20  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=6 PASS=6 FAIL=0 SKIP=0                                        50777.00           0.47     107391.55  **
+                                                        ****************************************************************************************************************
+- :0: Verilog $finish
+REGRESSION_PASS daq_top: 6 cases
+- V e r i l a t i o n   R e p o r t: Verilator 5.040 2025-08-30 rev UNKNOWN.REV
+- Verilator: Built from 0.257 MB sources in 12 modules, into 0.350 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 0.027 s (elab=0.001, cvt=0.013, bld=0.000); cpu 0.019 s on 1 threads; alloced 20.383 MB
+make: Entering directory '/work/build/e2e_extended_32'
+g++  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o verilator.o /opt/venv/lib/python3.12/site-packages/cocotb/share/lib/verilator/verilator.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/verilator/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_dpi.o /opt/verilator/share/verilator/include/verilated_dpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vpi.o /opt/verilator/share/verilator/include/verilated_vpi.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/verilator/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/verilator/share/verilator/include/verilated_threads.cpp
+python3 /opt/verilator/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__DepSet_h84412442__0.cpp Vtop___024root__DepSet_heccd7ead__0.cpp Vtop__Dpi.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__DepSet_h84412442__0__Slow.cpp Vtop___024root__DepSet_heccd7ead__0__Slow.cpp Vtop__Syms.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+echo "" > Vtop__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/opt/verilator/share/verilator/include -I/opt/verilator/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    verilator.o verilated.o verilated_dpi.o verilated_vpi.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a   -Wl,-rpath,/opt/venv/lib/python3.12/site-packages/cocotb/libs -L/opt/venv/lib/python3.12/site-packages/cocotb/libs -lcocotbvpi_verilator  -pthread -lpthread -latomic   -o daq_top
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/work/build/e2e_extended_32'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.3 interpreter at /opt/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Verilator version 5.040 2025-08-30
+     0.00ns INFO     cocotb                             Seeding Python random module with 1791847959
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from /opt/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_e2e_extended.packet_boundary_split (1/4)
+   619.00ns INFO     cocotb.regression                  test_e2e_extended.packet_boundary_split passed
+   619.00ns INFO     cocotb.regression                  running test_e2e_extended.final_address_space_record (2/4)
+   758.00ns INFO     cocotb.regression                  test_e2e_extended.final_address_space_record passed
+   758.00ns INFO     cocotb.regression                  running test_e2e_extended.next_descriptor_before_previous_host_delivery (3/4)
+ 17447.00ns INFO     cocotb.regression                  test_e2e_extended.next_descriptor_before_previous_host_delivery passed
+ 17447.00ns INFO     cocotb.regression                  running test_e2e_extended.large_ring_stress_and_repeated_jobs (4/4)
+ 53754.00ns WARNING  ..ge_ring_stress_and_repeated_jobs [Errno 2] No such file or directory: '/work/results/system-audit/extended-ring-32.json'
+                                                        Traceback (most recent call last):
+                                                          File "/work/tb/test_e2e_extended.py", line 69, in large_ring_stress_and_repeated_jobs
+                                                            (ROOT/f'results/system-audit/extended-ring-{RING}.json').write_text(json.dumps(rows,indent=2)+'\n')
+                                                          File "/usr/lib/python3.12/pathlib.py", line 1049, in write_text
+                                                            with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                          File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+                                                            return io.open(self, mode, buffering, encoding, errors, newline)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                                        FileNotFoundError: [Errno 2] No such file or directory: '/work/results/system-audit/extended-ring-32.json'
+ 53754.00ns WARNING  cocotb.regression                  test_e2e_extended.large_ring_stress_and_repeated_jobs failed
+ 53754.00ns INFO     cocotb.regression                  *************************************************************************************************************************
+                                                        ** TEST                                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************************
+                                                        ** test_e2e_extended.packet_boundary_split                           PASS         619.00           0.01      91689.30  **
+                                                        ** test_e2e_extended.final_address_space_record                      PASS         139.00           0.00     102049.41  **
+                                                        ** test_e2e_extended.next_descriptor_before_previous_host_delivery   PASS       16689.00           0.15     114506.87  **
+                                                        ** test_e2e_extended.large_ring_stress_and_repeated_jobs             FAIL       36307.00           0.34     107452.08  **
+                                                        *************************************************************************************************************************
+                                                        ** TESTS=4 PASS=3 FAIL=1 SKIP=0                                                 53754.00           0.49     109012.97  **
+                                                        *************************************************************************************************************************
+- :0: Verilog $finish
+Traceback (most recent call last):
+  File "/work/tools/rtl_tests.py", line 34, in <module>
+    run('daq_top','test_e2e_extended',f'e2e_extended_{ring}',
+  File "/work/tools/rtl_tests.py", line 20, in run
+    count=require_pass(result_path)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/tools/check_junit.py", line 12, in require_pass
+    raise RuntimeError(f'{p}: tests={len(cases)}, failures/errors={len(failures)}, skipped={len(skipped)}')
+RuntimeError: /work/results/e2e_extended_32.xml: tests=4, failures/errors=1, skipped=0
+make: *** [test] Error 1

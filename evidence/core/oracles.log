@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "CRC32 polynomial implementation verified against published standard check vector123456789=cbf43926",
+    "Custom envelope checksum matched independently serialized fixed bytes and bitwise CRC",
+    "Golden oracle matched manually packed3-record partial-frame vector and frame-zero/single-record vector"
+  ],
+  "known_packet_crc32": "0x5010a0de",
+  "scope": "Four supplemental audit checks, not added to the63 production tests. This validates the custom envelope, not PCIe LCRC. Mathematical oracle shares specification, but no DUT state or simulated memory is consulted."
+}

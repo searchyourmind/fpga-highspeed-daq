@@ -1,0 +1,26 @@
+TPS62130 manufacturer average-model DC and small-signal load response
+* TI SLVM936A, original unencrypted average model; CCM-only, no thermal/Iq.
+.include vendor/tps62130_avg.lib
+Vinput vin 0 12
+Xreg vin fb out sw TPS62130_AVG
+L1 sw lx 2.2u
+Rdcr lx out 0.035
+Cout out cesr 44u
+Resr cesr 0 0.01
+Rtop out fb 312k
+Rbottom fb 0 100k
+Rload out 0 3.3
+Itest out 0 DC 0 AC 1
+.nodeset v(out)=3.296 v(fb)=0.8
+.control
+set wr_singlescale
+set wr_vecnames
+op
+print v(out) v(fb)
+wrdata average_dc.txt v(out) v(fb)
+ac dec 60 100 1Meg
+let zout_mag=mag(v(out))
+wrdata average_ac.txt zout_mag
+quit
+.endc
+.end

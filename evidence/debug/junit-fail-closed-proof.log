@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/work/tools/check_junit.py", line 17, in <module>
+    print(f'JUnit PASS: {require_pass(sys.argv[1])} cases')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/tools/check_junit.py", line 12, in require_pass
+    raise RuntimeError(f'{p}: tests={len(cases)}, failures/errors={len(failures)}, skipped={len(skipped)}')
+RuntimeError: results/system-audit/boundary-before-fix.xml: tests=1, failures/errors=1, skipped=0

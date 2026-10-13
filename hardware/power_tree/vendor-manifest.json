@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://www.ti.com/lit/zip/SLVM436",
+    "sha256": "2e2e8abe16d4edfb3712487cc78baf418510928e7358470b7c1517637ef5caca",
+    "member": "TPS62130_PSPICE_TRANS/tps62130_trans.lib"
+  },
+  {
+    "url": "https://www.ti.com/lit/zip/SLVM936",
+    "sha256": "a82d230643a20a3d6a5a5d2ee53564d55b8c5b2092b15fbf584638dde9e832d2",
+    "member": "TPS62130_PSPICE_AVG/TPS62130_AVG.lib"
+  },
+  {
+    "url": "https://www.ti.com/lit/zip/SLVM893",
+    "sha256": "0e66ec33e5d44c0358abef9c1e6d74289679799d6338f35da16457418457bf09",
+    "member": "TPS62130A_PSPICE_TRANS/TPS62130A_TRANS.LIB"
+  }
+]

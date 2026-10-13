@@ -1,0 +1,2 @@
+./tools/run-eda python3 tools/release_pdf.py
+/work/output/pdf/Independent_Release_Review.pdf

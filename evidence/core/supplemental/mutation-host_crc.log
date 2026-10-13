@@ -1,0 +1,33 @@
+.............F.....F..............                                       [100%]
+=================================== FAILURES ===================================
+________________________ test_host_rejects_faults[crc] _________________________
+
+fault = 'crc'
+
+    @pytest.mark.parametrize('fault',['crc','tag','address','length','last','duplicate'])
+    def test_host_rejects_faults(fault):
+        p=Packet(4096,2,8,(17,),True).seal(); h=Host(2,4096,1)
+        if fault=='crc': p=replace(p,payload=(18,))
+        if fault=='tag': p=replace(p,tag=3).seal()
+        if fault=='address': p=replace(p,address=4104).seal()
+        if fault=='length': p=replace(p,length=16).seal()
+        if fault=='last': p=replace(p,last=False).seal()
+        if fault=='duplicate': h.receive(p)
+>       with pytest.raises(ProtocolError): h.receive(p)
+E       Failed: DID NOT RAISE <class 'sim.pcie_transaction.transport.ProtocolError'>
+
+tests/test_models.py:65: Failed
+________________________ test_link_corruption_and_reset ________________________
+
+    def test_link_corruption_and_reset():
+        l=Link(); l.corrupt_next=True
+        l.accept(0,data=7,address=0,tag=1,length=8,sop=True,eop=True,last=True)
+>       with pytest.raises(ProtocolError): l.deliver(7).validate()
+E       Failed: DID NOT RAISE <class 'sim.pcie_transaction.transport.ProtocolError'>
+
+tests/test_models.py:70: Failed
+---------------- generated xml file: /work/results/mutation.xml ----------------
+=========================== short test summary info ============================
+FAILED tests/test_models.py::test_host_rejects_faults[crc] - Failed: DID NOT ...
+FAILED tests/test_models.py::test_link_corruption_and_reset - Failed: DID NOT...
+2 failed, 32 passed in 0.03s

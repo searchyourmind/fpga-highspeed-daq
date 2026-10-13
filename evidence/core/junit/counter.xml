@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1791852762" />
+    <testcase name="counter_increments_and_holds" classname="test_counter" file="/work/tb/test_counter.py" lineno="6" time="0.0003108978271484375" sim_time_ns="54.0" ratio_time="173690.50306748465" />
+  </testsuite>
+</testsuites>

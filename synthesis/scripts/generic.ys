@@ -1,0 +1,7 @@
+read_verilog -sv -DSYNTHESIS rtl/counter.sv rtl/daq_top.sv rtl/dma_descriptor.sv rtl/dma_reader.sv rtl/dma_writer.sv rtl/sensor_source.sv rtl/stream_fifo.sv rtl/stream_processor.sv rtl/stream_to_mem.sv rtl/streaming_top.sv rtl/tlp_packetizer.sv
+hierarchy -check -top daq_top
+synth -top daq_top -noabc
+check -assert
+tee -o synthesis/reports/generic-stat.json stat -json
+write_json synthesis/reports/daq_top.json
+write_verilog -noattr synthesis/reports/daq_top_netlist.v

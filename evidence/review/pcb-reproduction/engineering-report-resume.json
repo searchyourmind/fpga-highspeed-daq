@@ -1,0 +1,6 @@
+{
+  "mode": "Resume only two reporting stages after upstream input SHA256 validation",
+  "preserved_failed_run": "results/engineering-before-report-repair.json",
+  "upstream_stages": 21,
+  "upstream_input_hashes_valid": true
+}
