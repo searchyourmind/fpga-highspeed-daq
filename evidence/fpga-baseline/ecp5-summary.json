@@ -1,0 +1,225 @@
+{
+  "scope": "Place-and-route timing of the ULX3S board top on ECP5; not measured on hardware",
+  "device": {
+    "family": "ECP5",
+    "part": "LFE5U-25F-6BG381C",
+    "board": "ULX3S (25F)"
+  },
+  "tools": {
+    "yosys": "Yosys 0.33 (git sha1 2584903a060)",
+    "nextpnr": "nextpnr-ecp5 -- Next Generation Place and Route (Version 0.6-3build5)"
+  },
+  "target_mhz": 100,
+  "board_clock_mhz": 25,
+  "fmax_mhz": {
+    "min": 55.72,
+    "median": 57.34,
+    "max": 58.0,
+    "per_seed": [
+      57.8,
+      57.34,
+      55.72,
+      58.0,
+      56.68
+    ]
+  },
+  "meets_board_clock": true,
+  "synthesis_cells": {
+    "LUT4": 2017,
+    "TRELLIS_FF": 1315,
+    "CCU2C": 379,
+    "PFUMX": 313,
+    "L6MUX21": 101,
+    "TRELLIS_DPR16X4": 16,
+    "DP16KD": 2,
+    "MULT18X18D": 2
+  },
+  "cells_by_module": {
+    "daq_top": {
+      "LUT4": 82,
+      "TRELLIS_FF": 31,
+      "CCU2C": 0,
+      "PFUMX": 0,
+      "L6MUX21": 0,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "stream_fifo": {
+      "LUT4": 37,
+      "TRELLIS_FF": 13,
+      "CCU2C": 0,
+      "PFUMX": 4,
+      "L6MUX21": 1,
+      "TRELLIS_DPR16X4": 16,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "dma_descriptor": {
+      "LUT4": 286,
+      "TRELLIS_FF": 151,
+      "CCU2C": 86,
+      "PFUMX": 36,
+      "L6MUX21": 19,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "bram_memory": {
+      "LUT4": 25,
+      "TRELLIS_FF": 2,
+      "CCU2C": 31,
+      "PFUMX": 5,
+      "L6MUX21": 2,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 2,
+      "MULT18X18D": 0
+    },
+    "dma_reader": {
+      "LUT4": 278,
+      "TRELLIS_FF": 133,
+      "CCU2C": 31,
+      "PFUMX": 42,
+      "L6MUX21": 19,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "dma_writer": {
+      "LUT4": 212,
+      "TRELLIS_FF": 68,
+      "CCU2C": 31,
+      "PFUMX": 43,
+      "L6MUX21": 21,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "streaming_top": {
+      "LUT4": 8,
+      "TRELLIS_FF": 8,
+      "CCU2C": 0,
+      "PFUMX": 0,
+      "L6MUX21": 0,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "tlp_packetizer": {
+      "LUT4": 630,
+      "TRELLIS_FF": 289,
+      "CCU2C": 97,
+      "PFUMX": 66,
+      "L6MUX21": 15,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "uart_rx": {
+      "LUT4": 144,
+      "TRELLIS_FF": 40,
+      "CCU2C": 8,
+      "PFUMX": 48,
+      "L6MUX21": 22,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "uart_tx": {
+      "LUT4": 116,
+      "TRELLIS_FF": 29,
+      "CCU2C": 8,
+      "PFUMX": 34,
+      "L6MUX21": 17,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "fpga_top": {
+      "LUT4": 607,
+      "TRELLIS_FF": 328,
+      "CCU2C": 30,
+      "PFUMX": 90,
+      "L6MUX21": 1,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    },
+    "sensor_source": {
+      "LUT4": 268,
+      "TRELLIS_FF": 113,
+      "CCU2C": 64,
+      "PFUMX": 88,
+      "L6MUX21": 63,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 1
+    },
+    "stream_processor": {
+      "LUT4": 85,
+      "TRELLIS_FF": 65,
+      "CCU2C": 0,
+      "PFUMX": 0,
+      "L6MUX21": 0,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 1
+    },
+    "stream_to_mem": {
+      "LUT4": 67,
+      "TRELLIS_FF": 65,
+      "CCU2C": 0,
+      "PFUMX": 0,
+      "L6MUX21": 0,
+      "TRELLIS_DPR16X4": 0,
+      "DP16KD": 0,
+      "MULT18X18D": 0
+    }
+  },
+  "median_run": {
+    "seed": 2,
+    "fmax_mhz": 57.34,
+    "utilization": {
+      "DCCA": {
+        "available": 56,
+        "used": 1
+      },
+      "DP16KD": {
+        "available": 56,
+        "used": 2
+      },
+      "MULT18X18D": {
+        "available": 28,
+        "used": 2
+      },
+      "TRELLIS_COMB": {
+        "available": 24288,
+        "used": 3017
+      },
+      "TRELLIS_FF": {
+        "available": 24288,
+        "used": 1315
+      },
+      "TRELLIS_IO": {
+        "available": 197,
+        "used": 12
+      },
+      "TRELLIS_RAMW": {
+        "available": 3036,
+        "used": 16
+      }
+    },
+    "critical_path": {
+      "start": "daq_i.stream_i.source_i.seq_TRELLIS_FF_Q_22",
+      "end": "daq_i.stream_i.processor_i.m_data_TRELLIS_FF_Q_48",
+      "logic_ns": 10.28,
+      "routing_ns": 7.16,
+      "multipliers_in_series": 2
+    }
+  },
+  "bitstream": {
+    "path": "results/fpga/fpga_top.bit",
+    "seed": 2,
+    "bytes": 154189
+  }
+}

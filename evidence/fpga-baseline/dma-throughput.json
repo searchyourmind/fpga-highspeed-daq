@@ -1,0 +1,62 @@
+[
+  {
+    "memory_latency": 1,
+    "words": 32,
+    "write_cycles_per_word": 2.0,
+    "read_cycles_per_word": 3.0,
+    "write_words_per_cycle": 0.5,
+    "read_words_per_cycle": 0.3333,
+    "max_commands_in_flight": 1,
+    "job_cycles": 175
+  },
+  {
+    "memory_latency": 2,
+    "words": 32,
+    "write_cycles_per_word": 3.0,
+    "read_cycles_per_word": 4.0,
+    "write_words_per_cycle": 0.3333,
+    "read_words_per_cycle": 0.25,
+    "max_commands_in_flight": 1,
+    "job_cycles": 239
+  },
+  {
+    "memory_latency": 4,
+    "words": 32,
+    "write_cycles_per_word": 5.0,
+    "read_cycles_per_word": 6.0,
+    "write_words_per_cycle": 0.2,
+    "read_words_per_cycle": 0.1667,
+    "max_commands_in_flight": 1,
+    "job_cycles": 367
+  },
+  {
+    "memory_latency": 8,
+    "words": 32,
+    "write_cycles_per_word": 9.0,
+    "read_cycles_per_word": 10.0,
+    "write_words_per_cycle": 0.1111,
+    "read_words_per_cycle": 0.1,
+    "max_commands_in_flight": 1,
+    "job_cycles": 623
+  },
+  {
+    "memory_latency": 16,
+    "words": 32,
+    "write_cycles_per_word": 17.0,
+    "read_cycles_per_word": 18.0,
+    "write_words_per_cycle": 0.0588,
+    "read_words_per_cycle": 0.0556,
+    "max_commands_in_flight": 1,
+    "job_cycles": 1135
+  },
+  {
+    "memory_latency": 32,
+    "words": 32,
+    "write_cycles_per_word": 33.0,
+    "read_cycles_per_word": 34.0,
+    "write_words_per_cycle": 0.0303,
+    "read_words_per_cycle": 0.0294,
+    "max_commands_in_flight": 1,
+    "job_cycles": 2159
+  }
+]

@@ -1,0 +1,7 @@
+FROM ubuntu:24.04
+ARG DEBIAN_FRONTEND=noninteractive
+# Open-source Lattice ECP5 flow: Yosys synthesis, nextpnr place-and-route, Trellis bitstream.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    yosys nextpnr-ecp5 fpga-trellis python3 ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /work

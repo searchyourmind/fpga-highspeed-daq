@@ -19,6 +19,10 @@ jobs:
         run: make verify
       - name: Run structural timing checks
         run: ./tools/run python tools/timing_audit.py
+      - name: Run ULX3S board-top and DMA throughput simulations
+        run: |
+          ./tools/run python tools/rtl_tests.py fpga
+          ./tools/run python tools/rtl_tests.py throughput
       - name: Retain executed evidence
         if: always()
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
@@ -26,9 +30,32 @@ jobs:
           name: simulation-evidence
           path: |
             results/*.xml
+            results/board/*.xml
             results/system-audit/*.json
             results/benchmark_csv/
             synthesis/reports/timing-audit.json
             synthesis/reports/longest-path.txt
+          if-no-files-found: error
+  ecp5:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Build ECP5 tools
+        run: docker build -t fpga-daq-fpga:1 -f tools/Dockerfile.fpga .
+      - name: Synthesize, place and route for LFE5U-25F (five seeds), pack bitstream
+        run: make fpga
+      - name: Retain place-and-route evidence
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: ecp5-build
+          path: |
+            results/fpga/summary.json
+            results/fpga/report_seed*.json
+            results/fpga/pnr_seed*.log
+            results/fpga/fpga_top.bit
           if-no-files-found: error
 # Public publication authorized by the owner; local evidence and remote CI remain separate.
