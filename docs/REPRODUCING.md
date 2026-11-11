@@ -20,6 +20,18 @@ Expected: **39 pytest + 24 cocotb = 63 PASS**, zero failures/skips; **15 + 18 = 
 
 `make verify` includes lint and generic synthesis. `make timing` checks generic topology, not target setup/hold timing. Waveforms and benchmark figures use actual VCD/JSON output; no physical time, bandwidth or power is inferred. `make release-assets` regenerates the presentation assets; it intentionally changes tracked figure files. Rerunning tests and synthesis alone leaves the tracked source/evidence unchanged.
 
+## ECP5 board build
+
+```sh
+make fpga-tools
+make fpga
+make fpga-test
+make throughput
+make fpga-mutations
+```
+
+Expected: Fmax near 55.7 / 57.3 / 58.0 MHz (min / median / max, seeds 1-5) for LFE5U-25F-6BG381C, 2 board-top cases and 1 throughput case passing under `results/board/`, and 6/6 injected board-top bugs detected. Results, scope and limits: [fpga/README.md](../fpga/README.md).
+
 ## Actual clean Git checkout
 
 The final release was staged from [the explicit tracking list](../release/tracked-files.txt), committed in an isolated **local** repository, then cloned to an empty directory. No original `results/`, `build/`, synthesized netlist or vendor model was supplied. Actual commands, commit, source hashes, Docker image ID, return codes and stdout are retained in [core evidence](../evidence/core/). The commands above passed on that checkout. GitHub Actions is prepared; publication was subsequently authorized. See the repository Actions page for the independent remote result.

@@ -21,10 +21,12 @@ def run(top,module,name=None,params=None,env=None):
     (ROOT/'results/system-audit').mkdir(parents=True,exist_ok=True)
     runner=get_runner('verilator')
     sources=[ROOT/'rtl'/f'{top}.sv'] if top in ('counter','stream_fifo','stream_processor','dma_descriptor','tlp_packetizer') else sorted((ROOT/'rtl').glob('*.sv'))
+    if top=='fpga_top': sources+=sorted((ROOT/'fpga'/'rtl').glob('*.sv'))
     build=ROOT/'build'/name
     runner.build(sources=sources,hdl_toplevel=top,build_dir=build,parameters=params or {},
                  build_args=['--assert','--Wall','-Wno-PINCONNECTEMPTY'],waves=os.getenv('WAVES')=='1')
     result_path=ROOT/'results'/f'{name}.xml'
+    result_path.parent.mkdir(parents=True,exist_ok=True)
     result_path.unlink(missing_ok=True)
     runner.test(hdl_toplevel=top,test_module=module,test_dir=ROOT/'tb',build_dir=build,
                 results_xml=ROOT/'results'/f'{name}.xml',extra_env=env or {},waves=os.getenv('WAVES')=='1')
@@ -34,7 +36,7 @@ def run(top,module,name=None,params=None,env=None):
     print(f'REGRESSION_PASS {name}: {count} cases',flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(); p.add_argument('suite',choices=['counter','fifo','streaming','e2e','extended','all']); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('suite',choices=['counter','fifo','streaming','e2e','extended','fpga','throughput','all']); a=p.parse_args()
     if a.suite in ('counter','all'): run('counter','test_counter')
     if a.suite in ('fifo','all'):
         run('stream_fifo','test_stream_fifo')
@@ -47,3 +49,7 @@ if __name__=='__main__':
             run('daq_top','test_e2e_extended',f'e2e_extended_{ring}',
                 {'RING_WORDS':ring,'FIFO_DEPTH':depth,'MAX_WORDS':words,'MEM_BYTES':mem},
                 {'DAQ_RING_WORDS':str(ring),'DAQ_MAX_WORDS':str(words),'DAQ_MEM_BYTES':str(mem)})
+    # Board and benchmark suites run separately, and report under results/board/,
+    # so the published 63-case production count stays fixed.
+    if a.suite=='fpga': run('fpga_top','test_fpga_top','board/fpga_top',{'CLKS_PER_BIT':16},{'FPGA_CLKS_PER_BIT':'16'})
+    if a.suite=='throughput': run('daq_top','test_throughput','board/throughput')

@@ -1,0 +1,47 @@
+{
+  "scope": "Deliberate board-top defects in isolated copies; production files unchanged",
+  "cases": [
+    {
+      "mutation": "addr_upper",
+      "file": "fpga/rtl/fpga_top.sv",
+      "original": " ^ link_addr[63:32]",
+      "modified": "",
+      "detected": true
+    },
+    {
+      "mutation": "addr_lower",
+      "file": "fpga/rtl/fpga_top.sv",
+      "original": "^ link_addr[31:0] ",
+      "modified": "",
+      "detected": true
+    },
+    {
+      "mutation": "tag_length_swap",
+      "file": "fpga/rtl/fpga_top.sv",
+      "original": "^ {link_tag, link_length}",
+      "modified": "^ {link_length, link_tag}",
+      "detected": true
+    },
+    {
+      "mutation": "sop_eop_swap",
+      "file": "fpga/rtl/fpga_top.sv",
+      "original": "5'b11010, link_last, link_eop, link_sop}",
+      "modified": "5'b11010, link_last, link_sop, link_eop}",
+      "detected": true
+    },
+    {
+      "mutation": "bram_index",
+      "file": "fpga/rtl/bram_memory.sv",
+      "original": "rsp_data       <= storage[index];",
+      "modified": "rsp_data       <= storage[index ^ 1];",
+      "detected": true
+    },
+    {
+      "mutation": "uart_rx_bit_order",
+      "file": "fpga/rtl/uart_rx.sv",
+      "original": "shift <= {rx_sync, shift[7:1]};",
+      "modified": "shift <= {shift[6:0], rx_sync};",
+      "detected": true
+    }
+  ]
+}

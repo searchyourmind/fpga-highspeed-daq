@@ -71,3 +71,16 @@ pcb-independent:
 	./tools/run-analysis python3 hardware/reference_pcie_adapter/analysis/thermal_independent_review.py
 	./tools/run-analysis python3 hardware/reference_pcie_adapter/analysis/si_independent_review.py
 	python3 tools/write_independent_review.py
+
+.PHONY: fpga-tools fpga fpga-test fpga-mutations throughput
+fpga-tools:
+	docker build -t fpga-daq-fpga:1 -f tools/Dockerfile.fpga .
+fpga-test:
+	$(RUN) python tools/rtl_tests.py fpga
+fpga:
+	DAQ_TOOLS_IMAGE=fpga-daq-fpga:1 ./tools/run python3 tools/fpga_build.py
+throughput:
+	$(RUN) python tools/rtl_tests.py throughput
+	$(RUN) python tools/plot_throughput.py
+fpga-mutations:
+	python3 tools/fpga_mutations.py

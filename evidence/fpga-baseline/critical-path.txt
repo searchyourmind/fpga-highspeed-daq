@@ -1,0 +1,22 @@
+# nextpnr-ecp5 0.6 critical path, LFE5U-25F-6BG381C, seed 2 (median Fmax of 5 seeds)
+Warning: Max frequency for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN': 57.34 MHz (FAIL at 100.00 MHz)
+Critical path report for clock '$glbnet$clk_25mhz$TRELLIS_IO_IN' (posedge -> posedge):
+ 0.5  0.5  Source daq_i.stream_i.source_i.seq_TRELLIS_FF_Q_22.Q
+ 3.9  5.7  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_B0_MULT18X18D_P0.P2
+ 0.4  7.7  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_3$CCU2_COMB0.FCO
+ 0.0  7.7  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_3$CCU2_COMB1.FCO
+ 0.1  7.8  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_2$CCU2_COMB0.FCO
+ 0.0  7.8  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_2$CCU2_COMB1.FCO
+ 0.1  7.8  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_1$CCU2_COMB0.FCO
+ 0.0  7.8  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_1$CCU2_COMB1.FCO
+ 0.1  7.9  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0$CCU2_COMB0.FCO
+ 0.0  7.9  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0$CCU2_COMB1.FCO
+ 0.1  8.0  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_6$CCU2_COMB0.FCO
+ 0.0  8.0  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_6$CCU2_COMB1.FCO
+ 0.4  8.4  Source daq_i.stream_i.processor_i.s_data_CCU2C_S0_5$CCU2_COMB0.F
+ 3.9 13.9  Source daq_i.stream_i.processor_i.product_MULT18X18D_P0.P19
+ 0.2 15.4  Source daq_i.stream_i.processor_i.m_data_TRELLIS_FF_Q_63_DI_LUT4_Z_D_PFUMX_Z_C0_LUT4_Z.F
+ 0.3 16.4  Source daq_i.stream_i.processor_i.m_data_TRELLIS_FF_Q_63_DI_LUT4_Z_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+ 0.2 17.3  Source daq_i.stream_i.processor_i.m_data_TRELLIS_FF_Q_48_DI_LUT4_Z.F
+ 0.0 17.4  Setup daq_i.stream_i.processor_i.m_data_TRELLIS_FF_Q_48.DI
+10.3 ns logic, 7.2 ns routing

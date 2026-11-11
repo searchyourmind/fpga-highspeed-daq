@@ -1,6 +1,6 @@
 # FPGA High-Speed DAQ — RTL simulation portfolio
 
-**SystemVerilog · cocotb · Verilator · Python · Yosys**
+**SystemVerilog · cocotb · Verilator · Python · Yosys · nextpnr (Lattice ECP5)**
 
 A single-clock acquisition pipeline with ready/valid buffering, saturating gain, ring-buffer DMA and packetized host readback. **63 tests pass; 33 end-to-end scenarios match independent expected records.** DDR3 is a **behavioral model**; PCIe is a **custom transaction-level model**, not a hardware endpoint.
 
@@ -15,7 +15,18 @@ The waveform comes from an executed regression. [Full VCD](evidence/core/daq_top
 | **63/63 PASS**, zero failures/skips | 39 pytest + 24 cocotb; [actual clean-checkout log](evidence/core/verify.log) |
 | **33/33 MATCH** | 15 baseline + 18 extended scenarios **within** those tests; [results](evidence/core/verification.json) |
 | Independent checks detect six injected defects | [Mutation results and coverage limits](docs/VERIFICATION_REVIEW.md) |
-| Generic synthesis: 1,447 flip-flops, no latches/loops | [Yosys evidence](evidence/core/synthesis/); 42-cell topological path, **not device timing closure** |
+| Generic synthesis: 1,447 flip-flops, no latches/loops | [Yosys evidence](evidence/core/synthesis/); 42-cell topological path |
+| **ECP5 place and route: 57.3 MHz median Fmax** (5 seeds, LFE5U-25F); meets the 25 MHz board clock | [Board build, critical path, resources](fpga/README.md) |
+
+### ECP5 baseline
+
+The core is placed and routed for the Lattice LFE5U-25F on a [ULX3S board top](fpga/README.md) that takes descriptors over UART and keeps every input live. These are the numbers to beat:
+
+- **Fmax 55.7 / 57.3 / 58.0 MHz** (min / median / max of 5 seeds); 2,017 LUT4, 1,315 FF, 2 block RAMs, 2 multipliers.
+- **Critical path:** two hardware multipliers in one cycle, `seq × 73` in `sensor_source` feeding `× gain` in `stream_processor`.
+- **DMA throughput:** one memory command in flight, so a word costs latency + 1 cycles to write and latency + 2 to read; 0.03 words per cycle at a 32-cycle latency. [Chart and table](fpga/README.md#dma-throughput-baseline-simulation)
+
+The bitstream builds but has not been run on a board.
 
 ### Debugging findings
 
@@ -32,6 +43,9 @@ Requires Docker, Make and Python 3. Run from the repository root:
 make tools
 make verify                 # lint, 63 tests / 33 scenarios, generic synthesis
 make timing                 # structural checks; no device delays or slack
+make fpga-tools && make fpga  # ECP5 synthesis, place and route (5 seeds), bitstream
+make fpga-test              # ULX3S board top, driven through its UART pins
+make throughput             # DMA words per cycle against memory latency
 ```
 
 Recorded versions: Verilator 5.040, cocotb 2.0.0, pytest 8.4.2, Yosys 0.33. [Commands, versions and clean-checkout scope](docs/REPRODUCING.md) · [Simulation benchmark](portfolio/assets/benchmarks.png)
@@ -40,7 +54,7 @@ Recorded versions: Verilator 5.040, cocotb 2.0.0, pytest 8.4.2, Yosys 0.33. [Com
 
 [Architecture and RTL modules](docs/architecture.md) · [Verification review](docs/VERIFICATION_REVIEW.md) · [Portfolio summary](portfolio/README.md) · [Resume bullets](docs/RESUME_BULLETS.md) · [Release summary](release/RELEASE_SUMMARY.md)
 
-One descriptor is active at a time; capture finishes before readback. The source honors backpressure. No physical ADC, DDR PHY, real PCIe TLP/LCRC, FPGA implementation, device STA or measured throughput is claimed. [Interface contracts](docs/interface_contracts.md) · [Synthesis scope](synthesis/README.md)
+One descriptor is active at a time; capture finishes before readback. The source honors backpressure. No physical ADC, DDR PHY, real PCIe TLP/LCRC or measured hardware throughput is claimed; the ECP5 timing comes from nextpnr's model, not a board. [Interface contracts](docs/interface_contracts.md) · [Synthesis scope](synthesis/README.md)
 
 ### Separate PCB Rev 0.3.1 design study
 
